@@ -18,16 +18,16 @@ Welcome to my portfolio project! This web application showcases my skills and pr
 
 ## How to access the Application:
 
-1. Backend Setup:
+### Backend Setup:
 
 - Install dependencies: composer install
 - Set up the environment: cp .env.example .env and configure your database settings.
 - Run migrations: php artisan migrate
 - Start the Laravel development server: php artisan serve
 
-2. Frontend Setup:
+### Frontend Setup:
 
 - Install dependencies: npm install
 - Start the Nuxt 3 development server: npm run dev
 
-3. Open your browser and go to http://localhost:3000 to see the portfolio project in action.
+### Open your browser and go to http://localhost:3000 to see the portfolio project in action.
