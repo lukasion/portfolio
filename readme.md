@@ -15,3 +15,19 @@ Welcome to my portfolio project! This web application showcases my skills and pr
 - **Pinia**: A state management library for Vue.js and Nuxt applications. It provides a simple and efficient way to manage the state of your application.
 
 - **MySQL**: A popular open-source relational database management system. It is used to store and retrieve data efficiently for the portfolio project.
+
+## How to access the Application:
+
+1. Backend Setup:
+
+- Install dependencies: composer install
+- Set up the environment: cp .env.example .env and configure your database settings.
+- Run migrations: php artisan migrate
+- Start the Laravel development server: php artisan serve
+
+2. Frontend Setup:
+
+- Install dependencies: npm install
+- Start the Nuxt 3 development server: npm run dev
+
+3. Open your browser and go to http://localhost:3000 to see the portfolio project in action.
