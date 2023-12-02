@@ -16,6 +16,8 @@ Welcome to my portfolio project! This web application showcases my skills and pr
 
 - **MySQL**: A popular open-source relational database management system. It is used to store and retrieve data efficiently for the portfolio project.
 
+- **Laravel Sail - Docker** - A lightweight command-line interface for interacting with Laravel's Docker development environment. It provides a simple way to set up a local development environment using Docker.
+
 ## How to access the Application:
 
 ### Backend Setup:
