@@ -1,0 +1,9 @@
+.technology {
+	&__container {
+		@apply flex flex-row gap-5 text-lg tracking-wider mt-10 flex-wrap;
+	}
+
+	&__item {
+		@apply border-2 px-7 py-5 gap-3 flex items-center rounded-xl cursor-pointer transition-colors;
+	}
+}

@@ -1,0 +1,34 @@
+.section {
+	&__wrapper {
+		@apply flex flex-col justify-center;
+	}
+
+	&__container {
+		@apply z-20 py-24 container mx-auto;
+
+		@screen 2xl {
+			@apply max-w-[1450px];
+		}
+	}
+
+	&__start {
+		position: relative;
+		background: url('~/assets/images/background/image.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-color: #1a101d;
+		min-height: 100vh;
+		color: white;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+	}
+}
