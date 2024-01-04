@@ -4,9 +4,13 @@
 		<SectionStart/>
 		<SectionTechnologies/>
 		<SectionSocials/>
+
+		<ModalContact :class="{ 'active': modalStore.visible }"/>
 	</div>
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
+import {useModalStore} from "~/store/modal";
+
+const modalStore = useModalStore()
 </script>
