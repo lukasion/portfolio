@@ -2,7 +2,7 @@
 	<section class="section__wrapper">
 		<div class="section__container">
 			<h2 class="title--x-large title--condensed">
-				You can find me also here.
+				You can find me also here
 			</h2>
 
 			<p class="leading-7 mt-5">

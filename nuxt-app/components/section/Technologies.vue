@@ -1,8 +1,10 @@
 <template>
 	<section class="section__wrapper">
 		<div class="section__container">
-			<h2 class="title--x-large title--condensed">
-				Technologies I use in my projects.
+			<h2 class="title--x-large title--condensed title--overflow-y"
+			    :class="{'element--visible': targetIsVisible}"
+			    ref="target">
+				<span>Technologies I use in my projects</span>
 			</h2>
 
 			<p class="leading-7 mt-5">
@@ -60,4 +62,9 @@
 </template>
 
 <script setup lang="ts">
+import {useElementVisibility} from '@vueuse/core'
+
+const target = ref(null)
+const targetIsVisible = useElementVisibility(target)
+
 </script>

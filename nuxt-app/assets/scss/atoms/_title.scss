@@ -7,4 +7,22 @@
 	&--x-large {
 		font-size: 4em;
 	}
+
+	&--overflow-y {
+		position: relative;
+		overflow-y: hidden;
+
+		span {
+			display: block;
+			transform: translateY(100%);
+		}
+
+		&.element--visible {
+			span {
+				transition: .3s transform .3s;
+				transform: translateY(0);
+			}
+		}
+	}
+
 }

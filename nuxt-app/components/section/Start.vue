@@ -1,8 +1,9 @@
 <template>
 	<section class="section__start section__wrapper">
-		<div class="section__container border-l">
-			<h2 class="title--x-large title--condensed">
-				Websites done the right way.
+		<div class="section__container border-l px-20">
+			<h2 class="title--x-large title--condensed title--overflow-y" ref="target"
+			    :class="{'element--visible': targetIsVisible}">
+				<span>Websites done the right way</span>
 			</h2>
 
 			<p class="leading-7">
@@ -21,4 +22,9 @@
 </template>
 
 <script setup lang="ts">
+import {useElementVisibility} from '@vueuse/core'
+
+const target = ref(null)
+const targetIsVisible = useElementVisibility(target)
+
 </script>
