@@ -1,18 +1,19 @@
 <template>
 	<section class="section__wrapper">
 		<div class="section__container">
-			<h2 class="title--x-large title--condensed title--overflow-y"
-			    :class="{'element--visible': targetIsVisible}"
-			    ref="target">
+			<h2 class="title--x-large title--condensed title--slide-from-bottom"
+			    :ref="onElementVisible">
 				<span>Technologies I use in my projects</span>
 			</h2>
 
-			<p class="leading-7 mt-5">
-				As a web developer, I have experience with a wide range of technologies. I have worked with
-				Laravel, Vue.js, Nuxt 3, Tailwind CSS, and many other technologies. <br/>I am always trying to gain new
-				skills and improve my knowledge of the technologies I already know. Below you can find a list of
-				the technologies I use in my projects everyday. If you are interested in working with me, feel free to
-				contact me. I am always open to new opportunities.
+			<p class="leading-7 mt-5 title--slide-from-left" :ref="onElementVisible">
+				<span style="transition-delay: .6s">
+					As a web developer, I have experience with a wide range of technologies. I have worked with
+					Laravel, Vue.js, Nuxt 3, Tailwind CSS, and many other technologies. <br/>I am always trying to gain new
+					skills and improve my knowledge of the technologies I already know. Below you can find a list of
+					the technologies I use in my projects everyday. If you are interested in working with me, feel free to
+					contact me. I am always open to new opportunities.
+				</span>
 			</p>
 
 			<div class="technology__container mt-12">
@@ -62,9 +63,5 @@
 </template>
 
 <script setup lang="ts">
-import {useElementVisibility} from '@vueuse/core'
-
-const target = ref(null)
-const targetIsVisible = useElementVisibility(target)
-
+const onElementVisible = inject('onElementVisible')
 </script>

@@ -8,7 +8,7 @@
 		font-size: 4em;
 	}
 
-	&--overflow-y {
+	&--slide-from-bottom {
 		position: relative;
 		overflow-y: hidden;
 
@@ -17,12 +17,34 @@
 			transform: translateY(100%);
 		}
 
+		button {
+			transform: translateY(110%);
+		}
+
 		&.element--visible {
-			span {
+			span, button {
 				transition: .3s transform .3s;
 				transform: translateY(0);
 			}
 		}
 	}
 
+	&--slide-from-left {
+		position: relative;
+		overflow-x: hidden;
+
+		span {
+			display: block;
+			transform: translateX(-100%);
+			opacity: 0;
+		}
+
+		&.element--visible {
+			span {
+				transition: transform .3s, opacity .6s;
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+	}
 }
