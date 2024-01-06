@@ -1,6 +1,9 @@
 <template>
-	<div class="code">
-		<div class="code__container">
+	<div class="code" ref="editor">
+		<div class="code__preloader" v-if="loading">
+			LOADING ENVIRONMENT <span>{{ dots }}</span>
+		</div>
+		<div class="code__container" v-else>
 			<div data-line-nr="01" class="code__line">
 				<div class="methods">class</div>
 				<span class="propname">Łukasz Fujarski</span>
@@ -170,5 +173,32 @@
 </template>
 
 <script setup lang="ts">
+const loading = ref(true)
+const dots = ref('...')
+const editor = ref(null)
+
+
+const {stop} = useIntersectionObserver(
+	editor,
+	([{isIntersecting}], observerElement) => {
+		if (isIntersecting) {
+			if (editor.value) {
+				observerElement.unobserve(editor.value)
+			}
+
+			setTimeout(() => {
+				loading.value = false
+			}, 4000)
+
+			setInterval(() => {
+				if (dots.value === '...') {
+					dots.value = ''
+				} else {
+					dots.value += '.'
+				}
+			}, 300)
+		}
+	}
+)
 
 </script>

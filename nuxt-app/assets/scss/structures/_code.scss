@@ -4,6 +4,7 @@
 	line-height: 1.6;
 	color: #adb2ad;
 	position: relative;
+	min-height: 100vh;
 
 	&::before {
 		content: '';
@@ -66,5 +67,10 @@
 		font-weight: normal;
 		color: #adb2ad;
 		font-size: 12px;
+	}
+
+	&__preloader {
+		@apply absolute inset-0 z-50 flex justify-center items-center;
+		background: rgba(0, 0, 0, .5);
 	}
 }
