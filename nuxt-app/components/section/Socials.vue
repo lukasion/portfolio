@@ -14,21 +14,29 @@
 			</p>
 
 			<div class="technology__container mt-12">
-				<div class="technology__item">
-					<Icon name="logos:github-icon" size="48px"/>
-					GitHub
+				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
+					<span class="technology__item">
+						<Icon name="logos:github-icon" size="48px"/>
+						GitHub
+					</span>
 				</div>
-				<div class="technology__item">
-					<Icon name="logos:linkedin-icon" size="48px"/>
-					LinkedIn
+				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
+					<span class="technology__item" style="transition-delay: 0.6s">
+						<Icon name="logos:linkedin-icon" size="48px"/>
+						LinkedIn
+					</span>
 				</div>
-				<div class="technology__item">
-					<Icon name="logos:facebook" size="48px"/>
-					Facebook
+				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
+					<span class="technology__item" style="transition-delay: 0.9s">
+						<Icon name="logos:facebook" size="48px"/>
+						Facebook
+					</span>
 				</div>
-				<div class="technology__item">
-					<Icon name="logos:google-gmail" size="48px"/>
-					Google Mail
+				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
+					<span class="technology__item" style="transition-delay: 1.2s">
+						<Icon name="logos:google-gmail" size="48px"/>
+						Google Mail
+					</span>
 				</div>
 			</div>
 		</div>

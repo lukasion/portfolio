@@ -4,6 +4,7 @@
 		<SectionStart/>
 		<SectionTechnologies/>
 		<SectionSocials/>
+		<SectionCode/>
 
 		<ModalContact :class="{ 'active': modalStore.visible }"/>
 	</div>

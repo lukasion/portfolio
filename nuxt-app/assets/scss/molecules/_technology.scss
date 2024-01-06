@@ -5,5 +5,9 @@
 
 	&__item {
 		@apply border-2 px-7 py-5 gap-3 flex items-center rounded-xl cursor-pointer transition-colors;
+
+		&-wrapper {
+			@apply hover:-translate-y-1 transition-all;
+		}
 	}
 }

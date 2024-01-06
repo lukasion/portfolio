@@ -1,0 +1,70 @@
+.code {
+	font-family: Roboto Mono, Courier New, Courier, monospace !important;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #adb2ad;
+	position: relative;
+
+	&::before {
+		content: '';
+		background: #313335;
+		border-right: 1px solid #555754;
+		width: 100px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+
+	@apply bg-[#2b2b2b] text-neutral-100;
+
+	&__container {
+		@apply container mx-auto px-10 py-10;
+	}
+
+	&__line {
+		display: flex;
+		gap: 8px;
+		position: relative;
+		z-index: 2;
+
+		&::before {
+			content: attr(data-line-nr);
+			color: #555754;
+			padding-right: 65px;
+		}
+	}
+
+	.dot {
+		color: #3d3d3d;
+	}
+
+	.methods {
+		font-weight: bold;
+		color: #c17330;
+		display: inline;
+	}
+
+	.propname {
+		font-weight: bold;
+		color: #85a3c0;
+	}
+
+	.methodname {
+		font-weight: bold;
+		color: #f0b25e;
+	}
+
+	.variable {
+		font-weight: bold;
+		color: #84657b;
+	}
+
+
+	.arrow {
+		font-weight: normal;
+		color: #adb2ad;
+		font-size: 12px;
+	}
+}
