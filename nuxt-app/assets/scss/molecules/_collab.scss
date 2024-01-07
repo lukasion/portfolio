@@ -1,0 +1,46 @@
+.collab {
+	&__container {
+		@apply container mx-auto flex gap-8 mt-8 px-20;
+	}
+
+	&__box {
+		@apply flex flex-col shadow-lg w-full min-h-64;
+
+		&:not(.collab__box--empty):hover {
+			box-shadow: 4px 21px 44px -13px rgba(0, 0, 0, .75);
+		}
+
+		&--empty {
+			box-shadow: none;
+		}
+	}
+
+	&__background {
+		@apply p-7 h-full flex flex-col justify-center;
+
+		background: url('~/assets/images/offer-bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+
+		&--on-demand {
+			background-image: url('~/assets/images/demand.jpg');
+		}
+
+		&--seo {
+			background-image: url('~/assets/images/seo.jpg');
+		}
+
+		&::after {
+			@apply z-10;
+			content: '';
+			position: absolute;
+			inset: 0;
+			background-image: linear-gradient(65deg, rgba(16, 9, 27, .8), transparent 50%);
+		}
+	}
+
+	&__content {
+		@apply z-20 relative -left-24;
+	}
+}

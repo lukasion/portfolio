@@ -3,6 +3,7 @@
 		<Header/>
 		<SectionStart/>
 		<SectionTechnologies/>
+		<SectionCollab/>
 		<SectionSocials/>
 		<SectionCode/>
 

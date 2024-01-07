@@ -31,4 +31,10 @@
 			background-color: rgba(0, 0, 0, 0.7);
 		}
 	}
+
+	&__dark {
+		@apply py-6;
+		background-color: #1a1527;
+		color: white;
+	}
 }
