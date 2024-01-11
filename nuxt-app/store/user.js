@@ -17,5 +17,11 @@ export const useUserStore = defineStore('user', () => {
         await login(userCredentials);
     }
 
-    return {data, checkAuth, setData, login}
+    const logout = async () => {
+        const {logout} = useSanctumAuth();
+
+        await logout();
+    }
+
+    return {data, checkAuth, setData, login, logout}
 })

@@ -6,6 +6,7 @@
 
 
 <script setup lang="ts">
+
 const onElementVisible = (el: any) => {
 	const {stop} = useIntersectionObserver(
 		el,
