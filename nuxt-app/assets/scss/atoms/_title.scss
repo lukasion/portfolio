@@ -16,7 +16,8 @@
 		position: relative;
 		overflow-y: hidden;
 
-		span {
+		& > span,
+		& > a {
 			display: block;
 			transform: translateY(100%);
 		}
@@ -26,7 +27,9 @@
 		}
 
 		&.element--visible {
-			span, button {
+			& > span,
+			& > button,
+			& > a {
 				transition: .3s transform .3s;
 				transform: translateY(0);
 			}

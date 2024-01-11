@@ -4,10 +4,20 @@
 	}
 
 	&__item {
-		@apply border-2 px-7 py-5 gap-3 flex items-center rounded-xl cursor-pointer transition-colors;
+		@apply block border-2 px-7 py-5 gap-3 flex items-center rounded-xl cursor-pointer transition-colors overflow-hidden;
 
 		&-wrapper {
 			@apply hover:-translate-y-1 transition-all;
 		}
+
+		&:hover {
+			.technology__title {
+				@apply translate-y-0;
+			}
+		}
+	}
+
+	&__title {
+		@apply shadow-2xl shadow-black transition-all text-xs mt-2 absolute left-0 bottom-0 right-0 bg-white text-center p-2 translate-y-full rounded-xl;
 	}
 }
