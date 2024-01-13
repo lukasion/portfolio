@@ -1,75 +1,35 @@
-# Nuxt 3 Minimal Starter
+# Portfolio Project with Laravel, Nuxt 3, and SSR Rendering
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my portfolio project! This web application showcases my skills and projects in a clean and efficient manner. The project is built using a powerful stack including Laravel, Nuxt 3, and SSR rendering for optimal performance. Additionally, I've utilized technologies such as Tailwind CSS, SCSS, Pinia, and MySQL to enhance the overall development experience.
 
-## Setup
+## Technologies Used
 
-Make sure to install the dependencies:
+- **Nuxt 3**: A progressive JavaScript framework for building modern web applications. Nuxt 3 introduces Server-Side Rendering (SSR) to enhance performance and SEO capabilities.
 
-```bash
-# npm
-npm install
+- **Prisma ORM**
 
-# pnpm
-pnpm install
+- **Tailwind CSS**: A utility-first CSS framework that makes it easy to design responsive and visually appealing interfaces without the need for custom CSS.
 
-# yarn
-yarn install
+- **daisyUI**
 
-# bun
-bun install
-```
+- **SCSS**: A preprocessor scripting language that is interpreted or compiled into CSS. SCSS allows for the use of variables, nesting, and other features to improve the maintainability of stylesheets.
 
-## Development Server
+- **Pinia**: A state management library for Vue.js and Nuxt applications. It provides a simple and efficient way to manage the state of your application.
 
-Start the development server on `http://localhost:3000`:
+- **MySQL**: A popular open-source relational database management system. It is used to store and retrieve data efficiently for the portfolio project.
 
-```bash
-# npm
-npm run dev
+## How to access the Application:
 
-# pnpm
-pnpm run dev
+### Backend Setup:
 
-# yarn
-yarn dev
+- Install dependencies: composer install
+- Set up the environment: cp .env.example .env and configure your database settings.
+- Run migrations: php artisan migrate
+- Start the Laravel development server: php artisan serve
 
-# bun
-bun run dev
-```
+### Frontend Setup:
 
-## Production
+- Install dependencies: npm install
+- Start the Nuxt 3 development server: npm run dev
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Open your browser and go to http://localhost:3000 to see the portfolio project in action.
