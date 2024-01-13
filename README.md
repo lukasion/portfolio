@@ -1,4 +1,4 @@
-# Portfolio Project with Laravel, Nuxt 3, and SSR Rendering
+# Portfolio Project with Nuxt 3, and SSR Rendering
 
 Welcome to my portfolio project! This web application showcases my skills and projects in a clean and efficient manner. The project is built using a powerful stack including Laravel, Nuxt 3, and SSR rendering for optimal performance. Additionally, I've utilized technologies such as Tailwind CSS, SCSS, Pinia, and MySQL to enhance the overall development experience.
 
@@ -20,14 +20,7 @@ Welcome to my portfolio project! This web application showcases my skills and pr
 
 ## How to access the Application:
 
-### Backend Setup:
-
-- Install dependencies: composer install
-- Set up the environment: cp .env.example .env and configure your database settings.
-- Run migrations: php artisan migrate
-- Start the Laravel development server: php artisan serve
-
-### Frontend Setup:
+### Setup:
 
 - Install dependencies: npm install
 - Start the Nuxt 3 development server: npm run dev
