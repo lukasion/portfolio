@@ -1,62 +1,52 @@
 <template>
-	<UCard class="max-w-sm w-full mx-auto my-10">
-		<UAuthForm
-			v-if="!isAuthenticated"
-			:fields="fields"
-			:validate="validate"
-			title="Login to Admin Panel"
-			align="top"
-			icon="i-heroicons-lock-closed"
-			:ui="{ base: 'text-center', footer: 'text-center' }"
-			@submit="onSubmit"
-		>
-			<template #description>
-				ACP NuxtCMS
-			</template>
-		</UAuthForm>
+	<div class="relative flex flex-col items-center justify-center h-screen overflow-hidden">
+		<div class="w-full p-6 bg-white border-t-4 border-gray-600 rounded-md shadow-md border-top lg:max-w-lg">
+			<h1 class="text-3xl font-semibold text-center text-gray-700">AdminCP</h1>
+			<form class="space-y-4" @submit.prevent="onSubmit">
+				<div>
+					<label class="label">
+						<span class="text-base label-text">Email</span>
+					</label>
 
-		<UAuthForm
-			v-else
-			title="Logout of ACP"
-			align="top"
-			icon="i-heroicons-lock-closed"
-			@submit="userStore.logout"
-			:ui="{ base: 'text-center', footer: 'text-center' }"
-		>
-			<template #description>
-				Are you sure you want to logout?
-			</template>
-		</UAuthForm>
-	</UCard>
+					<input
+						type="text"
+						placeholder="Email Address"
+						class="w-full input input-bordered"
+						v-model="form.email"
+					/>
+				</div>
+				<div>
+					<label class="label">
+						<span class="text-base label-text">Password</span>
+					</label>
+
+					<input
+						type="password"
+						placeholder="Enter Password"
+						class="w-full input input-bordered"
+						v-model="form.password"
+					/>
+				</div>
+				<a href="#" class="text-xs text-gray-600 hover:underline hover:text-blue-600">Forget Password?</a>
+				<div>
+					<button class="btn btn-block">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </template>
 
 <script setup lang="ts">
 import {useUserStore} from "~/store/user";
-import type {FormError} from '#ui/types'
 
 const userStore = useUserStore()
-const {isAuthenticated} = useSanctumAuth();
 
-const fields = [{
-	name: 'email',
-	type: 'text',
-	label: 'Email',
-	placeholder: 'Enter your email'
-}, {
-	name: 'password',
-	label: 'Password',
-	type: 'password',
-	placeholder: 'Enter your password'
-}]
+const form = ref({
+	email: null,
+	password: null
+})
 
-const validate = (state: any) => {
-	const errors: FormError[] = []
-	if (!state.email) errors.push({path: 'email', message: 'Email is required'})
-	if (!state.password) errors.push({path: 'password', message: 'Password is required'})
-	return errors
-}
-
-function onSubmit(data: any) {
-	userStore.login(data)
+function onSubmit() {
+	userStore.login(form)
 }
 </script>

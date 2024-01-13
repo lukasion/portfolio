@@ -12,15 +12,17 @@ export const useUserStore = defineStore('user', () => {
     }
 
     const login = async (userCredentials) => {
-        const {login} = useSanctumAuth();
-
-        await login(userCredentials);
+        console.log(userCredentials)
+        const {data} = await useFetch('/api/user', {
+            method: 'POST',
+            body: JSON.stringify({
+                email: userCredentials.value.email,
+                password: userCredentials.value.password
+            })
+        })
     }
 
     const logout = async () => {
-        const {logout} = useSanctumAuth();
-
-        await logout();
     }
 
     return {data, checkAuth, setData, login, logout}
