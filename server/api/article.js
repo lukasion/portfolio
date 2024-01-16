@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     const prisma = new PrismaClient()
     const body = await readBody(event)
     const openai = new OpenAI({
-        apiKey: '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'
+        apiKey: null
     });
 
     const response = await openai.chat.completions.create({
