@@ -5,7 +5,10 @@
 				<a class="btn btn-ghost text-xl">Admin CP</a>
 			</div>
 			<div class="flex-none">
-				<ul class="menu menu-horizontal px-1">
+				<ul class="menu menu-horizontal px-1 gap-2">
+					<li>
+						<nuxt-link to="/">Mainpage</nuxt-link>
+					</li>
 					<li>
 						<nuxt-link to="/user/auth">Dashboard</nuxt-link>
 					</li>
