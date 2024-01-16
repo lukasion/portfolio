@@ -6,6 +6,10 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         'nuxt-icon',
         '@nuxt/ui',
+        '@sidebase/nuxt-auth'
     ],
     css: ['~/assets/scss/main.scss'],
+    auth: {
+        baseURL: '/user/auth',
+    }
 })
