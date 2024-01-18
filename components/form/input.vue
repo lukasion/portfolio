@@ -5,21 +5,23 @@
 		</label>
 		<label class="input-group">
 			<input
-				type="text"
+				:type="type"
 				:placeholder="placeholder"
 				:class="['input input-bordered', props.class]"
-				:value="value"
 				:required="required"
+				v-model="model"
 			/>
 		</label>
 	</div>
 </template>
 
 <script setup lang="ts">
+const model = defineModel()
+
 const props = defineProps({
-	value: {
+	type: {
 		type: String,
-		default: null
+		default: 'text'
 	},
 	class: {
 		type: String,

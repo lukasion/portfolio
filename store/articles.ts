@@ -4,7 +4,7 @@ export const useArticlesStore = defineStore('articles', () => {
     const articles = ref([])
     const article = ref({})
 
-    async function fetchData() {
+    async function fetchData(): Promise<void> {
         const {data}: any = await useFetch('/api/articles')
 
         if (data.value) {
@@ -12,7 +12,7 @@ export const useArticlesStore = defineStore('articles', () => {
         }
     }
 
-    async function fetchArticle(id: number) {
+    async function fetchArticle(id: string): Promise<void> {
         const {data}: any = await useFetch(`/api/articles/${id}`)
 
         if (data.value) {

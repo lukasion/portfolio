@@ -25,6 +25,7 @@
 
 			<div class="flex gap-2">
 				<nuxt-link to="/user/posts" class="btn">Cancel</nuxt-link>
+				
 				<button class="btn btn-neutral">Submit form</button>
 			</div>
 		</div>
@@ -38,7 +39,7 @@ const articlesStore = useArticlesStore()
 
 const props = defineProps({
 	postId: {
-		type: Number,
+		type: String,
 		default: null
 	}
 })

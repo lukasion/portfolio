@@ -6,7 +6,7 @@ export default defineEventHandler(async (event: H3Event<EventHandlerRequest>): P
     const params: Record<string, string> | undefined = event.context.params
 
     if (params?.id) {
-        return await prisma.post.findFirst({
+        return await prisma.topic.findFirst({
             where: {
                 id: parseInt(params.id)
             }

@@ -22,3 +22,9 @@ model Post {
   content   String?
   prompt   String?
 }
+
+model Topic {
+  id            Int     @id @default(autoincrement())
+  name          String
+  datetime      DateTime
+}
