@@ -15,8 +15,4 @@
 
 <script setup>
 const {status, data} = useAuth()
-
-definePageMeta({
-	middleware: 'auth'
-})
 </script>
