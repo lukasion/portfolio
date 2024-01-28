@@ -1,10 +1,17 @@
 <template>
 	<div>
 		<Header/>
+
 		<SectionStart/>
+
 		<SectionTechnologies/>
-		<SectionCollab/>
+		
+		<ClientOnly>
+			<SectionCollab/>
+		</ClientOnly>
+
 		<SectionSocials/>
+
 		<SectionCode/>
 
 		<ModalContact :class="{ 'active': modalStore.visible }"/>

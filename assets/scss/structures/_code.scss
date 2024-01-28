@@ -5,6 +5,13 @@
 	color: #adb2ad;
 	position: relative;
 	min-height: 100vh;
+	max-width: 100vw;
+	overflow-x: auto;
+
+	@screen md {
+		max-width: initial;
+		overflow-x: initial;
+	}
 
 	&::before {
 		content: '';
@@ -22,6 +29,11 @@
 
 	&__container {
 		@apply container mx-auto px-10 py-10;
+		min-width: 1000px;
+
+		@screen md {
+			min-width: initial;
+		}
 	}
 
 	&__line {

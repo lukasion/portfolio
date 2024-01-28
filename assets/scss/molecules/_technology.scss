@@ -4,7 +4,27 @@
 	}
 
 	&__item {
-		@apply block border-2 px-7 py-5 gap-3 flex items-center rounded-xl cursor-pointer transition-colors overflow-hidden;
+		@apply block border-2 px-5 py-3 gap-3 flex items-center rounded-xl cursor-pointer transition-colors overflow-hidden text-xs;
+
+		@screen md {
+			@apply text-base px-7 py-5;
+		}
+
+		svg {
+			@apply w-8 h-8;
+
+			@screen md {
+				@apply w-[48px] h-[48px];
+			}
+		}
+
+		& > div {
+			@apply flex items-center gap-3;
+
+			@screen md {
+				@apply gap-5;
+			}
+		}
 
 		&-wrapper {
 			@apply hover:-translate-y-1 transition-all;

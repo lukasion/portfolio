@@ -5,10 +5,14 @@
 				&lt;lukasz-fujarski&nbsp;/&gt;
 			</div>
 
-			<ul>
+			<ul :class="{ 'active': mobileVisible }">
 				<li class="header__item--active">Web developer</li>
 				<li class="header__item">About web</li>
 			</ul>
+
+			<div class="header__hamburger md:hidden" @click="mobileVisible = !mobileVisible">
+				<Icon name="material-symbols:menu" size="32px"/>
+			</div>
 		</div>
 	</div>
 </template>
@@ -18,6 +22,7 @@ import {ref} from 'vue'
 
 const scrolled = ref(false)
 const header = ref(null)
+const mobileVisible = ref(false)
 
 onMounted(() => {
 	const sectionStartHeight = document.querySelector('.section__start')?.clientHeight

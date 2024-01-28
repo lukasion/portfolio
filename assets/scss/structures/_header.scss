@@ -1,12 +1,24 @@
 .header {
-	@apply px-4 fixed text-white w-full z-50 left-0 right-0 justify-between items-center pr-24 transition-all;
+	@apply fixed text-white w-full z-50 left-0 right-0 justify-between items-center transition-all py-3;
+
+	@screen md {
+		@apply pr-24 px-4 py-0;
+	}
 
 	&__logo {
-		@apply text-xl tracking-widest;
+		@apply text-base tracking-widest;
+
+		@screen md {
+			@apply text-xl;
+		}
 	}
 
 	&__container {
-		@apply container flex flex-row mx-auto justify-between items-center px-10;
+		@apply container flex flex-row mx-auto justify-between items-center px-4;
+
+		@screen md {
+			@apply px-10;
+		}
 	}
 
 	&__item {
@@ -15,18 +27,40 @@
 		}
 	}
 
-	&--scrolled {
-		@apply backdrop-blur-md bg-white/40 shadow-lg text-black;
-	}
-
 	ul {
-		@apply flex flex-row gap-10 text-lg tracking-wider mt-3 uppercase py-2;
+		@apply hidden flex-row gap-5 text-base tracking-wider mt-3 uppercase py-2 px-4 bg-white shadow-lg absolute top-10 right-0 left-0 flex-col text-black;
+
+		&.active {
+			@apply flex;
+		}
+
+		@screen md {
+			@apply gap-10 text-lg flex relative top-auto right-auto left-auto bg-transparent shadow-none flex-row text-white;
+		}
 
 		li {
 			@apply cursor-pointer transition-colors py-3;
 
 			&:hover {
 				@apply text-gray-400;
+			}
+		}
+	}
+
+	&--scrolled {
+		@apply backdrop-blur-md bg-white/40 shadow-lg text-black;
+
+		ul {
+			@apply text-black;
+		}
+	}
+
+	&__hamburger {
+		svg {
+			@apply transition-all;
+
+			&:hover {
+				@apply rotate-180;
 			}
 		}
 	}

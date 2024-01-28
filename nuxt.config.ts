@@ -10,6 +10,6 @@ export default defineNuxtConfig({
     ],
     css: ['~/assets/scss/main.scss'],
     auth: {
-        baseURL: '/user/auth',
+        baseURL: 'https://be-crafty.com/user/auth'
     }
 })

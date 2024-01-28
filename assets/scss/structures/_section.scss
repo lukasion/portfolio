@@ -4,7 +4,11 @@
 	}
 
 	&__container {
-		@apply z-20 py-24 container mx-auto;
+		@apply z-20 py-24 container mx-auto px-4;
+
+		@screen md {
+			@apply px-0;
+		}
 
 		@screen 2xl {
 			@apply max-w-[1450px];

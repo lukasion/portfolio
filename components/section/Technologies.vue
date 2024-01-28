@@ -79,8 +79,10 @@
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
 					<span class="technology__item" style="transition-delay: 2.1s">
-						<Icon name="logos:nodejs" size="48px"/>
-						Node.js
+						<div>
+							<Icon name="logos:nodejs" size="48px"/>
+							Node.js
+						</div>
 					</span>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
@@ -121,20 +123,26 @@
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
 					<span class="technology__item" style="transition-delay: 3.3s">
-						<Icon name="logos:docker-icon" size="48px"/>
-						Docker
+						<div>
+							<Icon name="logos:docker-icon" size="48px"/>
+							Docker
+						</div>
 					</span>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
 					<span class="technology__item" style="transition-delay: 3.6s">
-						<Icon name="logos:git" size="48px"/>
-						Git
+						<div>
+							<Icon name="logos:git" size="48px"/>
+							Git
+						</div>
 					</span>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
 					<span class="technology__item" style="transition-delay: 3.9s">
-						<Icon name="logos:github-copilot" size="48px"/>
-						GitHub Copilot
+						<div>
+							<Icon name="logos:github-copilot" size="48px"/>
+							GitHub Copilot
+						</div>
 					</span>
 				</div>
 			</div>

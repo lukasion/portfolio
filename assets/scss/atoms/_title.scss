@@ -9,7 +9,15 @@
 	}
 
 	&--x-large {
-		font-size: 4em;
+		@apply mb-4 text-4xl;
+
+		@screen md {
+			@apply text-5xl;
+		}
+
+		@screen lg {
+			@apply text-6xl;
+		}
 	}
 
 	&--slide-from-bottom {

@@ -1,27 +1,52 @@
 .collab {
 	&__container {
-		@apply container mx-auto flex gap-8 mt-8 px-20;
+		@apply container mx-auto flex flex-col mt-8 gap-8;
+
+		@screen md {
+			@apply gap-20 flex flex-row px-28;
+		}
+
+		@screen lg {
+			@apply px-20 gap-8;
+		}
 	}
 
 	&__box {
-		@apply flex flex-col shadow-lg w-full min-h-64;
+		@apply flex flex-col shadow-lg w-full;
+
+		@screen md {
+			@apply min-h-64;
+		}
 
 		&:not(.collab__box--empty):hover {
 			box-shadow: 4px 21px 44px -13px rgba(0, 0, 0, .75);
 		}
 
 		&--empty {
+			@apply hidden;
 			box-shadow: none;
+
+			@screen lg {
+				@apply block;
+			}
 		}
 	}
 
 	&__background {
-		@apply p-7 h-full flex flex-col justify-center;
+		@apply p-4 h-full flex flex-col justify-center;
 
 		background: url('~/assets/images/offer-bg.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
+
+		@screen md {
+			@apply p-0;
+		}
+
+		@screen lg {
+			@apply p-7;
+		}
 
 		&--on-demand {
 			background-image: url('~/assets/images/demand.jpg');
@@ -41,6 +66,10 @@
 	}
 
 	&__content {
-		@apply z-20 relative -left-24;
+		@apply z-20 relative;
+
+		@screen md {
+			@apply -left-24;
+		}
 	}
 }
