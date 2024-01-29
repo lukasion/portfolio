@@ -1,9 +1,9 @@
 <template>
 	<div class="header" :class="{'header--scrolled': scrolled === true}" ref="header">
 		<div class="header__container">
-			<div class="header__logo">
+			<nuxt-link to="/" class="header__logo">
 				&lt;lukasz-fujarski&nbsp;/&gt;
-			</div>
+			</nuxt-link>
 
 			<ul :class="{ 'active': mobileVisible }">
 				<li class="header__item--active">Web developer</li>

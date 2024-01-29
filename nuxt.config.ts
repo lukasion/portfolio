@@ -6,7 +6,16 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         'nuxt-icon',
         '@nuxt/ui',
-        '@sidebase/nuxt-auth'
+        '@sidebase/nuxt-auth',
+        ['nuxt-mail', {
+            message: {
+                to: 'lukasz.fujarski@gmail.com',
+            },
+            smtp: {
+                host: "smtp.example.com",
+                port: 587,
+            },
+        }],
     ],
     css: ['~/assets/scss/main.scss'],
     auth: {

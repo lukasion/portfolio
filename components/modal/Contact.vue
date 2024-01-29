@@ -22,19 +22,38 @@
 				<div class="modal__form">
 					<form action="">
 						<div class="form__input-container">
-							<input class="form__input" type="text" id="name" placeholder="Your name"/>
+							<input
+								class="form__input" t
+								type="text"
+								id="name"
+								placeholder="Your name"
+								v-model="form.name"
+							/>
 						</div>
 
 						<div class="form__input-container">
-							<input class="form__input" type="email" id="name" placeholder="Your e-mail address"/>
+							<input
+								class="form__input"
+								type="email"
+								id="email"
+								placeholder="Your e-mail address"
+								v-model="form.email"
+							/>
 						</div>
 
 						<div class="form__input-container">
-							<textarea class="form__input" id="message" placeholder="Your message"></textarea>
+							<textarea
+								class="form__input"
+								id="message"
+								placeholder="Your message"
+								v-model="form.message"
+							></textarea>
 						</div>
 
 						<div class="modal__form-input">
-							<button class="form__button form__button--dark">Contact request</button>
+							<button @click.prevent="modalStore.submit(form)" class="form__button form__button--dark">
+								Contact request
+							</button>
 						</div>
 					</form>
 				</div>
@@ -47,4 +66,10 @@
 import {useModalStore} from "~/store/modal";
 
 const modalStore = useModalStore()
+
+const form = ref({
+	name: '',
+	email: '',
+	message: '',
+})
 </script>
