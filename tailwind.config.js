@@ -1,6 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    theme: {},
+    theme: {
+        screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1333px',
+        }
+    },
     plugins: [require("daisyui")],
     content: [
         `./components/**/*.{vue,js,ts}`,
@@ -24,12 +32,5 @@ export default {
             xl: '5rem',
             '2xl': '7rem',
         },
-        width: {
-            DEFAULT: '100%',
-            sm: '640px',
-            md: '768px',
-            lg: '1024px',
-            xl: '1024px',
-        }
     }
 };

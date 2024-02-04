@@ -3,7 +3,7 @@
 		<div class="section__container">
 			<h2 class="title--x-large title--condensed">What can I offer?</h2>
 
-			<div class="collab__container">
+			<div class="collab__container" :ref="onElementVisible">
 				<div class="collab__box" :ref="assignTiltElement">
 					<div class="collab__background">
 						<div class="collab__content">
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 
-			<div class="collab__container md:!mt-16">
+			<div class="collab__container md:!mt-16" :ref="onElementVisible">
 				<div class="collab__box collab__box--empty"></div>
 				<div class="collab__box" :ref="assignTiltElement">
 					<div class="collab__background collab__background--seo">
@@ -64,6 +64,8 @@
 <script setup lang="ts">
 import VanillaTilt from 'vanilla-tilt';
 import {useModalStore} from "~/store/modal";
+
+const onElementVisible: any = inject('onElementVisible')
 
 const displayModal = () => {
 	useModalStore().visible = true

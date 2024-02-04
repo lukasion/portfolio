@@ -1,0 +1,21 @@
+.blog {
+	&__container {
+		@apply flex gap-24 mt-12;
+
+		&--column {
+			@apply flex-col gap-12;
+		}
+	}
+
+	&__articles {
+		@apply flex-1;
+	}
+
+	&__side {
+		@apply flex-1;
+	}
+
+	&__box {
+		@apply border p-6;
+	}
+}

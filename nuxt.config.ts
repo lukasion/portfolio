@@ -20,5 +20,8 @@ export default defineNuxtConfig({
     css: ['~/assets/scss/main.scss'],
     auth: {
         baseURL: 'https://be-crafty.com/user/auth'
+    },
+    app: {
+        pageTransition: {name: 'page', mode: 'out-in'}
     }
 })

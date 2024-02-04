@@ -15,12 +15,19 @@ model User {
   email String  @unique
   name  String?
   password String?
+    posts Post[]
 }
 
 model Post {
-  id        Int     @id @default(autoincrement())
-  content   String?
-  prompt   String?
+    id              Int     @id @default(autoincrement())
+    title           String?
+    content         String?
+    prompt          String?
+    datetime        DateTime?
+    userId          Int?
+    user            User?    @relation(fields: [userId], references: [id])
+    minutes_read    Int?
+    friendly_url    String?
 }
 
 model Topic {

@@ -9,10 +9,21 @@
 		@screen lg {
 			@apply px-20 gap-8;
 		}
+
+		.collab__background {
+			transition: .2s background-position cubic-bezier(.65, 0, .35, 1) .5s;
+			background-position-x: -410px;
+		}
+
+		&.element--visible {
+			.collab__background {
+				background-position-x: 0px;
+			}
+		}
 	}
 
 	&__box {
-		@apply flex flex-col shadow-lg w-full;
+		@apply flex flex-col w-full relative;
 
 		@screen md {
 			@apply min-h-64;
@@ -33,7 +44,7 @@
 	}
 
 	&__background {
-		@apply p-4 h-full flex flex-col justify-center;
+		@apply p-4 h-full flex flex-col justify-center shadow-lg;
 
 		background: url('~/assets/images/offer-bg.jpg');
 		background-repeat: no-repeat;

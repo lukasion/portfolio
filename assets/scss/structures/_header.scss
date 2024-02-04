@@ -1,6 +1,20 @@
 .header {
 	@apply fixed text-white w-full z-50 left-0 right-0 justify-between items-center transition-all py-3;
 
+	&--white {
+		@apply bg-[#ffffff] shadow-2xl shadow-gray-50 border-b;
+
+		ul {
+			li {
+				@apply text-black;
+			}
+		}
+
+		.header__logo {
+			@apply text-black;
+		}
+	}
+
 	@screen md {
 		@apply pr-24 px-4 py-0;
 	}
@@ -39,7 +53,11 @@
 		}
 
 		li {
-			@apply cursor-pointer transition-colors py-3;
+			@apply cursor-pointer transition-colors;
+
+			a {
+				@apply block py-3;
+			}
 
 			&:hover {
 				@apply text-gray-400;

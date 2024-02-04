@@ -40,7 +40,7 @@
 						<span class="methods">;</span>
 					</div>
 				</div>
-				<div data-line-nr="05" class="code__line">
+				<div data-line-nr="06" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						<div class="methods">public string&nbsp;</div>
@@ -48,7 +48,7 @@
 						<span class="methods">;</span>
 					</div>
 				</div>
-				<div data-line-nr="05" class="code__line">
+				<div data-line-nr="07" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						<div class="methods">private string&nbsp;</div>
@@ -56,64 +56,64 @@
 						<span class="methods">;</span>
 					</div>
 				</div>
-				<div data-line-nr="05" class="code__line">
+				<div data-line-nr="08" class="code__line">
 				</div>
-				<div data-line-nr="05" class="code__line">
+				<div data-line-nr="09" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						<div class="methods">public function&nbsp;</div>
 						<span class="methodname">__construct</span>()
 					</div>
 				</div>
-				<div data-line-nr="07" class="code__line">
+				<div data-line-nr="10" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						{
 					</div>
 				</div>
-				<div data-line-nr="07" class="code__line">
+				<div data-line-nr="11" class="code__line">
 					<div class="dot">·....·</div>
 					<span class="variable">$this<span class="arrow">-></span>name</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
 					<span
 						class="string">'Łukasz Fujarski';</span>
 				</div>
-				<div data-line-nr="07" class="code__line">
+				<div data-line-nr="12" class="code__line">
 					<div class="dot">·....·</div>
 					<span class="variable">$this<span class="arrow">-></span>email</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
 					<span
 						class="string">'lukasz.fujarski@gmail.com';</span>
 				</div>
-				<div data-line-nr="07" class="code__line">
+				<div data-line-nr="13" class="code__line">
 					<div class="dot">·....·</div>
 					<span class="variable">$this<span class="arrow">-></span>dayOfBirthTimestamp</span>&nbsp;= <span
 					class="string">856059633;</span>
 				</div>
-				<div data-line-nr="08" class="code__line">
+				<div data-line-nr="14" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						}
 					</div>
 				</div>
-				<div data-line-nr="05" class="code__line"></div>
-				<div data-line-nr="05" class="code__line">
+				<div data-line-nr="15" class="code__line"></div>
+				<div data-line-nr="16" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						<div class="methods">public function&nbsp;</div>
 						<span class="methodname">workExperience</span>(): <span class="methods">array</span>
 					</div>
 				</div>
-				<div data-line-nr="08" class="code__line">
+				<div data-line-nr="17" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						{
 					</div>
 				</div>
-				<div data-line-nr="01" class="code__line">
+				<div data-line-nr="18" class="code__line">
 					<div class="dot">······</div>
 					<div class="methods">return</div>
 					[
 				</div>
-				<div data-line-nr="01" class="code__line">
+				<div data-line-nr="19" class="code__line">
 					<div class="dot">······</div>
 					<div>
 						&nbsp;&nbsp;&nbsp;&nbsp;'2022 - now' => 'Full Stack Developer at <a
@@ -122,7 +122,7 @@
 						S.C.</a>',
 					</div>
 				</div>
-				<div data-line-nr="01" class="code__line">
+				<div data-line-nr="20" class="code__line">
 					<div class="dot">······</div>
 					<div>
 						&nbsp;&nbsp;&nbsp;&nbsp;'2018 - 2022' => 'PHP Developer at <a href="https://tech-studio.pl/"
@@ -130,34 +130,38 @@
 						S.C.</a>'
 					</div>
 				</div>
-				<div data-line-nr="01" class="code__line">
+				<div data-line-nr="21" class="code__line">
 					<div class="dot">······</div>
 					<div>
 						];
 					</div>
 				</div>
-				<div data-line-nr="08" class="code__line">
+				<div data-line-nr="22" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						}
 					</div>
 				</div>
 
-				<div data-line-nr="05" class="code__line"></div>
-				<div data-line-nr="05" class="code__line">
+				<div data-line-nr="23" class="code__line"></div>
+				<div data-line-nr="24" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						<div class="methods">public function&nbsp;</div>
-						<span class="methodname">skills</span>(): <span class="methods">array</span>
+						<span class="methodname lg:tooltip"
+						      data-tip="Method defines only few of the technologies I've worked with. Through the time working as web developer I've gained experience in many more programming languages, frameworks and tools.">skills</span>():
+						<span
+							class="methods">array</span>
+
 					</div>
 				</div>
-				<div data-line-nr="08" class="code__line">
+				<div data-line-nr="25" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						{
 					</div>
 				</div>
-				<div data-line-nr="01" class="code__line">
+				<div data-line-nr="26" class="code__line">
 					<div class="dot">······</div>
 					<div class="methods">return</div>
 					['JavaScript', 'PHP', 'CSS', 'Laravel Framework', 'SCSS', 'Vue.js 2 & 3', 'Nuxt.js', 'Tailwind CSS',
@@ -167,13 +171,13 @@
 					'Vuex',
 					'Vuetify', 'Bootstrap', 'jQuery', 'HTML', 'REST API', 'Python', 'C#'];
 				</div>
-				<div data-line-nr="08" class="code__line">
+				<div data-line-nr="27" class="code__line">
 					<div class="dot">··</div>
 					<div class="propname">
 						}
 					</div>
 				</div>
-				<div data-line-nr="06" class="code__line">
+				<div data-line-nr="28" class="code__line">
 					<div class="propname">
 						}
 					</div>

@@ -9,14 +9,14 @@
 	}
 
 	&--x-large {
-		@apply mb-4 text-4xl;
+		@apply mb-4 text-4xl leading-normal;
 
 		@screen md {
-			@apply text-5xl;
+			@apply text-5xl leading-normal;
 		}
 
 		@screen lg {
-			@apply text-6xl;
+			@apply text-6xl leading-normal;
 		}
 	}
 

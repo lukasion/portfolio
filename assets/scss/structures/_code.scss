@@ -17,7 +17,7 @@
 		content: '';
 		background: #313335;
 		border-right: 1px solid #555754;
-		width: 100px;
+		width: 260px;
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -46,6 +46,10 @@
 			content: attr(data-line-nr);
 			color: #555754;
 			padding-right: 65px;
+		}
+
+		&:hover {
+			@apply bg-[#3d3d3d];
 		}
 	}
 
