@@ -15,6 +15,7 @@
     "@sidebase/nuxt-auth": "^0.6.4",
     "@types/node": "^20.11.0",
     "daisyui": "^4.6.0",
+    "dayjs-nuxt": "^2.1.9",
     "nuxt": "^3.8.2",
     "nuxt-icon": "^0.6.7",
     "prisma": "^5.8.0",

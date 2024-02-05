@@ -12,16 +12,21 @@
 				<div class="blog__articles">
 					<h3 class="text-2xl mb-4">Featured article</h3>
 
-					<article-short/>
+					<article-short
+						:article="articlesStore.articles[0]"
+					/>
 				</div>
 
 				<div class="blog__side">
 					<h3 class="text-2xl mb-4">Recent articles</h3>
 
 					<div class="flex flex-col gap-8">
-						<article-short column hide-description/>
-						<article-short column hide-description/>
-						<article-short column hide-description/>
+						<article-short
+							v-for="article in articlesStore.articles"
+							:article="article"
+							hide-description
+							column
+						/>
 					</div>
 				</div>
 			</div>
@@ -65,7 +70,12 @@
 </template>
 
 <script setup lang="ts">
+import {useArticlesStore} from "~/store/articles";
 
+const articlesStore = useArticlesStore()
+await articlesStore.fetchData({
+	limit: 4
+})
 </script>
 
 <style scoped>

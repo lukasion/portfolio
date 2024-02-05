@@ -11,7 +11,7 @@
 				</div>
 
 				<div class="article__content">
-					<h1 class="article__title">How to Become a Known YouTuber</h1>
+					<h1 class="article__title">{{ articlesStore.article.title }}</h1>
 
 					<template v-if="articlesStore.article">
 						<div v-html="articlesStore.article.content"></div>
@@ -30,24 +30,24 @@
 <script setup lang="ts">
 import {useArticlesStore} from "~/store/articles";
 
-useHead({
-	title: 'How to become a known YouTuber | Be Crafty',
-	meta: {
-		description: 'Unlock YouTube success: Learn to thrive in the digital realm with essential steps to become a recognized content creator.'
-	}
-})
-
+const articlesStore = useArticlesStore()
 const route = useRoute()
 const router = useRouter()
-const articlesStore = useArticlesStore()
 
 if (typeof route.params.slug === 'string') {
-	const res = await articlesStore.fetchBySlug(route.params.slug)
-	if (res === null) {
-		router.push('/blog')
-	}
+	await articlesStore.fetchBySlug(route.params.slug)
 }
 
+if (!articlesStore.article) {
+	router.push('/blog')
+}
+
+useHead({
+	title: `${articlesStore.article ? articlesStore.article.title : 'Page not found'} | Be Crafty`,
+	meta: {
+		description: articlesStore.article ? articlesStore.article.description : 'Article not found. Redirecting.'
+	}
+})
 </script>
 
 <style lang="scss" scoped>

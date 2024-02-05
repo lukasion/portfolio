@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import 'dayjs/locale/en'
+
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
@@ -6,6 +8,7 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         'nuxt-icon',
         '@nuxt/ui',
+        'dayjs-nuxt',
         '@sidebase/nuxt-auth',
         ['nuxt-mail', {
             message: {
@@ -23,5 +26,11 @@ export default defineNuxtConfig({
     },
     app: {
         pageTransition: {name: 'page', mode: 'out-in'}
-    }
+    },
+    dayjs: {
+        locales: ['en'],
+        plugins: ['timezone'],
+        defaultLocale: 'en',
+        defaultTimezone: 'Europe/Warsaw',
+    },
 })
