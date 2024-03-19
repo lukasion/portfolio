@@ -19,7 +19,7 @@
 					class="form__button"
 					@click.prevent="displayModal"
 				>
-					Let's colaborate
+					Let's colaborate on a project
 				</button>
 			</div>
 		</div>
