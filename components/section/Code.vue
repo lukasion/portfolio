@@ -4,6 +4,13 @@
 			<h2 class="title--x-large title--condensed" :ref="onElementVisible">
 				<span>About me</span>
 			</h2>
+
+			<button
+				class="form__button form__button--dark"
+				@click.prevent="skillsChartStore.toggle(true)"
+			>
+				Checkout my skills chart
+			</button>
 		</div>
 
 		<div class="code" ref="editor">
@@ -188,10 +195,13 @@
 </template>
 
 <script setup>
+import {useSkillsChartStore} from "~/store/skillsChart";
+
 const loading = ref(true)
 const dots = ref('...')
 const editor = ref(null)
 const onElementVisible = inject('onElementVisible')
+const skillsChartStore = useSkillsChartStore()
 
 const handleVisibility = ([{isIntersecting}], observerElement) => {
 	if (isIntersecting) {

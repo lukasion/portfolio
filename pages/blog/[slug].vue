@@ -11,6 +11,9 @@
 				</div>
 
 				<div class="article__content">
+					<h4 class="uppercase text-sm tracking-wider text-center">
+						{{ articlesStore.article.category ? articlesStore.article.category.name : 'Not assigned' }}
+					</h4>
 					<h1 class="article__title">{{ articlesStore.article.title }}</h1>
 
 					<template v-if="articlesStore.article">

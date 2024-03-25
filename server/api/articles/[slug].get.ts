@@ -9,6 +9,9 @@ export default defineEventHandler(async (event: H3Event<EventHandlerRequest>): P
         return await prisma.post.findFirst({
             where: {
                 friendly_url: params.slug
+            },
+            include: {
+                category: true
             }
         })
     }

@@ -11,6 +11,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Category {
+    id          Int @id @default(autoincrement())
+    name        String
+    posts       Post[]
+}
+
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
@@ -30,10 +36,12 @@ model Post {
     user            User?    @relation(fields: [userId], references: [id])
     minutes_read    Int?
     friendly_url    String?
+    category        Category? @relation(fields: [category_id], references: [id])
+    category_id     Int?
 }
 
 model Topic {
-  id            Int     @id @default(autoincrement())
-  name          String
-  datetime      DateTime
+    id            Int     @id @default(autoincrement())
+    name          String
+    datetime      DateTime
 }

@@ -13,13 +13,20 @@
 				</span>
 			</p>
 
-			<div class="title--slide-from-bottom" :ref="onElementVisible">
+			<div class="title--slide-from-bottom flex gap-3" :ref="onElementVisible">
 				<button
 					type="button"
 					class="form__button"
 					@click.prevent="displayModal"
 				>
 					Let's colaborate on a project
+				</button>
+
+				<button
+					class="form__button form__button--darker"
+					@click.prevent="skillsChartStore.toggle(true)"
+				>
+					Checkout my skills chart
 				</button>
 			</div>
 		</div>
@@ -28,7 +35,9 @@
 
 <script setup lang="ts">
 import {useModalStore} from "~/store/modal";
+import {useSkillsChartStore} from "~/store/skillsChart";
 
+const skillsChartStore = useSkillsChartStore()
 const onElementVisible = inject('onElementVisible')
 
 const displayModal = () => {

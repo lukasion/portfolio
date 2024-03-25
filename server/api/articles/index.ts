@@ -15,5 +15,8 @@ export default defineEventHandler(async (event: H3Event<EventHandlerRequest>): P
         orderBy: {
             datetime: 'desc'
         },
+        include: {
+            category: true
+        }
     });
 })

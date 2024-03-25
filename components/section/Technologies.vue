@@ -18,7 +18,7 @@
 
 			<div class="technology__container mt-12">
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<a href="https://github.com/lukasion/portfolio/tree/main/nuxt-app" target="_blank"
+					<a href="https://github.com/lukasion/portfolio/tree/main" target="_blank"
 					   class="technology__item">
 						<div>
 							<Icon name="logos:vue" size="48px"/>
@@ -66,7 +66,7 @@
 					</span>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<a href="https://github.com/lukasion/portfolio/tree/main/nuxt-app" target="_blank"
+					<a href="https://github.com/lukasion/portfolio/tree/main" target="_blank"
 					   class="technology__item" style="transition-delay: 1.8s">
 						<div>
 							<Icon name="logos:nuxt-icon" size="48px"/>
@@ -78,12 +78,17 @@
 					</a>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<span class="technology__item" style="transition-delay: 2.1s">
+					<a href="https://github.com/lukasion/portfolio/tree/main" target="_blank"
+					   class="technology__item"
+					   style="transition-delay: 2.1s">
 						<div>
 							<Icon name="logos:nodejs" size="48px"/>
 							Node.js
 						</div>
-					</span>
+						<p class="technology__title">
+							Checkout my work
+						</p>
+					</a>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
 					<a href="https://github.com/lukasion/portfolio/tree/main/laravel-api" target="_blank"
@@ -98,7 +103,7 @@
 					</a>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<a href="https://github.com/lukasion/portfolio/tree/main/nuxt-app/assets/scss" target="_blank"
+					<a href="https://github.com/lukasion/portfolio/tree/main/assets/scss" target="_blank"
 					   class="technology__item" style="transition-delay: 2.7s">
 						<div>
 							<Icon name="vscode-icons:file-type-scss2" size="48px"/>
@@ -110,7 +115,7 @@
 					</a>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<a href="https://github.com/lukasion/portfolio/tree/main/nuxt-app/assets/scss" target="_blank"
+					<a href="https://github.com/lukasion/portfolio/tree/main/assets/scss" target="_blank"
 					   class="technology__item" style="transition-delay: 3.0s">
 						<div>
 							<Icon name="logos:tailwindcss-icon" size="48px"/>

@@ -6,7 +6,9 @@
 		</div>
 
 		<nuxt-link class="flex-1" :to="`/blog/${article.friendly_url}`">
-			<h4 class="uppercase text-sm tracking-wider">Category</h4>
+			<h4 class="uppercase text-sm tracking-wider">
+				{{ article.category ? article.category.name : 'Not assigned' }}
+			</h4>
 			<h2 class="text-2xl font-bold">{{ article.title }}</h2>
 			<p class="mt-4">{{ $dayjs(article.datetime).fromNow() }} - {{ article.minutes_read }} minutes read</p>
 

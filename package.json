@@ -9,11 +9,14 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "@sidebase/nuxt-auth": "^0.6.4",
-    "@types/node": "^20.11.0",
+    "@types/node": "^20.11.30",
     "daisyui": "^4.6.0",
     "dayjs-nuxt": "^2.1.9",
     "nuxt": "^3.8.2",
@@ -22,7 +25,7 @@
     "sass": "^1.69.5",
     "tailwindcss": "^3.4.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.3",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
