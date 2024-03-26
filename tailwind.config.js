@@ -9,7 +9,6 @@ export default {
             '2xl': '1333px',
         }
     },
-    plugins: [require("daisyui")],
     content: [
         `./components/**/*.{vue,js,ts}`,
         `./layouts/**/*.vue`,
