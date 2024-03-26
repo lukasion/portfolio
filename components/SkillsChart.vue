@@ -65,20 +65,16 @@ const items = ref([
 		technologies: [
 			{
 				name: 'Vue.js',
-				features: ['Vue 2', 'Vue 3', 'Composition API', 'Options API', 'Vuex', 'Vue Router', 'Pinia', 'Vite', 'Webpack', 'Quasar', 'Vuetfy', 'VCalendar']
+				features: ['Vue 2', 'Vue 3', 'Composition API', 'Options API', 'Vuex Store', 'Vue Router', 'Pinia', 'Vite', 'Webpack', 'Quasar', 'Vuetfy', 'VCalendar', 'VueUse']
 			},
 			{
 				name: 'Nuxt.js',
-				features: ['Nuxt 3']
+				features: ['Nuxt 3', 'Nuxt Mapbox', 'Nuxt Mail', 'Nuxt Icon', 'Sidebase/Nuxt Auth']
 			},
 			{
-				name: 'Tailwind CSS',
-				features: []
+				name: 'Others',
+				features: ['Tailwind CSS', 'Alpine.js', 'Bootstrap', 'jQuery']
 			},
-			{
-				name: 'Alpine.js',
-				features: []
-			}
 		]
 	},
 	{
