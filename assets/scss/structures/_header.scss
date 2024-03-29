@@ -20,7 +20,7 @@
 	}
 
 	&__logo {
-		@apply text-base tracking-widest;
+		@apply text-white text-base tracking-widest;
 
 		@screen md {
 			@apply text-xl;
@@ -37,7 +37,7 @@
 
 	&__item {
 		&--active {
-			@apply border-b-2 border-red-600 text-red-600;
+			@apply border-b-2 border-white text-white;
 		}
 	}
 
@@ -53,10 +53,10 @@
 		}
 
 		li {
-			@apply cursor-pointer transition-colors;
+			@apply cursor-pointer transition-colors ;
 
 			a {
-				@apply block py-3;
+				@apply block py-3 text-white;
 			}
 		}
 	}
