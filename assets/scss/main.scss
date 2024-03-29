@@ -47,3 +47,9 @@ body {
 @import 'structures';
 @import 'molecules';
 @import 'atoms';
+
+@layer base {
+	html {
+		color-scheme: light !important;
+	}
+}
