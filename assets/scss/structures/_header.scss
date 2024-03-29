@@ -1,5 +1,5 @@
 .header {
-	@apply fixed text-white w-full z-50 left-0 right-0 justify-between items-center transition-all py-3;
+	@apply fixed w-full z-50 left-0 right-0 justify-between items-center transition-all py-3;
 
 	&--white {
 		@apply bg-[#ffffff] shadow-2xl shadow-gray-50 border-b;
@@ -37,7 +37,7 @@
 
 	&__item {
 		&--active {
-			@apply border-b-2 border-red-400 text-red-400;
+			@apply border-b-2 border-red-600 text-red-600;
 		}
 	}
 
@@ -49,7 +49,7 @@
 		}
 
 		@screen md {
-			@apply gap-10 text-lg flex relative top-auto right-auto left-auto bg-transparent shadow-none flex-row text-white;
+			@apply gap-10 text-lg flex relative top-auto right-auto left-auto bg-transparent shadow-none flex-row text-black;
 		}
 
 		li {
@@ -57,10 +57,6 @@
 
 			a {
 				@apply block py-3;
-			}
-
-			&:hover {
-				@apply text-gray-400;
 			}
 		}
 	}

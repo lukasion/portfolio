@@ -1,10 +1,21 @@
 <template>
 	<section class="section__start section__wrapper">
-		<div class="section__container md:border-l px-5 md:px-20">
-			<h2 class="title--x-large title--condensed title--slide-from-bottom" :ref="onElementVisible">
-				<span>Websites done the right way!</span>
-			</h2>
+		<div class="section__background">
+			<canvas id="canvas" width="32px" height="32px"></canvas>
+		</div>
 
+		<div class="mt-48 mx-auto container relative">
+			<h2 class="title--ultra-large title--condensed title--slide-from-bottom element--visible"
+			    style="mix-blend-mode: overlay;">
+				<span>Websites done <br/>the right way!</span>
+			</h2>
+			<h2 class="title--ultra-large title--condensed title--slide-from-bottom element--visible"
+			    style="position: absolute; top: 0; left: 0; opacity: 0.4;">
+				<span>Websites done <br/>the right way!</span>
+			</h2>
+		</div>
+
+		<div class="section__container section__container--small-padding-top">
 			<p class="leading-7 title--slide-from-left" :ref="onElementVisible">
 				<span style="transition-delay: .6s">
 					I am a web developer based in Katowice, Poland. I specialise in building websites and web applications
@@ -36,6 +47,7 @@
 <script setup lang="ts">
 import {useModalStore} from "~/store/modal";
 import {useSkillsChartStore} from "~/store/skillsChart";
+import GradientAnimation from '~/utils/GradientAnimation'
 
 const skillsChartStore = useSkillsChartStore()
 const onElementVisible = inject('onElementVisible')
@@ -43,4 +55,8 @@ const onElementVisible = inject('onElementVisible')
 const displayModal = () => {
 	useModalStore().visible = true
 }
+
+onMounted(() => {
+	new GradientAnimation();
+})
 </script>

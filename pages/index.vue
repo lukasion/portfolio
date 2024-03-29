@@ -18,9 +18,9 @@
 
 			<FooterComponent/>
 
-			<ModalContact :class="{ 'active': modalStore.visible }"/>
 		</div>
 
+		<ModalContact :class="{ 'active': modalStore.visible }"/>
 		<SkillsChart/>
 	</div>
 </template>

@@ -5,8 +5,8 @@ export default {
             'sm': '640px',
             'md': '768px',
             'lg': '1024px',
-            'xl': '1280px',
-            '2xl': '1333px',
+            'xl': '1150px',
+            '2xl': '1250px',
         }
     },
     content: [
