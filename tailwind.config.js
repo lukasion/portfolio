@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: false,
     theme: {
         screens: {
             'sm': '640px',
