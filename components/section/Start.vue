@@ -2,7 +2,7 @@
 	<section class="section__start section__wrapper">
 		<div class="section__container md:border-l px-5 md:px-20">
 			<h2 class="title--x-large title--condensed title--slide-from-bottom" :ref="onElementVisible">
-				<span>Websites done the right way</span>
+				<span>Websites done the right way!</span>
 			</h2>
 
 			<p class="leading-7 title--slide-from-left" :ref="onElementVisible">

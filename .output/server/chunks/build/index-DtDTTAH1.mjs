@@ -47,7 +47,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     useSkillsChartStore();
     inject("onElementVisible");
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<section${ssrRenderAttrs(mergeProps({ class: "section__start section__wrapper" }, _attrs))}><div class="section__container md:border-l px-5 md:px-20"><h2 class="title--x-large title--condensed title--slide-from-bottom"><span>Websites done the right way</span></h2><p class="leading-7 title--slide-from-left"><span style="${ssrRenderStyle({ "transition-delay": ".6s" })}"> I am a web developer based in Katowice, Poland. I specialise in building websites and web applications using modern technologies. <br>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here. </span></p><div class="title--slide-from-bottom flex gap-3"><button type="button" class="form__button"> Let&#39;s colaborate on a project </button><button class="form__button form__button--darker"> Checkout my skills chart </button></div></div></section>`);
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "section__start section__wrapper" }, _attrs))}><div class="section__container md:border-l px-5 md:px-20"><h2 class="title--x-large title--condensed title--slide-from-bottom"><span>Websites done the right way!</span></h2><p class="leading-7 title--slide-from-left"><span style="${ssrRenderStyle({ "transition-delay": ".6s" })}"> I am a web developer based in Katowice, Poland. I specialise in building websites and web applications using modern technologies. <br>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here. </span></p><div class="title--slide-from-bottom flex gap-3"><button type="button" class="form__button"> Let&#39;s colaborate on a project </button><button class="form__button form__button--darker"> Checkout my skills chart </button></div></div></section>`);
     };
   }
 });
@@ -384,4 +384,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-a33397c5"]]);
 
 export { index as default };
-//# sourceMappingURL=index-BwQWHHOW.mjs.map
+//# sourceMappingURL=index-DtDTTAH1.mjs.map
