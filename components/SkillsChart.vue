@@ -13,7 +13,7 @@
 
 			<div class="skills-chart__content">
 				<h2 class="title--x-large title--condensed">
-					<span>My skills chart</span>
+					<span>My skills summary</span>
 				</h2>
 
 				<p class="leading-7 mt-5">

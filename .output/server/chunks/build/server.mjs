@@ -685,7 +685,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "0ee9a387-77be-4b21-b495-a9061f10af73"
+    "buildId": "9c4ff545-73da-40cc-909b-a80e406e7dc1"
   },
   "ui": {
     "primary": "green",
@@ -768,7 +768,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DA161QSN.mjs').then((m) => m.default || m)
+    component: () => import('./index-DvzdccAP.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "user",

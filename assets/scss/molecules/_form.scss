@@ -8,14 +8,27 @@
 	}
 
 	&__button {
-		@apply mt-10 inline-block rounded-3xl bg-neutral-50 px-6 pb-2 pt-2.5 font-bold leading-normal text-neutral-800 transition duration-150 ease-in-out hover:bg-neutral-200;
+		@apply mt-10 inline-block rounded-3xl bg-white px-6 pb-2 pt-2.5 font-bold leading-normal text-neutral-800 transition duration-150 ease-in-out hover:bg-neutral-200;
+
+		&--arrow-right {
+			@apply relative pr-12;
+
+			&::after {
+				content: '→';
+				@apply right-6 absolute transition-all;
+			}
+
+			&:hover::after {
+				@apply right-4;
+			}
+		}
 
 		&--dark {
 			@apply bg-neutral-800 text-neutral-100 hover:bg-neutral-700 hover:text-neutral-50 focus:bg-neutral-700 focus:text-neutral-50 active:bg-neutral-600 active:text-neutral-50 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:bg-neutral-700 dark:hover:text-neutral-50 dark:focus:bg-neutral-700 dark:focus:text-neutral-50 dark:active:bg-neutral-600 dark:active:text-neutral-50;
 		}
 
 		&--darker {
-			@apply bg-gray-400 text-black hover:bg-gray-400 focus:bg-gray-400 active:bg-gray-300 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-400 dark:focus:bg-gray-400 dark:active:bg-gray-300;
+			@apply bg-neutral-800 text-white transition-all hover:bg-neutral-600 focus:bg-gray-600 active:bg-gray-300 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-400 dark:focus:bg-gray-400 dark:active:bg-gray-300;
 		}
 	}
 }

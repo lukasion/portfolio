@@ -17,18 +17,18 @@
 
 		<div class="section__container section__container--small-padding-top flex gap-12">
 			<div class="w-full lg:w-1/2">
-				<p class="leading-7 title--slide-from-left" :ref="onElementVisible">
-				<span style="transition-delay: .6s">
-					I am a web developer based in Katowice, Poland. I specialise in building websites and web applications
-					using modern technologies. <br/>If you are a business seeking a web presence or an employer looking to
-					hire, you can get in touch with me here.
-				</span>
+				<p class="leading-7 mt-4 title--slide-from-left" :ref="onElementVisible">
+					<span style="transition-delay: .6s">
+						I am a web developer based in Katowice, Poland. I specialise in building websites and web applications
+						using modern technologies. <br/> <br/>If you are a business seeking a web presence or an employer looking to
+						hire, you&nbsp;can get in touch with me here.
+					</span>
 				</p>
 
 				<div class="title--slide-from-bottom flex gap-3" :ref="onElementVisible">
 					<button
 						type="button"
-						class="form__button"
+						class="form__button form__button--arrow-right"
 						@click.prevent="displayModal"
 					>
 						Let's colaborate on a project
@@ -38,16 +38,21 @@
 						class="form__button form__button--darker"
 						@click.prevent="skillsChartStore.toggle(true)"
 					>
-						Checkout my skills chart
+						Checkout my skills summary
 					</button>
 				</div>
 			</div>
 			<div class="hidden lg:block lg:w-1/2 relative">
-				<div class="box__rounded">
+				<div class="box__rounded box--animated">
 					<h4 class="font-bold mb-4">Fully responsive design</h4>
 					<img src="~/assets/images/mobile.jpg" alt="Fully responsive web design"
 					     width="260px"
 					     title="Fully responsive, mobile web design"/>
+				</div>
+				<div class="box__rounded box--bigger box--animated">
+					<img src="~/assets/images/doger-desktop.jpg" alt="Web application developed in laravel framework"
+					     width="450px"
+					     title="Web application developed in laravel framework"/>
 				</div>
 			</div>
 		</div>
@@ -77,7 +82,19 @@ onMounted(() => {
 <style lang="scss" scoped>
 .box {
 	&__rounded {
-		@apply bg-white rounded-2xl p-6 shadow-2xl absolute right-32 -top-48;
+		@apply bg-white rounded-2xl p-6 shadow-2xl absolute right-32 -top-48 z-20;
+	}
+
+	&--animated {
+		@apply transition-transform duration-300 ease-in-out;
+
+		&:hover {
+			@apply transform -translate-y-6;
+		}
+	}
+
+	&--bigger {
+		@apply -right-32 top-32 z-10;
 	}
 }
 </style>
