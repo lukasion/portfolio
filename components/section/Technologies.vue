@@ -3,17 +3,11 @@
 		<div class="section__container">
 			<h2 class="title--x-large title--condensed title--slide-from-bottom"
 			    :ref="onElementVisible">
-				<span>Technologies I use in my projects</span>
+				<span>{{ $t('technologies') }}</span>
 			</h2>
 
 			<p class="leading-7 mt-5 title--slide-from-left" :ref="onElementVisible">
-				<span style="transition-delay: .6s">
-					As a web developer, I have experience with a wide range of technologies. I have worked with
-					Laravel, Vue.js, Nuxt 3, Tailwind CSS, and many other technologies. <br/>I am always trying to gain new
-					skills and improve my knowledge of the technologies I already know. Below you can find a list of
-					the technologies I use in my projects everyday. If you are interested in working with me, feel free to
-					contact me. I am always open to new opportunities.
-				</span>
+				<span style="transition-delay: .6s" v-html="$t('technologiesDescription')"/>
 			</p>
 
 			<div class="technology__container mt-12">

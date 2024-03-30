@@ -7,22 +7,18 @@
 		<div class="mt-52 mx-auto container relative">
 			<h2 class="title--ultra-large title--condensed title--slide-from-bottom element--visible"
 			    style="mix-blend-mode: color-burn; opacity: 0.6">
-				<span>Websites done <br/>the right way!</span>
+				<span v-html="$t('headingTitle')"/>
 			</h2>
 			<h2 class="title--ultra-large title--condensed title--slide-from-bottom element--visible"
 			    style="position: absolute; top: 0; left: 0; opacity: 0.4;">
-				<span>Websites done <br/>the right way!</span>
+				<span v-html="$t('headingTitle')"/>
 			</h2>
 		</div>
 
 		<div class="section__container section__container--small-padding-top flex gap-12">
 			<div class="w-full lg:w-1/2">
-				<p class="leading-7 mt-4 title--slide-from-left" :ref="onElementVisible">
-					<span style="transition-delay: .6s">
-						I am a web developer based in Katowice, Poland. I specialise in building websites and web applications
-						using modern technologies. <br/> <br/>If you are a business seeking a web presence or an employer looking to
-						hire, you&nbsp;can get in touch with me here.
-					</span>
+				<p class="leading-7 mt-12 title--slide-from-left" :ref="onElementVisible">
+					<span style="transition-delay: .6s" v-html="$t('headingDescription')"/>
 				</p>
 
 				<div class="title--slide-from-bottom flex gap-3" :ref="onElementVisible">
@@ -31,14 +27,14 @@
 						class="form__button form__button--arrow-right"
 						@click.prevent="displayModal"
 					>
-						Let's colaborate on a project
+						{{ $t('collaborate') }}
 					</button>
 
 					<button
 						class="form__button form__button--darker"
 						@click.prevent="skillsChartStore.toggle(true)"
 					>
-						Checkout my skills summary
+						{{ $t('checkoutSummary') }}
 					</button>
 				</div>
 			</div>

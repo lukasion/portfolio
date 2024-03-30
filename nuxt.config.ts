@@ -4,6 +4,7 @@ import 'dayjs/locale/en'
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
+        '@nuxtjs/i18n',
         '@pinia/nuxt',
         '@vueuse/nuxt',
         'nuxt-icon',
@@ -20,6 +21,9 @@ export default defineNuxtConfig({
             },
         }],
     ],
+    i18n: {
+        vueI18n: './i18n.config.ts'
+    },
     css: ['~/assets/scss/main.scss'],
     auth: {
         baseURL: 'https://be-crafty.com/user/auth'

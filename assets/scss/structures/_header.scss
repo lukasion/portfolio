@@ -53,7 +53,7 @@
 		}
 
 		li {
-			@apply cursor-pointer transition-colors ;
+			@apply cursor-pointer transition-colors flex;
 
 			a {
 				@apply block py-3 text-white;

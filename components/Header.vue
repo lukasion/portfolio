@@ -5,13 +5,27 @@
 				&lt;lukasz-fujarski&nbsp;/&gt;
 			</nuxt-link>
 
-			<ul :class="{ 'active': mobileVisible }">
-				<li class="header__item" v-for="item in menu">
-					<nuxt-link :to="item.link" :class="{'header__item--active': route.path === item.link }">
-						{{ item.name }}
-					</nuxt-link>
-				</li>
-			</ul>
+			<div class="flex gap-4">
+				<ul :class="{ 'active': mobileVisible }">
+					<li class="header__item" v-for="item in menu">
+						<nuxt-link :to="item.link" :class="{'header__item--active': route.path === item.link }">
+							{{ item.name }}
+						</nuxt-link>
+					</li>
+				</ul>
+				<ul class="!gap-4">
+					<li class="header__item">
+						<button @click="changeLanguage('en')">
+							<Icon name="circle-flags:en" size="24px"/>
+						</button>
+					</li>
+					<li class="header__item">
+						<button @click="changeLanguage('pl')">
+							<Icon name="circle-flags:pl" size="24px"/>
+						</button>
+					</li>
+				</ul>
+			</div>
 
 			<div class="header__hamburger md:hidden" @click="mobileVisible = !mobileVisible">
 				<Icon name="material-symbols:menu" size="32px"/>
@@ -24,6 +38,8 @@
 import {ref} from 'vue'
 import {useRoute} from "vue-router";
 
+const {setLocale} = useI18n()
+const i18n = useI18n();
 const route = useRoute()
 const scrolled = ref(false)
 const header = ref(null)
@@ -38,14 +54,19 @@ const props = defineProps({
 
 const menu = ref([
 	{
-		name: 'About author',
+		name: i18n.t('home'),
 		link: '/'
 	},
 	{
-		name: 'About web',
+		name: i18n.t('about'),
 		link: '/blog'
 	},
 ])
+
+const changeLanguage = (locale: string) => {
+	setLocale(locale)
+	window.location.reload()
+}
 
 onMounted(() => {
 	const sectionStartHeight = document.querySelector('.section__start')?.clientHeight
