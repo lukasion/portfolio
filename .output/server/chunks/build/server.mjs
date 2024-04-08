@@ -912,7 +912,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "121c6eda-403f-447d-b15b-b6d8d684bb25"
+    "buildId": "dc58f24e-0141-4fba-b05c-015c2e4db27e"
   },
   "ui": {
     "primary": "green",
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-CcBuA-zz.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-Nwye8jsU.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DQxNtUla.mjs').then((m) => m.default || m)
+    component: () => import('./index-ZiowYoOj.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -996,7 +996,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-B1ewAOEl.mjs').then((m) => m.default || m)
+    component: () => import('./index-Bk_FhYvi.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "lang-slug",
+    path: "/lang/:slug()",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_slug_-vMvGk140.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "user",
@@ -6301,7 +6309,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-2no75Y-5.mjs'
+    './i18n.config-CR-fHdpa.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -8197,10 +8205,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "app",
   __ssrInlineRender: true,
   setup(__props) {
+    const i18n = useI18n();
     useHead({
-      title: "Navigating Web Development, Cybersecurity, Big Data and Cloud Trends | Be Crafty",
+      title: i18n.t("seo_title") + " | Be Crafty",
       meta: {
-        description: "Be Crafty delves into cutting-edge realms, exploring web development, cybersecurity, big data, and the transformative landscape of cloud computing. Stay informed with our insights on the forefront of business tech trends."
+        description: i18n.t("seo_description")
       },
       link: [
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
