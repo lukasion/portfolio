@@ -57,10 +57,10 @@ const menu = ref([
 		name: i18n.t('home'),
 		link: '/'
 	},
-	{
-		name: i18n.t('about'),
-		link: '/blog'
-	},
+	// {
+	// 	name: i18n.t('about'),
+	// 	link: '/blog'
+	// },
 ])
 
 const changeLanguage = (locale: string) => {

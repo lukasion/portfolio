@@ -3,6 +3,8 @@ export default defineI18nConfig(() => ({
     locale: 'pl',
     messages: {
         en: {
+            seo_title: 'Web development, Wordpress websites, SEO Katowice, Silesia - Łukasz Fujarski',
+            seo_description: 'Designing modern, mobile-friendly websites Katowice. Wordpress websites, freelancing, SEO optimization, website positioning.',
             welcome: 'Welcome',
             collaborate: 'Let\'s colaborate on a project',
             checkoutSummary: 'Checkout my skills summary',
@@ -36,8 +38,18 @@ export default defineI18nConfig(() => ({
             mySkillsDescription: 'Here you can see my skills chart. I have divided my skills into three categories: frontend, backend, and others. It is not a complete list of my skills, but it gives you an idea of what I can do. <br /><br />Feel free to contact me if you have any questions about my skills or if you want to work with me.',
             technologiesShort: 'Technologies',
             features: 'Features',
+            loading: 'LOADING ENVIRONMENT',
+            touch: 'Get in touch',
+            touchFull: 'Get in touch with me',
+            touchDescription: 'You can contact me via email, or by filling out the form below. I will try to respond as soon as possible.',
+            yourName: 'Your name',
+            yourEmail: 'Your e-mail address',
+            yourMessage: 'Your message',
+            contactRequest: 'Send request',
         },
         pl: {
+            seo_title: 'Tworzenie stron internetowych, strony WWW Wordpress, SEO Katowice, Śląsk - Łukasz Fujarski',
+            seo_description: 'Projektowanie nowoczesnych, mobilnych stron internetowych Katowice. Strony Wordpress, freelancing, optymalizacja SEO, pozycjonowanie WWW.',
             welcome: 'Witamy',
             collaborate: 'Rozpocznijmy współpracę',
             checkoutSummary: 'Sprawdź moje umiejętności',
@@ -78,6 +90,14 @@ export default defineI18nConfig(() => ({
                 '<br /><br />Jeśli masz jakieś pytania dotyczące moich umiejętności lub chcesz ze mną współpracować, śmiało się ze mną skontaktuj.',
             technologiesShort: 'Technologie',
             features: 'Funkcjonalności',
+            loading: 'ŁADOWANIE ŚRODOWISKA',
+            touch: 'Skontaktuj się',
+            touchFull: 'Skontaktuj się ze mną',
+            touchDescription: 'Możesz się ze mną skontaktować za pomocą poczty elektronicznej lub wypełniając poniższy formularz. Postaram się odpowiedzieć tak szybko, jak to możliwe.',
+            yourName: 'Twoje imię',
+            yourEmail: 'Twój adres e-mail',
+            yourMessage: 'Twoja wiadomość',
+            contactRequest: 'Wyślij zapytanie',
         }
     }
 }))

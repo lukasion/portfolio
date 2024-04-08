@@ -15,7 +15,7 @@
 
 		<div class="code" ref="editor">
 			<div class="code__preloader" v-if="loading">
-				LOADING ENVIRONMENT <span>{{ dots }}</span>
+				{{ $t('loading') }} <span>{{ dots }}</span>
 			</div>
 			<div class="code__container" v-else>
 				<div data-line-nr="01" class="code__line">

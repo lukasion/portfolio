@@ -28,7 +28,7 @@
 				     :class="{'element--visible': mounted}">
 					<button
 						type="button"
-						class="form__button form__button--arrow-right"
+						class="form__button form__button--arrow-right !mt-4 md:mt-10"
 						@click.prevent="displayModal"
 					>
 						<span v-html="$t('collaborate')"/>

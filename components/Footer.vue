@@ -26,7 +26,7 @@
 					class="form__button"
 					@click.prevent="displayModal"
 				>
-					Get in touch
+					{{ $t('touch') }}
 				</button>
 			</div>
 		</div>

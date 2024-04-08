@@ -6,10 +6,11 @@
 </template>
 
 <script setup lang="ts">
+const i18n = useI18n();
 useHead({
-	title: 'Navigating Web Development, Cybersecurity, Big Data and Cloud Trends | Be Crafty',
+	title: i18n.t('seo_title') + ' | Be Crafty',
 	meta: {
-		description: 'Be Crafty delves into cutting-edge realms, exploring web development, cybersecurity, big data, and the transformative landscape of cloud computing. Stay informed with our insights on the forefront of business tech trends.'
+		description: i18n.t('seo_description'),
 	},
 	link: [
 		{rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'},
