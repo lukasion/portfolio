@@ -2,15 +2,11 @@
 	<section class="section__wrapper">
 		<div class="section__container">
 			<h2 class="title--x-large title--condensed title--slide-from-bottom" :ref="onElementVisible">
-				<span>You can find me also here</span>
+				<span v-html="$t('socialsTitle')"/>
 			</h2>
 
 			<p class="leading-7 mt-5 title--slide-from-left" :ref="onElementVisible">
-				<span style="transition-delay: .6s">
-					I am active on many social media platforms. You can find me primarily on GitHub, and LinkedIn. I am also
-					available via email. If you want to get in touch with me, feel free to contact me on any of the
-					platforms listed below.
-				</span>
+				<span style="transition-delay: .6s" v-html="$t('socialsDescription')"/>
 			</p>
 
 			<div class="technology__container mt-12">

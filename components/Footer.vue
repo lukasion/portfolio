@@ -1,7 +1,9 @@
 <template>
 	<footer class="bg-[#222222] text-white">
-		<div class="py-12 mx-auto container">
-			<h4 class="text-xl font-bold">Find me on:</h4>
+		<div class="py-12 px-4 md:px-0 mx-auto container">
+			<h4 class="text-xl font-bold">
+				<span v-html="$t('findMe')"/>
+			</h4>
 
 			<div class="flex flex-col items-start gap-3 mt-6" :ref="onElementVisible">
 				<a href="https://linkedin.com/in/lukasz-fujarski" target="_blank" class="flex items-center gap-3">

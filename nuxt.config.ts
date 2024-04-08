@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         'nuxt-icon',
         '@nuxt/ui',
         'dayjs-nuxt',
+        '@nuxtjs/tailwindcss',
         '@sidebase/nuxt-auth',
         ['nuxt-mail', {
             message: {
@@ -26,7 +27,7 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/scss/main.scss'],
     auth: {
-        baseURL: 'https://be-crafty.com/user/auth'
+        baseURL: 'http://localhost:3000/user/auth'
     },
     app: {
         pageTransition: {name: 'page', mode: 'out-in'}

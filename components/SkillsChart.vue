@@ -13,14 +13,11 @@
 
 			<div class="skills-chart__content">
 				<h2 class="title--x-large title--condensed">
-					<span>My skills summary</span>
+					<span v-html="$t('mySkillsTitle')"></span>
 				</h2>
 
 				<p class="leading-7 mt-5">
-					<span style="transition-delay: .6s">
-						Here you can see my skills chart. I have divided my skills into three categories: frontend,
-						backend, and other. You can see the percentage of my skills in each category.
-					</span>
+					<span style="transition-delay: .6s" v-html="$t('mySkillsDescription')"/>
 				</p>
 
 				<div v-for="item in items">
@@ -31,8 +28,8 @@
 					>
 						<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
 						<tr>
-							<th class="px-6 py-3">Technologies</th>
-							<th class="px-6 py-3">Features</th>
+							<th class="px-6 py-3">{{ $t('technologiesShort') }}</th>
+							<th class="px-6 py-3">{{ $t('features') }}</th>
 						</tr>
 						</thead>
 						<tbody v-for="technology in item.technologies">
@@ -65,7 +62,7 @@ const items = ref([
 		technologies: [
 			{
 				name: 'Vue.js',
-				features: ['Vue 2', 'Vue 3', 'Composition API', 'Options API', 'Vuex Store', 'Vue Router', 'Pinia', 'Vite', 'Webpack', 'Quasar', 'Vuetfy', 'VCalendar', 'VueUse']
+				features: ['Vue 2', 'Vue 3', 'Composition API', 'Options API', 'Vuex Store', 'Vue Router', 'Pinia', 'Vite', 'Webpack', 'Quasar', 'Vuetify', 'VCalendar', 'VueUse']
 			},
 			{
 				name: 'Nuxt.js',
@@ -73,7 +70,7 @@ const items = ref([
 			},
 			{
 				name: 'Others',
-				features: ['Tailwind CSS', 'Alpine.js', 'Bootstrap', 'jQuery']
+				features: ['JavaScript', 'TypeScript', 'EcmaScript 6', 'Mapbox', 'Leaflet', 'OpenLayers', 'Tailwind CSS', 'Alpine.js', 'Bootstrap', 'jQuery']
 			},
 		]
 	},
@@ -116,6 +113,10 @@ const items = ref([
 			{
 				name: 'Apache',
 				features: ['Virtual Hosts', 'Modules', 'Configuration']
+			},
+			{
+				name: 'Others',
+				features: ['Jira', 'Trello', 'Slack', 'Jenkins', 'PhpStorm', 'VS Code', 'Postman', 'Python (PySpark, Pandas, NumPy, Matplotlib)', 'Java', 'C#'],
 			}
 		]
 	}
@@ -124,22 +125,34 @@ const items = ref([
 
 <style lang="scss" scoped>
 .skills-chart {
-	@apply p-10 bg-slate-100 w-screen min-w-full z-50 translate-x-full transition-transform duration-[750ms] fixed inset-0;
+	@apply px-2 py-10 bg-slate-100 w-screen min-w-full z-50 translate-x-full transition-transform duration-[750ms] fixed inset-0;
+
+	@screen md {
+		@apply p-10;
+	}
 
 	&.active {
 		@apply translate-x-0 duration-[600ms];
 	}
 
 	&__close {
-		@apply absolute top-5 right-10;
+		@apply absolute top-2 right-4;
+
+		@screen md {
+			@apply top-5 right-10;
+		}
 	}
 
 	&__container {
-		@apply overflow-auto h-full px-10;
+		@apply overflow-auto h-full px-2;
+
+		@screen md {
+			@apply px-10;
+		}
 	}
 }
 
 .badge {
-	@apply bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 dark:bg-gray-700 dark:text-gray-400 border border-gray-500;
+	@apply bg-gray-100 text-gray-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded me-2 dark:bg-gray-700 dark:text-gray-400 border border-gray-500 h-auto;
 }
 </style>

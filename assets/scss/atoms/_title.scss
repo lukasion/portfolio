@@ -21,14 +21,14 @@
 	}
 
 	&--ultra-large {
-		@apply text-5xl leading-none;
-
-		@screen md {
-			@apply text-6xl leading-none;
-		}
+		@apply text-4xl leading-none;
 
 		@screen lg {
-			@apply text-7xl leading-none;
+			@apply text-7xl;
+		}
+
+		@screen md {
+			@apply text-6xl;
 		}
 	}
 

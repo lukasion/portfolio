@@ -1,0 +1,11 @@
+.element {
+	&--visible {
+		.title--slide-from-left {
+			span {
+				transition: transform .3s, opacity .6s;
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+	}
+}

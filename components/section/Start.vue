@@ -1,46 +1,52 @@
 <template>
 	<section class="section__start section__wrapper">
-		<div class="section__background">
-			<canvas id="canvas" width="32px" height="32px"></canvas>
+		<div class="section__background" :class="{'section__background--gradient': !desktop}">
+			<canvas id="canvas" width="32px" height="32px" v-if="desktop"></canvas>
 		</div>
 
-		<div class="mt-52 mx-auto container relative">
-			<h2 class="title--ultra-large title--condensed title--slide-from-bottom element--visible"
+		<div class="mt-32 md:mt-72 mx-auto container relative">
+			<h2 class="px-4 md:px-0 title--ultra-large title--condensed title--slide-from-bottom element--visible"
 			    style="mix-blend-mode: color-burn; opacity: 0.6">
-				<span v-html="$t('headingTitle')"/>
+				<span v-html="$t('headingTitle')"></span>
 			</h2>
-			<h2 class="title--ultra-large title--condensed title--slide-from-bottom element--visible"
+			<h2 class="px-4 md:px-0 title--ultra-large title--condensed title--slide-from-bottom element--visible"
 			    style="position: absolute; top: 0; left: 0; opacity: 0.4;">
 				<span v-html="$t('headingTitle')"/>
 			</h2>
 		</div>
 
-		<div class="section__container section__container--small-padding-top flex gap-12">
+		<div
+			class="section__container mt-8 section__container--small-padding-top flex gap-12 z-100"
+			:class="{'element--visible': mounted}"
+		>
 			<div class="w-full lg:w-1/2">
-				<p class="leading-7 mt-12 title--slide-from-left" :ref="onElementVisible">
+				<p class="leading-7 md:mt-12 title--slide-from-left">
 					<span style="transition-delay: .6s" v-html="$t('headingDescription')"/>
 				</p>
 
-				<div class="title--slide-from-bottom flex gap-3" :ref="onElementVisible">
+				<div class="title--slide-from-bottom flex md:gap-3 flex-col md:flex-row"
+				     :class="{'element--visible': mounted}">
 					<button
 						type="button"
 						class="form__button form__button--arrow-right"
 						@click.prevent="displayModal"
 					>
-						{{ $t('collaborate') }}
+						<span v-html="$t('collaborate')"/>
 					</button>
 
 					<button
-						class="form__button form__button--darker"
+						class="form__button form__button--darker !mt-4 md:mt-10"
 						@click.prevent="skillsChartStore.toggle(true)"
 					>
-						{{ $t('checkoutSummary') }}
+						<span v-html="$t('checkoutSummary')"/>
 					</button>
 				</div>
 			</div>
 			<div class="hidden lg:block lg:w-1/2 relative">
 				<div class="box__rounded box--animated">
-					<h4 class="font-bold mb-4">Fully responsive design</h4>
+					<h4 class="font-bold mb-4">
+						<span v-html="$t('responsiveDesign')"/>
+					</h4>
 					<img src="~/assets/images/mobile.jpg" alt="Fully responsive web design"
 					     width="260px"
 					     title="Fully responsive, mobile web design"/>
@@ -67,11 +73,21 @@ const displayModal = () => {
 	useModalStore().visible = true
 }
 
+const desktop = ref(false)
+const mounted = ref(false)
+
 onMounted(() => {
-	new Gradient({
-		canvas: '#canvas',
-		colors: ['#ff333d', '#a960ee', '#90e0ff', '#ffcb57']
-	});
+	desktop.value = window.innerWidth > 1024
+	mounted.value = true
+
+	if (desktop.value) {
+		setTimeout(() => {
+			new Gradient({
+				canvas: '#canvas',
+				colors: ['#ff333d', '#a960ee', '#90e0ff', '#ffcb57']
+			});
+		}, 0)
+	}
 })
 </script>
 

@@ -16,12 +16,20 @@
 	}
 
 	&__background {
-		min-height: 80vh;
+		min-height: 50vh;
 		position: absolute;
 		top: 0;
 		right: 0;
 		left: 0;
 		clip-path: polygon(0 0, 100% 0, 100% 24%, 0 60%);
+
+		&--gradient {
+			background: linear-gradient(90deg, #fb4446, #ea4567 100%);
+		}
+
+		@screen lg {
+			min-height: 80vh;
+		}
 
 		canvas {
 			position: absolute;

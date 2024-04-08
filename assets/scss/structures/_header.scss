@@ -42,7 +42,7 @@
 	}
 
 	ul {
-		@apply hidden flex-row gap-5 text-base tracking-wider mt-3 uppercase py-2 px-4 bg-white shadow-lg absolute top-10 right-0 left-0 flex-col text-black;
+		@apply hidden flex-row gap-1 text-base tracking-wider mt-3 uppercase py-2 px-4 bg-white shadow-lg absolute top-10 right-0 left-0 flex-col text-black;
 
 		&.active {
 			@apply flex;
@@ -56,7 +56,11 @@
 			@apply cursor-pointer transition-colors flex;
 
 			a {
-				@apply block py-3 text-white;
+				@apply block py-3 text-black;
+
+				@screen md {
+					@apply text-white;
+				}
 			}
 		}
 	}

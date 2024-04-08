@@ -1,20 +1,21 @@
 <template>
 	<div class="section__dark section__wrapper">
 		<div class="section__container">
-			<h2 class="title--x-large title--condensed">What can I offer?</h2>
+			<h2 class="title--x-large title--condensed">{{ $t('offer') }}</h2>
 
 			<div class="collab__container" :ref="onElementVisible">
 				<div class="collab__box" :ref="assignTiltElement">
 					<div class="collab__background">
 						<div class="collab__content">
-							<h2 class="title--large title--condensed">Websites</h2>
+							<h2 class="title--large title--condensed">
+								<span v-html="$t('websites')"/>
+							</h2>
 							<p>
-								The websites I build are fast, secure and easy to manage. I&nbsp;use the latest
-								technologies to ensure your website is future-proof and scalable.
+								<span v-html="$t('websitesDescription')"/>
 							</p>
 							<a class="mt-5 block hover:underline hover:cursor-pointer"
 							   @click.prevent="displayModal">
-								Create a website
+								<span v-html="$t('createWebsiteButton')"/>
 							</a>
 						</div>
 					</div>
@@ -23,14 +24,15 @@
 				<div class="collab__box" :ref="assignTiltElement">
 					<div class="collab__background collab__background--on-demand">
 						<div class="collab__content">
-							<h2 class="title--large title--condensed">On-demand programming</h2>
+							<h2 class="title--large title--condensed">
+								<span v-html="$t('onDemand')"/>
+							</h2>
 							<p>
-								Do you need a custom solution for your business? I&nbsp;can build a web application
-								tailored to your needs. I&nbsp;can also help you with your existing project.
+								<span v-html="$t('onDemandDescription')"/>
 							</p>
 							<a class="mt-5 block hover:underline hover:cursor-pointer"
 							   @click.prevent="displayModal">
-								Maintain an existing project
+								<span v-html="$t('onDemandButton')"/>
 							</a>
 						</div>
 					</div>
@@ -44,13 +46,11 @@
 						<div class="collab__content">
 							<h2 class="title--large title--condensed">SEO</h2>
 							<p>
-								Search Engine Optimisation is a&nbsp;crucial part of any website. I&nbsp;can help
-								you
-								improve your website's ranking in search engines.
+								<span v-html="$t('seoDescription')"/>
 							</p>
 							<a class="mt-5 block hover:underline hover:cursor-pointer"
 							   @click.prevent="displayModal">
-								Rank up my webpage
+								<span v-html="$t('seoButton')"/>
 							</a>
 						</div>
 					</div>

@@ -2,14 +2,14 @@
 	<div>
 		<div class="section__container">
 			<h2 class="title--x-large title--condensed" :ref="onElementVisible">
-				<span>About me</span>
+				<span v-html="$t('aboutMeTitle')"/>
 			</h2>
 
 			<button
 				class="form__button form__button--dark"
 				@click.prevent="skillsChartStore.toggle(true)"
 			>
-				Checkout my skills chart
+				<span v-html="$t('checkoutSummary')"/>
 			</button>
 		</div>
 

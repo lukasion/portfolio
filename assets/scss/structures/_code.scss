@@ -17,12 +17,16 @@
 		content: '';
 		background: #313335;
 		border-right: 1px solid #555754;
-		width: 260px;
 		position: absolute;
 		left: 0;
 		top: 0;
 		bottom: 0;
 		z-index: 1;
+		width: 90px;
+
+		@screen md {
+			width: 260px;
+		}
 	}
 
 	@apply bg-[#2b2b2b] text-neutral-100;

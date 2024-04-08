@@ -32,5 +32,6 @@ export default {
             xl: '5rem',
             '2xl': '7rem',
         },
-    }
+    },
+    plugins: [require('daisyui')],
 };

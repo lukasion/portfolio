@@ -1,17 +1,19 @@
 <template>
-	<UserNavbar/>
+	<div>
+		<UserNavbar/>
 
-	<div class="container mx-auto mt-10">
-		<div class="card shadow-md">
-			<div class="card-body gap-0">
-				<h1 class="text-2xl font-bold">Topics</h1>
+		<div class="container mx-auto mt-10">
+			<div class="card shadow-md">
+				<div class="card-body gap-0">
+					<h1 class="text-2xl font-bold">Topics</h1>
 
-				<NuxtPage/>
+					<NuxtPage/>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<UserFooter/>
+		<UserFooter/>
+	</div>
 </template>
 
 <script setup lang="ts">

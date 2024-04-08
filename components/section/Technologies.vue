@@ -1,6 +1,6 @@
 <template>
 	<section class="section__wrapper">
-		<div class="section__container">
+		<div class="section__container !pt-0 lg:!pt-32">
 			<h2 class="title--x-large title--condensed title--slide-from-bottom"
 			    :ref="onElementVisible">
 				<span>{{ $t('technologies') }}</span>
