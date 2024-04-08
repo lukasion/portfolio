@@ -1,4 +1,5 @@
 import CredentialsProvider from 'next-auth/providers/credentials';
+import { PrismaClient } from '@prisma/client';
 import { E as ERROR_MESSAGES, a as defu, e as eventHandler, s as setCookie, b as appendHeader, c as sendRedirect, u as useTypedBackendConfig, f as useRuntimeConfig, h as getRequestURLFromRequest, p as parseCookies, i as getHeaders, j as getMethod, g as getQuery, k as createError, l as isMethod, r as readBody } from '../../../runtime.mjs';
 import { AuthHandler } from 'next-auth/core';
 import 'node:http';
@@ -118,9 +119,17 @@ const _____ = NuxtAuthHandler({
         email: { label: "E-mail", type: "text", placeholder: "(e.g.: admin@admin.test)" },
         password: { label: "Password", type: "password", placeholder: "(e.g.: hunter2)" }
       },
-      authorize(credentials) {
-        const user = { id: "1", email: "admin@admin.test", password: "hunter2" };
-        if ((credentials == null ? void 0 : credentials.email) === user.email && (credentials == null ? void 0 : credentials.password) === user.password) {
+      async authorize(credentials) {
+        const prisma = new PrismaClient();
+        const user = await prisma.user.findFirst(
+          {
+            where: {
+              email: credentials.email,
+              password: credentials.password
+            }
+          }
+        );
+        if (user) {
           return user;
         } else {
           console.error("Warning: Malicious login attempt registered, bad credentials provided");

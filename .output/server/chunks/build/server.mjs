@@ -1,8 +1,8 @@
-import { hasInjectionContext, inject, version, ref, watchEffect, watch, getCurrentInstance, toRef, isRef, defineComponent, provide, createElementBlock, defineAsyncComponent, readonly, h, onUnmounted, shallowReactive, Suspense, nextTick, Transition, computed, useSSRContext, unref, Fragment, getCurrentScope, onScopeDispose, createApp, effectScope, reactive, isReactive, toRaw, shallowRef, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, isReadonly, toRefs, markRaw, Text, isShallow, mergeProps } from 'vue';
+import { hasInjectionContext, inject, version, ref, watchEffect, watch, getCurrentInstance, toRef, isRef, defineComponent, provide, createElementBlock, defineAsyncComponent, readonly, h, onUnmounted, computed, unref, shallowReactive, Suspense, nextTick, Transition, useSSRContext, Fragment, mergeProps, getCurrentScope, onScopeDispose, withCtx, createVNode, createApp, effectScope, reactive, isReactive, toRaw, shallowRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, isReadonly, toRefs, markRaw, Text, isShallow } from 'vue';
 import { f as useRuntimeConfig$1, $ as $fetch$1, k as createError$1, z as klona, a as defu, A as sanitizeStatusCode, B as defuFn, C as createHooks, b as appendHeader, D as getRequestHeaders, c as sendRedirect, F as getHeader, G as toRouteMatcher, H as createRouter$1, I as parse$1, J as getRequestHeader, K as destr, L as isEqual$1, s as setCookie, M as getCookie, N as deleteCookie } from '../runtime.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin, composableNames } from '@unhead/shared';
-import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
+import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import getURL from 'requrl';
 import dayjs from 'dayjs';
 import updateLocale from 'dayjs/plugin/updateLocale.js';
@@ -912,7 +912,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "87d076e8-1617-44b0-b277-854d4fea2e60"
+    "buildId": "121c6eda-403f-447d-b15b-b6d8d684bb25"
   },
   "ui": {
     "primary": "green",
@@ -949,6 +949,7 @@ function useAppConfig() {
   return nuxtApp._appConfig;
 }
 const appPageTransition = { "name": "page", "mode": "out-in" };
+const appLayoutTransition = false;
 const appKeepalive = false;
 const nuxtLinkDefaults = { "componentName": "NuxtLink" };
 const asyncDataDefaults = { "deep": true };
@@ -979,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-B5Z2vjIE.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-CcBuA-zz.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -995,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DNm2xPFR.mjs').then((m) => m.default || m)
+    component: () => import('./index-B1ewAOEl.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "user",
@@ -1003,7 +1004,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
-    component: () => import('./user-TPbysgnT.mjs').then((m) => m.default || m),
+    component: () => import('./user-AwjFw73E.mjs').then((m) => m.default || m),
     children: [
       {
         name: "user-auth",
@@ -1011,7 +1012,7 @@ const _routes = [
         meta: {},
         alias: [],
         redirect: void 0 ,
-        component: () => import('./auth-C-MUkWo0.mjs').then((m) => m.default || m)
+        component: () => import('./auth-CcL9iGVC.mjs').then((m) => m.default || m)
       },
       {
         name: "user-posts",
@@ -1019,7 +1020,7 @@ const _routes = [
         meta: {},
         alias: [],
         redirect: void 0 ,
-        component: () => import('./posts-BEGieVm_.mjs').then((m) => m.default || m),
+        component: () => import('./posts-DQGXNRrs.mjs').then((m) => m.default || m),
         children: [
           {
             name: "user-posts-slug",
@@ -1045,7 +1046,7 @@ const _routes = [
         meta: {},
         alias: [],
         redirect: void 0 ,
-        component: () => import('./topics-6uJD_AmO.mjs').then((m) => m.default || m),
+        component: () => import('./topics-ChQnGFjU.mjs').then((m) => m.default || m),
         children: [
           {
             name: "user-topics-slug",
@@ -2291,7 +2292,7 @@ const _white = "#fff";
 const _slate = { "50": "#f8fafc", "100": "#f1f5f9", "200": "#e2e8f0", "300": "#cbd5e1", "400": "#94a3b8", "500": "#64748b", "600": "#475569", "700": "#334155", "800": "#1e293b", "900": "#0f172a", "950": "#020617" };
 const _gray = { "50": "rgb(var(--color-gray-50) / <alpha-value>)", "100": "rgb(var(--color-gray-100) / <alpha-value>)", "200": "rgb(var(--color-gray-200) / <alpha-value>)", "300": "rgb(var(--color-gray-300) / <alpha-value>)", "400": "rgb(var(--color-gray-400) / <alpha-value>)", "500": "rgb(var(--color-gray-500) / <alpha-value>)", "600": "rgb(var(--color-gray-600) / <alpha-value>)", "700": "rgb(var(--color-gray-700) / <alpha-value>)", "800": "rgb(var(--color-gray-800) / <alpha-value>)", "900": "rgb(var(--color-gray-900) / <alpha-value>)", "950": "rgb(var(--color-gray-950) / <alpha-value>)" };
 const _zinc = { "50": "#fafafa", "100": "#f4f4f5", "200": "#e4e4e7", "300": "#d4d4d8", "400": "#a1a1aa", "500": "#71717a", "600": "#52525b", "700": "#3f3f46", "800": "#27272a", "900": "#18181b", "950": "#09090b" };
-const _neutral = { "50": "#fafafa", "100": "#f5f5f5", "200": "#e5e5e5", "300": "#d4d4d4", "400": "#a3a3a3", "500": "#737373", "600": "#525252", "700": "#404040", "800": "#262626", "900": "#171717", "950": "#0a0a0a" };
+const _neutral = "hsl(var(--n) / <alpha-value>)";
 const _stone = { "50": "#fafaf9", "100": "#f5f5f4", "200": "#e7e5e4", "300": "#d6d3d1", "400": "#a8a29e", "500": "#78716c", "600": "#57534e", "700": "#44403c", "800": "#292524", "900": "#1c1917", "950": "#0c0a09" };
 const _red = { "50": "#fef2f2", "100": "#fee2e2", "200": "#fecaca", "300": "#fca5a5", "400": "#f87171", "500": "#ef4444", "600": "#dc2626", "700": "#b91c1c", "800": "#991b1b", "900": "#7f1d1d", "950": "#450a0a" };
 const _orange = { "50": "#fff7ed", "100": "#ffedd5", "200": "#fed7aa", "300": "#fdba74", "400": "#fb923c", "500": "#f97316", "600": "#ea580c", "700": "#c2410c", "800": "#9a3412", "900": "#7c2d12", "950": "#431407" };
@@ -2311,8 +2312,14 @@ const _fuchsia = { "50": "#fdf4ff", "100": "#fae8ff", "200": "#f5d0fe", "300": "
 const _pink = { "50": "#fdf2f8", "100": "#fce7f3", "200": "#fbcfe8", "300": "#f9a8d4", "400": "#f472b6", "500": "#ec4899", "600": "#db2777", "700": "#be185d", "800": "#9d174d", "900": "#831843", "950": "#500724" };
 const _rose = { "50": "#fff1f2", "100": "#ffe4e6", "200": "#fecdd3", "300": "#fda4af", "400": "#fb7185", "500": "#f43f5e", "600": "#e11d48", "700": "#be123c", "800": "#9f1239", "900": "#881337", "950": "#4c0519" };
 const _primary = { "50": "rgb(var(--color-primary-50) / <alpha-value>)", "100": "rgb(var(--color-primary-100) / <alpha-value>)", "200": "rgb(var(--color-primary-200) / <alpha-value>)", "300": "rgb(var(--color-primary-300) / <alpha-value>)", "400": "rgb(var(--color-primary-400) / <alpha-value>)", "500": "rgb(var(--color-primary-500) / <alpha-value>)", "600": "rgb(var(--color-primary-600) / <alpha-value>)", "700": "rgb(var(--color-primary-700) / <alpha-value>)", "800": "rgb(var(--color-primary-800) / <alpha-value>)", "900": "rgb(var(--color-primary-900) / <alpha-value>)", "950": "rgb(var(--color-primary-950) / <alpha-value>)", "DEFAULT": "rgb(var(--color-primary-DEFAULT) / <alpha-value>)" };
+const _secondary = "hsl(var(--s) / <alpha-value>)";
+const _accent = "hsl(var(--a) / <alpha-value>)";
+const _info = "hsl(var(--in) / <alpha-value>)";
+const _success = "hsl(var(--su) / <alpha-value>)";
+const _warning = "hsl(var(--wa) / <alpha-value>)";
+const _error = "hsl(var(--er) / <alpha-value>)";
 const _cool = { "50": "#f9fafb", "100": "#f3f4f6", "200": "#e5e7eb", "300": "#d1d5db", "400": "#9ca3af", "500": "#6b7280", "600": "#4b5563", "700": "#374151", "800": "#1f2937", "900": "#111827", "950": "#030712" };
-const config = { "inherit": _inherit, "current": _current, "transparent": _transparent, "black": _black, "white": _white, "slate": _slate, "gray": _gray, "zinc": _zinc, "neutral": _neutral, "stone": _stone, "red": _red, "orange": _orange, "amber": _amber, "yellow": _yellow, "lime": _lime, "green": _green, "emerald": _emerald, "teal": _teal, "cyan": _cyan, "sky": _sky, "blue": _blue, "indigo": _indigo, "violet": _violet, "purple": _purple, "fuchsia": _fuchsia, "pink": _pink, "rose": _rose, "primary": _primary, "cool": _cool };
+const config = { "inherit": _inherit, "current": _current, "transparent": _transparent, "black": _black, "white": _white, "slate": _slate, "gray": _gray, "zinc": _zinc, "neutral": _neutral, "stone": _stone, "red": _red, "orange": _orange, "amber": _amber, "yellow": _yellow, "lime": _lime, "green": _green, "emerald": _emerald, "teal": _teal, "cyan": _cyan, "sky": _sky, "blue": _blue, "indigo": _indigo, "violet": _violet, "purple": _purple, "fuchsia": _fuchsia, "pink": _pink, "rose": _rose, "primary": _primary, "secondary": _secondary, "accent": _accent, "info": _info, "success": _success, "warning": _warning, "error": _error, "cool": _cool, "primary-focus": "hsl(var(--pf) / <alpha-value>)", "primary-content": "hsl(var(--pc) / <alpha-value>)", "secondary-focus": "hsl(var(--sf) / <alpha-value>)", "secondary-content": "hsl(var(--sc) / <alpha-value>)", "accent-focus": "hsl(var(--af) / <alpha-value>)", "accent-content": "hsl(var(--ac) / <alpha-value>)", "neutral-focus": "hsl(var(--nf) / <alpha-value>)", "neutral-content": "hsl(var(--nc) / <alpha-value>)", "base-100": "hsl(var(--b1) / <alpha-value>)", "base-200": "hsl(var(--b2) / <alpha-value>)", "base-300": "hsl(var(--b3) / <alpha-value>)", "base-content": "hsl(var(--bc) / <alpha-value>)", "info-content": "hsl(var(--inc) / <alpha-value>)", "success-content": "hsl(var(--suc) / <alpha-value>)", "warning-content": "hsl(var(--wac) / <alpha-value>)", "error-content": "hsl(var(--erc) / <alpha-value>)", "neutral-50": "#fafafa", "neutral-100": "#f5f5f5", "neutral-200": "#e5e5e5", "neutral-300": "#d4d4d4", "neutral-400": "#a3a3a3", "neutral-500": "#737373", "neutral-600": "#525252", "neutral-700": "#404040", "neutral-800": "#262626", "neutral-900": "#171717", "neutral-950": "#0a0a0a" };
 const colors_244lXBzhnM = /* @__PURE__ */ defineNuxtPlugin(() => {
   const appConfig2 = useAppConfig();
   const root = computed(() => {
@@ -6294,7 +6301,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-BmoES3s2.mjs'
+    './i18n.config-2no75Y-5.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -7743,6 +7750,219 @@ const plugins = [
   i18n_yfWm7jX06p,
   plugin_nuxt3_gGdllsjxuZ
 ];
+function defaultEstimatedProgress(duration, elapsed) {
+  const completionPercentage = elapsed / duration * 100;
+  return 2 / Math.PI * 100 * Math.atan(completionPercentage / 50);
+}
+function createLoadingIndicator(opts = {}) {
+  const { duration = 2e3, throttle = 200, hideDelay = 500, resetDelay = 400 } = opts;
+  opts.estimatedProgress || defaultEstimatedProgress;
+  const nuxtApp = /* @__PURE__ */ useNuxtApp();
+  const progress = ref(0);
+  const isLoading = ref(false);
+  const start = () => set2(0);
+  function set2(at = 0) {
+    if (nuxtApp.isHydrating) {
+      return;
+    }
+    if (at >= 100) {
+      return finish();
+    }
+    progress.value = at < 0 ? 0 : at;
+    if (throttle && false) {
+      setTimeout(() => {
+        isLoading.value = true;
+      }, throttle);
+    } else {
+      isLoading.value = true;
+    }
+  }
+  function finish(opts2 = {}) {
+    progress.value = 100;
+    if (opts2.force) {
+      progress.value = 0;
+      isLoading.value = false;
+    }
+  }
+  function clear() {
+  }
+  let _cleanup = () => {
+  };
+  return {
+    _cleanup,
+    progress: computed(() => progress.value),
+    isLoading: computed(() => isLoading.value),
+    start,
+    set: set2,
+    finish,
+    clear
+  };
+}
+function useLoadingIndicator(opts = {}) {
+  const nuxtApp = /* @__PURE__ */ useNuxtApp();
+  const indicator = nuxtApp._loadingIndicator = nuxtApp._loadingIndicator || createLoadingIndicator(opts);
+  return indicator;
+}
+const __nuxt_component_0 = defineComponent({
+  name: "NuxtLoadingIndicator",
+  props: {
+    throttle: {
+      type: Number,
+      default: 200
+    },
+    duration: {
+      type: Number,
+      default: 2e3
+    },
+    height: {
+      type: Number,
+      default: 3
+    },
+    color: {
+      type: [String, Boolean],
+      default: "repeating-linear-gradient(to right,#00dc82 0%,#34cdfe 50%,#0047e1 100%)"
+    },
+    estimatedProgress: {
+      type: Function,
+      required: false
+    }
+  },
+  setup(props, { slots, expose }) {
+    const { progress, isLoading, start, finish, clear } = useLoadingIndicator({
+      duration: props.duration,
+      throttle: props.throttle,
+      estimatedProgress: props.estimatedProgress
+    });
+    expose({
+      progress,
+      isLoading,
+      start,
+      finish,
+      clear
+    });
+    return () => h("div", {
+      class: "nuxt-loading-indicator",
+      style: {
+        position: "fixed",
+        top: 0,
+        right: 0,
+        left: 0,
+        pointerEvents: "none",
+        width: "auto",
+        height: `${props.height}px`,
+        opacity: isLoading.value ? 1 : 0,
+        background: props.color || void 0,
+        backgroundSize: `${100 / progress.value * 100}% auto`,
+        transform: `scaleX(${progress.value}%)`,
+        transformOrigin: "left",
+        transition: "transform 0.1s, height 0.4s, opacity 0.4s",
+        zIndex: 999999
+      }
+    }, slots);
+  }
+});
+const layouts = {};
+const LayoutLoader = defineComponent({
+  name: "LayoutLoader",
+  inheritAttrs: false,
+  props: {
+    name: String,
+    layoutProps: Object
+  },
+  async setup(props, context) {
+    const LayoutComponent = await layouts[props.name]().then((r) => r.default || r);
+    return () => h(LayoutComponent, props.layoutProps, context.slots);
+  }
+});
+const __nuxt_component_1$1 = defineComponent({
+  name: "NuxtLayout",
+  inheritAttrs: false,
+  props: {
+    name: {
+      type: [String, Boolean, Object],
+      default: null
+    },
+    fallback: {
+      type: [String, Object],
+      default: null
+    }
+  },
+  setup(props, context) {
+    const nuxtApp = /* @__PURE__ */ useNuxtApp();
+    const injectedRoute = inject(PageRouteSymbol);
+    const route = injectedRoute === useRoute() ? useRoute$1() : injectedRoute;
+    const layout = computed(() => {
+      let layout2 = unref(props.name) ?? route.meta.layout ?? "default";
+      if (layout2 && !(layout2 in layouts)) {
+        if (props.fallback) {
+          layout2 = unref(props.fallback);
+        }
+      }
+      return layout2;
+    });
+    const layoutRef = ref();
+    context.expose({ layoutRef });
+    const done = nuxtApp.deferHydration();
+    return () => {
+      const hasLayout = layout.value && layout.value in layouts;
+      const transitionProps = route.meta.layoutTransition ?? appLayoutTransition;
+      return _wrapIf(Transition, hasLayout && transitionProps, {
+        default: () => h(Suspense, { suspensible: true, onResolve: () => {
+          nextTick(done);
+        } }, {
+          default: () => h(
+            LayoutProvider,
+            {
+              layoutProps: mergeProps(context.attrs, { ref: layoutRef }),
+              key: layout.value || void 0,
+              name: layout.value,
+              shouldProvide: !props.name,
+              hasTransition: !!transitionProps
+            },
+            context.slots
+          )
+        })
+      }).default();
+    };
+  }
+});
+const LayoutProvider = defineComponent({
+  name: "NuxtLayoutProvider",
+  inheritAttrs: false,
+  props: {
+    name: {
+      type: [String, Boolean]
+    },
+    layoutProps: {
+      type: Object
+    },
+    hasTransition: {
+      type: Boolean
+    },
+    shouldProvide: {
+      type: Boolean
+    }
+  },
+  setup(props, context) {
+    const name = props.name;
+    if (props.shouldProvide) {
+      provide(LayoutMetaSymbol, {
+        isCurrent: (route) => name === (route.meta.layout ?? "default")
+      });
+    }
+    return () => {
+      var _a, _b;
+      if (!name || typeof name === "string" && !(name in layouts)) {
+        return (_b = (_a = context.slots).default) == null ? void 0 : _b.call(_a);
+      }
+      return h(
+        LayoutLoader,
+        { key: name, layoutProps: props.layoutProps, name },
+        context.slots
+      );
+    };
+  }
+});
 const RouteProvider = defineComponent({
   props: {
     vnode: {
@@ -8003,8 +8223,24 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
     provide("onElementVisible", onElementVisible);
     return (_ctx, _push, _parent, _attrs) => {
+      const _component_NuxtLoadingIndicator = __nuxt_component_0;
+      const _component_NuxtLayout = __nuxt_component_1$1;
       const _component_NuxtPage = __nuxt_component_1;
-      _push(ssrRenderComponent(_component_NuxtPage, _attrs, null, _parent));
+      _push(`<!--[-->`);
+      _push(ssrRenderComponent(_component_NuxtLoadingIndicator, null, null, _parent));
+      _push(ssrRenderComponent(_component_NuxtLayout, null, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
+          } else {
+            return [
+              createVNode(_component_NuxtPage)
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`<!--]-->`);
     };
   }
 });
@@ -8022,18 +8258,18 @@ const _sfc_main$1 = {
   },
   setup(__props) {
     const props = __props;
-    const _error = props.error;
-    _error.stack ? _error.stack.split("\n").splice(1).map((line) => {
+    const _error2 = props.error;
+    _error2.stack ? _error2.stack.split("\n").splice(1).map((line) => {
       const text = line.replace("webpack:/", "").replace(".vue", ".js").trim();
       return {
         text,
         internal: line.includes("node_modules") && !line.includes(".cache") || line.includes("internal") || line.includes("new Promise")
       };
     }).map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n") : "";
-    const statusCode = Number(_error.statusCode || 500);
+    const statusCode = Number(_error2.statusCode || 500);
     const is404 = statusCode === 404;
-    const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
-    const description = _error.message || _error.toString();
+    const statusMessage = _error2.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
+    const description = _error2.message || _error2.toString();
     const stack = void 0;
     const _Error404 = defineAsyncComponent(() => import('./error-404-DXC3oWBO.mjs').then((r) => r.default || r));
     const _Error = defineAsyncComponent(() => import('./error-500-1as4lDjq.mjs').then((r) => r.default || r));

@@ -1,0 +1,6 @@
+const Start_vue_vue_type_style_index_0_scoped_3bf1288b_lang = ".box__rounded[data-v-3bf1288b]{border-radius:1rem;position:absolute;right:8rem;top:-12rem;z-index:20;--tw-bg-opacity:1;background-color:#fff;background-color:rgb(255 255 255/var(--tw-bg-opacity));padding:1.5rem;--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:0 0 #0000,0 0 #0000,0 25px 50px -12px rgba(0,0,0,.25);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.box--animated[data-v-3bf1288b]{transition-duration:.3s;transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.box--animated[data-v-3bf1288b]:hover{--tw-translate-y:-1.5rem;transform:translate(var(--tw-translate-x),-1.5rem) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.box--bigger[data-v-3bf1288b]{right:-8rem;top:8rem;z-index:10}";
+
+const StartStyles_ATvSh5cG = [Start_vue_vue_type_style_index_0_scoped_3bf1288b_lang];
+
+export { StartStyles_ATvSh5cG as default };
+//# sourceMappingURL=Start-styles.ATvSh5cG.mjs.map
