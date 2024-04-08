@@ -24,7 +24,7 @@
 					<span style="transition-delay: .6s" v-html="$t('headingDescription')"/>
 				</p>
 
-				<div class="title--slide-from-bottom flex md:gap-3 flex-col md:flex-row"
+				<div class="title--slide-from-bottom mt-6 flex md:gap-3 flex-col md:flex-row relative left-0 md:-left-6"
 				     :class="{'element--visible': mounted}">
 					<button
 						type="button"

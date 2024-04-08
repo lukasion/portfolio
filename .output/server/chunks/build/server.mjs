@@ -912,7 +912,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "d402686d-cb96-4c23-b778-a95fd925047d"
+    "buildId": "267c2a31-44c2-4151-b256-c872f314840c"
   },
   "ui": {
     "primary": "green",
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-BnR_r4C9.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-CL0Gv4pN.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CgEuD1FV.mjs').then((m) => m.default || m)
+    component: () => import('./index-DqEkvIAn.mjs').then((m) => m.default || m)
   },
   {
     name: "lang-slug",

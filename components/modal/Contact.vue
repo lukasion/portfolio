@@ -17,9 +17,14 @@
 						</span>
 					</p>
 
-					<a href="tel:+48786826806" target="_blank" class="flex items-center gap-3">
-						<Icon name="material-symbols:phone" size="32px" color="white"/>
+					<a href="tel:+48786826806" target="_blank" class="flex items-center gap-3 mt-4">
+						<Icon name="material-symbols:phone-enabled" size="32px" color="black"/>
 						<p class="text-md">+48 786 826 806</p>
+					</a>
+
+					<a href="mailto:lukasz.fujarski@gmail.com" target="_blank" class="flex items-center gap-3">
+						<Icon name="material-symbols:mail" size="32px" color="black"/>
+						<p class="text-md">lukasz.fujarski@gmail.com</p>
 					</a>
 				</div>
 

@@ -19,7 +19,7 @@
 					<p class="text-md">lukasz.fujarski@gmail.com</p>
 				</a>
 				<a href="tel:+48786826806" target="_blank" class="flex items-center gap-3">
-					<Icon name="material-symbols:phone" size="32px" color="white"/>
+					<Icon name="material-symbols:phone-enabled" size="32px" color="white"/>
 					<p class="text-md">+48 786 826 806</p>
 				</a>
 			</div>

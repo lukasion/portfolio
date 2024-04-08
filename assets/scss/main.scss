@@ -53,3 +53,9 @@ body {
 		color-scheme: light !important;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: light !important;
+	}
+}
