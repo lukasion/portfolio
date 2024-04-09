@@ -912,7 +912,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "267c2a31-44c2-4151-b256-c872f314840c"
+    "buildId": "2d9685e6-101a-427b-94d4-12776a572e3b"
   },
   "ui": {
     "primary": "green",
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-CL0Gv4pN.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-DNTHgb9A.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-ZiowYoOj.mjs').then((m) => m.default || m)
+    component: () => import('./index-C-OyBF4q.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DqEkvIAn.mjs').then((m) => m.default || m)
+    component: () => import('./index-DbBo7yM8.mjs').then((m) => m.default || m)
   },
   {
     name: "lang-slug",
@@ -1004,7 +1004,23 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-vMvGk140.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_--NgvSrEi.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "offer",
+    path: "/offer",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./offer-CVYU_dCi.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "strony-internetowe-katowice",
+    path: "/strony-internetowe-katowice",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./strony-internetowe-katowice-C1ItDDEm.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "user",
@@ -1036,7 +1052,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-C7B4e10C.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-BQcbUN8N.mjs').then((m) => m.default || m)
           },
           {
             name: "user-posts-form-slug",
@@ -1044,7 +1060,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-CJ_b5t5u.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-YR_Sh83h.mjs').then((m) => m.default || m)
           }
         ]
       },
@@ -1062,7 +1078,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-CdHJFU1I.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-D-zQDwTx.mjs').then((m) => m.default || m)
           },
           {
             name: "user-topics-form-slug",
@@ -1070,7 +1086,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-wcw1bb9f.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-BZ5rWTxl.mjs').then((m) => m.default || m)
           }
         ]
       }
@@ -1872,7 +1888,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-B2Tgb3Kq.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-BuLxKxLA.mjs').then((r) => r.default));
 const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-BnOjSUfD.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
@@ -8361,5 +8377,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { __nuxt_component_3 as _, useRoute as a, useRouter as b, useIntersectionObserver as c, defineStore as d, entry$1 as default, useNuxtApp as e, useI18n as f, __nuxt_component_1 as g, useAuth as h, hasProtocol as i, joinURL as j, parseQuery as k, useRuntimeConfig as l, navigateTo as m, nuxtLinkDefaults as n, withoutTrailingSlash as o, parseURL as p, asyncDataDefaults as q, createError as r, fetchDefaults as s, useRequestFetch as t, useHead as u, useAppConfig as v, withTrailingSlash as w, useState as x };
+export { __nuxt_component_3 as _, useRoute as a, useRouter as b, useIntersectionObserver as c, defineStore as d, entry$1 as default, useI18n as e, useNuxtApp as f, __nuxt_component_1 as g, useAuth as h, hasProtocol as i, joinURL as j, parseQuery as k, useRuntimeConfig as l, navigateTo as m, nuxtLinkDefaults as n, withoutTrailingSlash as o, parseURL as p, asyncDataDefaults as q, createError as r, fetchDefaults as s, useRequestFetch as t, useHead as u, useAppConfig as v, withTrailingSlash as w, useState as x };
 //# sourceMappingURL=server.mjs.map
