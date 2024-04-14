@@ -12,7 +12,7 @@ export default defineI18nConfig(() => ({
             headingDescription: 'I am a web developer based in Katowice, Poland. I specialise in building websites and web applications ' +
                 'using modern technologies. <br/> <br/>If you are a business seeking a web presence or an employer looking to ' +
                 'hire, you&nbsp;can get in touch with me here.',
-            home: 'About author',
+            home: 'Homepage',
             about: 'About web',
             technologies: 'Technologies I use in my projects',
             technologiesDescription: 'As a web developer, I have experience with a wide range of technologies. I have worked with ' +
@@ -45,7 +45,9 @@ export default defineI18nConfig(() => ({
             yourName: 'Your name',
             yourEmail: 'Your e-mail address',
             yourMessage: 'Your message',
+            yourPhone: 'Your phone number',
             contactRequest: 'Send request',
+            readMore: 'Read more',
         },
         pl: {
             seo_title: 'Tworzenie stron internetowych, strony WWW Wordpress, SEO Katowice, Śląsk - Łukasz Fujarski',
@@ -57,7 +59,7 @@ export default defineI18nConfig(() => ({
             headingDescription: 'Jestem programistą stron internetowych z&nbsp;Katowic. Specjalizuję się w&nbsp;tworzeniu stron i&nbsp;aplikacji ' +
                 'internetowych z wykorzystaniem nowoczesnych technologii. <br/> <br/>Jeśli jesteś firmą poszukującą obecności w&nbsp;sieci ' +
                 'lub pracodawcą szukającym pracownika, skontaktuj się ze mną.',
-            home: 'O autorze',
+            home: 'Strona główna',
             about: 'Blog',
             technologies: 'Technologie, których używam w projektach',
             technologiesDescription: 'Jako programista stron internetowych mam doświadczenie z szerokim zakresem technologii. ' +
@@ -96,8 +98,10 @@ export default defineI18nConfig(() => ({
             touchDescription: 'Możesz się ze mną skontaktować za pomocą poczty elektronicznej lub wypełniając poniższy formularz. Postaram się odpowiedzieć tak szybko, jak to możliwe.',
             yourName: 'Twoje imię',
             yourEmail: 'Twój adres e-mail',
+            yourPhone: 'Twój numer telefonu',
             yourMessage: 'Twoja wiadomość',
             contactRequest: 'Wyślij zapytanie',
+            readMore: 'Czytaj więcej',
         }
     }
 }))

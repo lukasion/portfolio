@@ -28,14 +28,14 @@
 					>
 						<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
 						<tr>
-							<th class="px-6 py-3">{{ $t('technologiesShort') }}</th>
-							<th class="px-6 py-3">{{ $t('features') }}</th>
+							<th class="px-2 py-3 text-center">{{ $t('technologiesShort') }}</th>
+							<th class="px-4 py-3">{{ $t('features') }}</th>
 						</tr>
 						</thead>
 						<tbody v-for="technology in item.technologies">
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<td class="px-6 py-4">{{ technology.name }}</td>
-							<td class="px-6 py-4">
+							<td class="py-4 text-center">{{ technology.name }}</td>
+							<td class="px-4 py-4">
 								<div class="flex flex-wrap gap-1 gap-y-3">
 									<div class="badge" v-for="feature in technology.features">
 										{{ feature }}
@@ -96,7 +96,7 @@ const items = ref([
 		]
 	},
 	{
-		name: 'Other',
+		name: 'Others',
 		technologies: [
 			{
 				name: 'Git',

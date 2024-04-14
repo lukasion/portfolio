@@ -15,7 +15,8 @@ export const useArticlesStore = defineStore('articles', () => {
     }
 
     async function fetchArticle(id: string): Promise<void> {
-        const {data}: any = await useFetch(`/api/articles/${id}`)
+        const {data}: any = await
+            useFetch(`/api/articles/${id}`)
 
         if (data.value) {
             article.value = data.value

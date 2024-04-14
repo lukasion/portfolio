@@ -51,6 +51,13 @@
 		background-size: cover;
 		position: relative;
 
+		&::after {
+			content: '';
+			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			inset: 0;
+		}
+
 		@screen md {
 			@apply p-0;
 		}

@@ -12,7 +12,7 @@
 							<p class="text-xs tracking-widest mb-2">ŁUKASZ-FUJARSKI / MID FULL-STACK DEV /
 								FREELANCER</p>
 							<h1 class="text-xl md:text-5xl leading-tight md:leading-tight font-bold">
-								Strony internetowe Katowice, Śląsk
+								Strony internetowe {{ currentCity.singular }}, {{ currentCity.voivodeship }}
 							</h1>
 
 							<p class="mt-6">
@@ -45,23 +45,48 @@
 							Oferta, cennik programowania stron
 						</h3>
 
-						<div class="flex gap-4 mt-8 text-center">
-							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border">
+						<div class="flex flex-col md:flex-row gap-4 mt-8 text-center">
+							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border w-full md:w-1/3">
 								<h4 class="text-2xl font-bold">Strona One Page</h4>
 								<p class="mt-4">
 									<strong>Strona One Page</strong> to idealne rozwiązanie dla osób, które chcą
-									pozycjonować się w internecie, ale nie mają zbyt dużego budżetu. Strona OnePage to
-									jednostronicowa strona internetowa, która zawiera wszystkie niezbędne informacje o
-									firmie.
+									pozycjonować się w internecie, ale nie mają zbyt dużego budżetu.
 								</p>
+								<p class="mt-2">1 podstrona</p>
+								<p class="mt-2">Czas pracy wykonawcy do 10 godz.</p>
+								<p class="mt-2">Realizacja do 7 dni</p>
 								<p class="mt-4 text-xl">
 									<strong>Cena:</strong> od 1000 zł
 								</p>
-								<button class="form__button form__button--dark form__button--arrow-right mt-4">
+
+								<button
+									class="form__button form__button--dark form__button--arrow-right mt-4"
+									@click.prevent="modalStore.visible = true"
+								>
 									Nawiąż współpracę
 								</button>
 							</div>
-							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border">
+							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border w-full md:w-1/3">
+								<h4 class="text-2xl font-bold">Strona starter</h4>
+								<p class="mt-4">
+									<strong>Strona starter</strong> to świetne rozwiązanie dla osób, które chcą mieć
+									swoją stronę firmową w internecie. Pozwala na zaprezentowanie swojej oferty oraz
+									ułatwia kontakt z klientem.
+								</p>
+								<p class="mt-4">5 podstron</p>
+								<p class="mt-2">Czas pracy wykonawcy do 25 godz.</p>
+								<p class="mt-2">Realizacja do 14 dni</p>
+								<p class="mt-4 text-xl">
+									<strong>Cena:</strong> 1500 zł
+								</p>
+								<button
+									class="form__button form__button--dark form__button--arrow-right mt-4"
+									@click.prevent="modalStore.visible = true"
+								>
+									Nawiąż współpracę
+								</button>
+							</div>
+							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border w-full md:w-1/3">
 								<h4 class="text-2xl font-bold">Sklep internetowy</h4>
 								<p class="mt-4">
 									<strong>Sklep internetowy</strong> to idealne rozwiązanie dla osób, które chcą
@@ -69,29 +94,113 @@
 									produktów
 									24/7, co pozwala na zwiększenie sprzedaży.
 								</p>
+								<p class="mt-2">Realizacja do 20 dni</p>
 								<p class="mt-4 text-xl">
 									<strong>Cena:</strong> od 2000 zł
 								</p>
-								<button class="form__button form__button--dark form__button--arrow-right mt-4">
+								<button
+									class="form__button form__button--dark form__button--arrow-right mt-4"
+									@click.prevent="modalStore.visible = true"
+								>
 									Nawiąż współpracę
 								</button>
 							</div>
-							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border">
-								<h4 class="text-2xl font-bold">Strona firmowa</h4>
-								<p class="mt-4">
-									<strong>Strona firmowa</strong> to idealne rozwiązanie dla firm, które chcą
-									zaistnieć
-									w internecie. Strona firmowa pozwala na przedstawienie oferty firmy, kontaktu z
-									klientem
-									oraz na zwiększenie sprzedaży.
-								</p>
-								<p class="mt-4 text-xl">
-									<strong>Cena:</strong> 800 zł
-								</p>
-								<button class="form__button form__button--dark form__button--arrow-right mt-4">
-									Nawiąż współpracę
-								</button>
+						</div>
+
+						<p class="mt-12 text-center">
+							Powyższe kwoty stanowią cenę netto. Wszystkie ceny są cenami orientacyjnymi i mogą ulec
+							zmianie w zależności od indywidualnych potrzeb klienta. <br/>W celu uzyskania dokładnej
+							wyceny
+							<a href="tel:+48786826806" class="font-semibold">zapraszam do kontaktu</a>.
+						</p>
+					</div>
+
+					<div class="mt-24">
+						<h2 class="text-4xl font-bold text-center">
+							Jaką stronę internetową potrzebujesz?
+						</h2>
+
+
+						<p class="mt-12 text-center">
+							Tworzę strony internetowe firm z wykorzystaniem platformyWordPress. Jest to
+							najpopularniejszą na
+							świecie platformę do zarządzania treścią stron.
+							Korzystając z platformy WordPress, jestem w stanie zbudować różnorodne typy stron
+							internetowych, które są responsywne. Może to być strona firmowa, sklep online, katalog
+							produktów, strona e-learningowa, strona dla restauracji, system rezerwacji, prosta strona
+							typu landing page, strona typu one page, czy strona dedykowana. <br/><br/>WordPress to&nbsp;rozwiązanie
+							najwyższej jakości, które na pewno spełni Twoje oczekiwania.
+						</p>
+
+
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center mt-12">
+							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
+								<Icon name="gg:website" class="mb-4 text-gray-600" size="48px"/>
+								<h2 class="font-bold">Strona internetowa</h2>
+								<p class="mt-4">WordPress to platforma, która cieszy się największą popularnością wśród
+									twórców stron internetowych. Strona zbudowana na WordPressie oferuje prostotę
+									edycji, a co najważniejsze, umożliwia rozwijanie strony www w takt z rozwojem
+									Twojego projektu.</p>
 							</div>
+							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
+								<Icon name="material-symbols:business-center" class="mb-4 text-gray-600" size="48px"/>
+								<h2 class="font-bold">Strona dla Firmy</h2>
+								<p class="mt-4">Strona dla firmy to nieodłączny element każdego biznesu, pełniący rolę
+									wirtualnej wizytówki. Profesjonalnie zaprojektowana strona firmowa jest kluczowa dla
+									osiągnięcia sukcesu. Tworzymy nowoczesne, responsywne strony internetowe, zwracając
+									szczególną uwagę na detale i optymalizację SEO. Strona oparta na WordPressie
+									zaspokoi wszystkie wymagania Twojej firmy.</p>
+							</div>
+							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
+								<Icon name="ic:baseline-laptop" class="mb-4 text-gray-600" size="48px"/>
+								<h2 class="font-bold">Strona e-learning</h2>
+								<p class="mt-4">Strona e-learningowa oparta na WordPressie umożliwia utworzenie
+									platformy edukacyjnej online, gdzie Twoi klienci mogą nabywać dostęp do kursów
+									poprzez subskrypcję miesięczną lub jednorazową opłatę za kurs.</p>
+							</div>
+							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
+								<Icon name="material-symbols:restaurant" class="mb-4 text-gray-600" size="48px"/>
+								<h2 class="font-bold">Strona dla restauracji</h2>
+								<p class="mt-4">Za pomocą WordPressa, Twoja strona restauracji może stać się prawdziwym
+									biznesem online. WordPress umożliwia utworzenie systemu do zamawiania jedzenia
+									online, idealnego dla restauracji, fast foodów, pizzerii czy kawiarni. Możesz
+									skonfigurować system zamówień online dla restauracji, oferując różne opcje
+									dostawy.</p>
+							</div>
+							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
+								<Icon name="material-symbols:edit-calendar" class="mb-4 text-gray-600" size="48px"/>
+								<h2 class="font-bold">System rezerwacji</h2>
+								<p class="mt-4">Strona internetowa z funkcją wypożyczania produktów, zbudowana na
+									platformie WordPress, oferuje prostotę w zarządzaniu i edycji, a co najważniejsze,
+									umożliwia rozwój Twojego sklepu internetowego wraz z ekspansją Twojego biznesu.
+									Funkcje takie jak rezerwacja miejsc, system bookingowy czy wypożyczalnia produktów
+									są łatwe do implementacji..</p>
+							</div>
+							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
+								<Icon name="material-symbols:screenshot-monitor-outline" class="mb-4 text-gray-600"
+								      size="48px"/>
+								<h2 class="font-bold">Strona Landing page</h2>
+								<p class="mt-4">Landing page, często nazywana prostą stroną docelową, to strona, na
+									którą użytkownik trafia po kliknięciu na Twoją reklamę na Facebooku, wiadomość
+									e-mail, newsletter, baner reklamowy umieszczony na innej stronie lub reklamę w
+									Google.</p>
+							</div>
+						</div>
+
+						<h3 class="text-4xl mt-12 font-bold text-center">Strony internetowe dla klientów z całej
+							Polski</h3>
+						<p class="mt-8 text-center">
+							Świadczę usługi tworzenia stron internetowych dla firm oraz osób prywatnych z całej Polski.
+							<br/> Sprawdź ofertę tworzenia stron WWW dla klientów z innych miast:
+						</p>
+
+						<div class="flex flex-wrap gap-2 mt-8 justify-center">
+							<span class="hover:bg-slate-100 border px-4 py-1 rounded-lg" v-for="(city, key) in cities"
+							      :key="key">
+								<nuxt-link :to="'/strony-internetowe/' + key">
+									Strony internetowe {{ city.singular }}
+								</nuxt-link>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -106,8 +215,129 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+	title: 'Tworzenie stron internetowych Katowice | Be Crafty',
+	meta: {
+		description: 'test'
+	},
+})
 import FooterComponent from "~/components/Footer.vue";
 import {useModalStore} from "~/store/modal";
 
 const modalStore = useModalStore()
+
+const props = defineProps({
+	city: String
+})
+
+const cities = ref({
+	'katowice': {
+		singular: 'Katowice',
+		plural: 'Katowicach',
+		voivodeship: 'Śląsk'
+	},
+	'warszawa': {
+		singular: 'Warszawa',
+		plural: 'Warszawie',
+		voivodeship: 'Mazowieckie'
+	},
+	'krakow': {
+		singular: 'Kraków',
+		plural: 'Krakowie',
+		voivodeship: 'Małopolskie'
+	},
+	'poznan': {
+		singular: 'Poznań',
+		plural: 'Poznaniu',
+		voivodeship: 'Wielkopolskie'
+	},
+	'gdansk': {
+		singular: 'Gdańsk',
+		plural: 'Gdańsku',
+		voivodeship: 'Pomorskie'
+	},
+	'wroclaw': {
+		singular: 'Wrocław',
+		plural: 'Wrocławiu',
+		voivodeship: 'Dolnośląskie'
+	},
+	'bydgoszcz': {
+		singular: 'Bydgoszcz',
+		plural: 'Bydgoszczy',
+		voivodeship: 'Kujawsko-Pomorskie'
+	},
+	'gdynia': {
+		singular: 'Gdynia',
+		plural: 'Gdyni',
+		voivodeship: 'Pomorskie'
+	},
+	'kielce': {
+		singular: 'Kielce',
+		plural: 'Kielcach',
+		voivodeship: 'Świętokrzyskie'
+	},
+	'opole': {
+		singular: 'Opole',
+		plural: 'Opolu',
+		voivodeship: 'Opolskie'
+	},
+	'radom': {
+		singular: 'Radom',
+		plural: 'Radomiu',
+		voivodeship: 'Mazowieckie'
+	},
+	'rzeszow': {
+		singular: 'Rzeszów',
+		plural: 'Rzeszowie',
+		voivodeship: 'Podkarpackie'
+	},
+	'szczecin': {
+		singular: 'Szczecin',
+		plural: 'Szczecinie',
+		voivodeship: 'Zachodniopomorskie'
+	},
+	'torun': {
+		singular: 'Toruń',
+		plural: 'Toruniu',
+		voivodeship: 'Kujawsko-Pomorskie'
+	},
+	'lublin': {
+		singular: 'Lublin',
+		plural: 'Lublinie',
+		voivodeship: 'Lubelskie'
+	},
+	'olsztyn': {
+		singular: 'Olsztyn',
+		plural: 'Olsztynie',
+		voivodeship: 'Warmińsko-Mazurskie'
+	},
+	'zielona-gora': {
+		singular: 'Zielona Góra',
+		plural: 'Zielonej Górze',
+		voivodeship: 'Lubuskie'
+	},
+	'bialystok': {
+		singular: 'Białystok',
+		plural: 'Białymstoku',
+		voivodeship: 'Podlaskie'
+	},
+	'czestochowa': {
+		singular: 'Częstochowa',
+		plural: 'Częstochowie',
+		voivodeship: 'Śląskie'
+	},
+	'gorzow-wielkopolski': {
+		singular: 'Gorzów Wielkopolski',
+		plural: 'Gorzowie Wielkopolskim',
+		voivodeship: 'Lubuskie'
+	},
+	'kalisz': {
+		singular: 'Kalisz',
+		plural: 'Kaliszu',
+		voivodeship: 'Wielkopolskie'
+	},
+})
+
+const currentCity = computed(() => cities.value[props.city])
+const allCities = computed(() => Object.values(cities.value).map((city: any) => city.singular))
 </script>

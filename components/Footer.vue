@@ -30,7 +30,7 @@
 					class="form__button"
 					@click.prevent="displayModal"
 				>
-					{{ $t('touch') }}
+					{{ $t('touchFull') }}
 				</button>
 			</div>
 		</div>

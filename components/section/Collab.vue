@@ -13,10 +13,11 @@
 							<p>
 								<span v-html="$t('websitesDescription')"/>
 							</p>
-							<a class="mt-5 block hover:underline hover:cursor-pointer"
-							   @click.prevent="displayModal">
-								<span v-html="$t('createWebsiteButton')"/>
-							</a>
+							<nuxt-link
+								class="mt-5 block hover:underline hover:cursor-pointer"
+								to="/strony-internetowe-katowice">
+								<span v-html="$t('readMore')"/>
+							</nuxt-link>
 						</div>
 					</div>
 				</div>
