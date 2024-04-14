@@ -1,5 +1,5 @@
 import { hasInjectionContext, inject, version, ref, watchEffect, watch, getCurrentInstance, toRef, isRef, defineComponent, provide, createElementBlock, defineAsyncComponent, readonly, h, onUnmounted, computed, unref, shallowReactive, Suspense, nextTick, Transition, useSSRContext, Fragment, mergeProps, getCurrentScope, onScopeDispose, withCtx, createVNode, createApp, effectScope, reactive, isReactive, toRaw, shallowRef, onErrorCaptured, onServerPrefetch, resolveDynamicComponent, isReadonly, toRefs, markRaw, Text, isShallow } from 'vue';
-import { f as useRuntimeConfig$1, $ as $fetch$1, k as createError$1, z as klona, a as defu, A as sanitizeStatusCode, B as defuFn, C as createHooks, b as appendHeader, D as getRequestHeaders, c as sendRedirect, F as getHeader, G as toRouteMatcher, H as createRouter$1, I as parse$1, J as getRequestHeader, K as destr, L as isEqual$1, s as setCookie, M as getCookie, N as deleteCookie } from '../runtime.mjs';
+import { u as useRuntimeConfig$1, $ as $fetch$1, c as createError$1, A as klona, b as defu, B as sanitizeStatusCode, C as defuFn, D as createHooks, f as appendHeader, F as getRequestHeaders, h as sendRedirect, G as getHeader, H as toRouteMatcher, I as createRouter$1, J as parse$1, K as getRequestHeader, L as destr, M as isEqual$1, s as setCookie, N as getCookie, O as deleteCookie } from '../runtime.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin, composableNames } from '@unhead/shared';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
@@ -912,7 +912,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "2d9685e6-101a-427b-94d4-12776a572e3b"
+    "buildId": "9685c8d6-48ea-47a5-b042-1336934c4606"
   },
   "ui": {
     "primary": "green",
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-DNTHgb9A.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-_3clLIiH.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-C-OyBF4q.mjs').then((m) => m.default || m)
+    component: () => import('./index-BUqmHaAi.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DbBo7yM8.mjs').then((m) => m.default || m)
+    component: () => import('./index-DeQfTsdD.mjs').then((m) => m.default || m)
   },
   {
     name: "lang-slug",
@@ -1012,15 +1012,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./offer-CVYU_dCi.mjs').then((m) => m.default || m)
+    component: () => import('./offer-C4GHjzkK.mjs').then((m) => m.default || m)
   },
   {
-    name: "strony-internetowe-katowice",
-    path: "/strony-internetowe-katowice",
+    name: "strony-internetowe-slug",
+    path: "/strony-internetowe/:slug()",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./strony-internetowe-katowice-C1ItDDEm.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-B4QtC1yj.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "user",
@@ -1888,9 +1888,11 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-BuLxKxLA.mjs').then((r) => r.default));
+const LazyContact = defineAsyncComponent(() => import('./Contact-B_b1lq5U.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-CIx_58DH.mjs').then((r) => r.default));
 const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-BnOjSUfD.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
+  ["Contact", LazyContact],
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
 ];
@@ -6325,7 +6327,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-CR-fHdpa.mjs'
+    './i18n.config-NDGuFnm8.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];

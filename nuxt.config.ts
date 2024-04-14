@@ -21,8 +21,8 @@ export default defineNuxtConfig({
                 host: "smtp.mailgun.org",
                 port: 587,
                 auth: {
-                    user: "postmaster@sandbox9e12515110d94261aa7c3d9133c2071d.mailgun.org",
-                    pass: "f341d05db0e78dbacb0a5752b5ed1935-6d1c649a-36c45324"
+                    user: "postmaster@sandbox3d5f52a7c94d4b3c83ade5b6124bba07.mailgun.org",
+                    pass: "6f1459e3d58612c6f4d9140b41a2cae1-4b670513-4b614ea2"
                 }
             },
         }],
