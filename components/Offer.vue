@@ -19,16 +19,16 @@
 								Zajmuję się<strong> tworzeniem stron internetowych dla klientów z Katowic jak i całej
 								Polski</strong> opartych o system zarządzania
 								treścią <strong>Wordpress</strong> (i nie tylko). Tworzę rozwiązania dla potrzeb małych
-								i
-								średnich firm, które chcą <strong>zaistnieć w sieci</strong>.
-								Wszystkie strony są responsywne, co oznacza, że są dostosowane do urządzeń mobilnych.
+								i średnich firm działających na terenie miasta Katowice, które chcą <strong>zaistnieć w
+								sieci</strong>.
+								Wszystkie moje strony są responsywne, co oznacza, że są dostosowane do urządzeń
+								mobilnych.
 								<br/> <br/>
-								Strony WWW tworzone przeze mnie są <strong>zgodne z najnowszymi trendami i
-								standardami</strong>, co pozwala
-								na ich długotrwałe użytkowanie. Wszystkie opracowywane aplikacje są zoptymalizowane pod
-								kątem SEO, sprawiając że są one lepiej widoczne w wynikach wyszukiwania, co przekłada
-								się
-								na zwiększenie ruchu na stronie i zwiększenie sprzedaży.
+								Tworzone przeze mnie strony WWW Katowice są <strong>zgodne z najnowszymi
+								trendami i standardami</strong>, co pozwala na ich długotrwałe użytkowanie. Wszystkie
+								opracowywane aplikacje są zoptymalizowane pod kątem SEO, sprawiając że są one lepiej
+								widoczne w wynikach wyszukiwania, co przekłada się na zwiększenie ruchu na stronie i
+								zwiększenie sprzedaży.
 							</p>
 						</div>
 						<div class="w-1/2">
@@ -38,11 +38,12 @@
 					</div>
 
 					<div class="mt-24">
-						<h2 class="text-4xl font-bold text-center">Najtańsze i najlepsze strony WWW na
-							rynku</h2>
+						<h2 class="text-4xl font-bold text-center">
+							Profesjonalne strony WWW Katowice
+						</h2>
 
 						<h3 class="text-center mt-4 uppercase">
-							Oferta, cennik programowania stron
+							Oferta, cennik programowania stron dla klientów z Katowic
 						</h3>
 
 						<div class="flex flex-col md:flex-row gap-4 mt-8 text-center">
@@ -91,8 +92,7 @@
 								<p class="mt-4">
 									<strong>Sklep internetowy</strong> to idealne rozwiązanie dla osób, które chcą
 									sprzedawać swoje produkty w internecie. Sklep internetowy pozwala na sprzedaż
-									produktów
-									24/7, co pozwala na zwiększenie sprzedaży.
+									produktów 24/7, co pozwala na zwiększenie sprzedaży.
 								</p>
 								<p class="mt-2">Realizacja do 20 dni</p>
 								<p class="mt-4 text-xl">
@@ -110,8 +110,8 @@
 						<p class="mt-12 text-center">
 							Powyższe kwoty stanowią cenę netto. Wszystkie ceny są cenami orientacyjnymi i mogą ulec
 							zmianie w zależności od indywidualnych potrzeb klienta. <br/>W celu uzyskania dokładnej
-							wyceny
-							<a href="tel:+48786826806" class="font-semibold">zapraszam do kontaktu</a>.
+							wyceny <a href="tel:+48786826806" class="font-semibold">zapraszam do kontaktu</a> klientów z
+							miasta Katowice i okolic.
 						</p>
 					</div>
 
@@ -120,16 +120,15 @@
 							Jaką stronę internetową potrzebujesz?
 						</h2>
 
-
 						<p class="mt-12 text-center">
-							Tworzę strony internetowe firm z wykorzystaniem platformyWordPress. Jest to
-							najpopularniejszą na
-							świecie platformę do zarządzania treścią stron.
+							Z wykorzystaniem platformy WordPress tworzę strony internetowe lokalnych firm z Katowic i
+							nie tylko.
+							Jest to najpopularniejsza na świecie platforma do zarządzania treścią stron internetowych.
 							Korzystając z platformy WordPress, jestem w stanie zbudować różnorodne typy stron
-							internetowych, które są responsywne. Może to być strona firmowa, sklep online, katalog
-							produktów, strona e-learningowa, strona dla restauracji, system rezerwacji, prosta strona
-							typu landing page, strona typu one page, czy strona dedykowana. <br/><br/>WordPress to&nbsp;rozwiązanie
-							najwyższej jakości, które na pewno spełni Twoje oczekiwania.
+							internetowych, które są responsywne. Może to być strona firmowa biznesu z Katowic, sklep
+							online, katalog produktów, strona e-learningowa, strona dla restauracji, system rezerwacji,
+							prosta strona typu landing page, strona typu one page, czy strona dedykowana. <br/><br/>WordPress
+							to&nbsp;rozwiązanie najwyższej jakości, które na pewno spełni Twoje oczekiwania.
 						</p>
 
 
@@ -160,7 +159,7 @@
 							</div>
 							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
 								<Icon name="material-symbols:restaurant" class="mb-4 text-gray-600" size="48px"/>
-								<h2 class="font-bold">Strona dla restauracji</h2>
+								<h2 class="font-bold">Strona dla restauracji Katowice</h2>
 								<p class="mt-4">Za pomocą WordPressa, Twoja strona restauracji może stać się prawdziwym
 									biznesem online. WordPress umożliwia utworzenie systemu do zamawiania jedzenia
 									online, idealnego dla restauracji, fast foodów, pizzerii czy kawiarni. Możesz
@@ -187,21 +186,7 @@
 							</div>
 						</div>
 
-						<h3 class="text-4xl mt-12 font-bold text-center">Strony internetowe dla klientów z całej
-							Polski</h3>
-						<p class="mt-8 text-center">
-							Świadczę usługi tworzenia stron internetowych dla firm oraz osób prywatnych z całej Polski.
-							<br/> Sprawdź ofertę tworzenia stron WWW dla klientów z innych miast:
-						</p>
-
-						<div class="flex flex-wrap gap-2 mt-8 justify-center">
-							<span class="hover:bg-slate-100 border px-4 py-1 rounded-lg" v-for="(city, key) in cities"
-							      :key="key">
-								<nuxt-link :to="'/strony-internetowe/' + key">
-									Strony internetowe {{ city.singular }}
-								</nuxt-link>
-							</span>
-						</div>
+						<cities-list/>
 					</div>
 				</div>
 			</div>
@@ -215,129 +200,17 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-	title: 'Tworzenie stron internetowych Katowice | Be Crafty',
-	meta: {
-		description: 'test'
-	},
-})
+import {useCitiesStore} from "~/store/citites";
 import FooterComponent from "~/components/Footer.vue";
 import {useModalStore} from "~/store/modal";
 
 const modalStore = useModalStore()
+const citiesStore = useCitiesStore()
 
 const props = defineProps({
 	city: String
 })
 
-const cities = ref({
-	'katowice': {
-		singular: 'Katowice',
-		plural: 'Katowicach',
-		voivodeship: 'Śląsk'
-	},
-	'warszawa': {
-		singular: 'Warszawa',
-		plural: 'Warszawie',
-		voivodeship: 'Mazowieckie'
-	},
-	'krakow': {
-		singular: 'Kraków',
-		plural: 'Krakowie',
-		voivodeship: 'Małopolskie'
-	},
-	'poznan': {
-		singular: 'Poznań',
-		plural: 'Poznaniu',
-		voivodeship: 'Wielkopolskie'
-	},
-	'gdansk': {
-		singular: 'Gdańsk',
-		plural: 'Gdańsku',
-		voivodeship: 'Pomorskie'
-	},
-	'wroclaw': {
-		singular: 'Wrocław',
-		plural: 'Wrocławiu',
-		voivodeship: 'Dolnośląskie'
-	},
-	'bydgoszcz': {
-		singular: 'Bydgoszcz',
-		plural: 'Bydgoszczy',
-		voivodeship: 'Kujawsko-Pomorskie'
-	},
-	'gdynia': {
-		singular: 'Gdynia',
-		plural: 'Gdyni',
-		voivodeship: 'Pomorskie'
-	},
-	'kielce': {
-		singular: 'Kielce',
-		plural: 'Kielcach',
-		voivodeship: 'Świętokrzyskie'
-	},
-	'opole': {
-		singular: 'Opole',
-		plural: 'Opolu',
-		voivodeship: 'Opolskie'
-	},
-	'radom': {
-		singular: 'Radom',
-		plural: 'Radomiu',
-		voivodeship: 'Mazowieckie'
-	},
-	'rzeszow': {
-		singular: 'Rzeszów',
-		plural: 'Rzeszowie',
-		voivodeship: 'Podkarpackie'
-	},
-	'szczecin': {
-		singular: 'Szczecin',
-		plural: 'Szczecinie',
-		voivodeship: 'Zachodniopomorskie'
-	},
-	'torun': {
-		singular: 'Toruń',
-		plural: 'Toruniu',
-		voivodeship: 'Kujawsko-Pomorskie'
-	},
-	'lublin': {
-		singular: 'Lublin',
-		plural: 'Lublinie',
-		voivodeship: 'Lubelskie'
-	},
-	'olsztyn': {
-		singular: 'Olsztyn',
-		plural: 'Olsztynie',
-		voivodeship: 'Warmińsko-Mazurskie'
-	},
-	'zielona-gora': {
-		singular: 'Zielona Góra',
-		plural: 'Zielonej Górze',
-		voivodeship: 'Lubuskie'
-	},
-	'bialystok': {
-		singular: 'Białystok',
-		plural: 'Białymstoku',
-		voivodeship: 'Podlaskie'
-	},
-	'czestochowa': {
-		singular: 'Częstochowa',
-		plural: 'Częstochowie',
-		voivodeship: 'Śląskie'
-	},
-	'gorzow-wielkopolski': {
-		singular: 'Gorzów Wielkopolski',
-		plural: 'Gorzowie Wielkopolskim',
-		voivodeship: 'Lubuskie'
-	},
-	'kalisz': {
-		singular: 'Kalisz',
-		plural: 'Kaliszu',
-		voivodeship: 'Wielkopolskie'
-	},
-})
-
-const currentCity = computed(() => cities.value[props.city])
-const allCities = computed(() => Object.values(cities.value).map((city: any) => city.singular))
+const currentCity = computed(() => citiesStore.cities[props.city])
+const allCities = computed(() => Object.values(citiesStore.cities).map((city: any) => city.singular))
 </script>

@@ -6,11 +6,32 @@
 </template>
 
 <script setup lang="ts">
+import {useCitiesStore} from './store/citites';
+
 const i18n = useI18n();
+const route = useRoute()
+const citiesStore = useCitiesStore()
+
+const title = computed(() => {
+	if (route.name === 'strony-internetowe-slug') {
+		return `Tworzenie stron internetowych ${citiesStore.cities[route.params.slug].singular}, tanie strony WWW | Be Crafty`
+	}
+
+	return i18n.t('seo_title') + ' | Be Crafty'
+})
+
+const description = computed(() => {
+	if (route.name === 'strony-internetowe-slug') {
+		return `Projektuję strony internetowe dla klientów z ${citiesStore.cities[route.params.slug].genitive} i okolic. ${citiesStore.cities[route.params.slug].voivodeship} to jedno z miejsce mojego działania. Strony WWW dla firm z ${citiesStore.cities[route.params.slug].genitive}, które chcą zaistnieć w sieci. Sprawdź ofertę!`
+	}
+
+	return i18n.t('seo_description')
+})
+
 useHead({
-	title: i18n.t('seo_title') + ' | Be Crafty',
+	title: title,
 	meta: {
-		description: i18n.t('seo_description'),
+		description: description
 	},
 	link: [
 		{rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'},
@@ -20,6 +41,7 @@ useHead({
 		{rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5'},
 	],
 })
+
 
 const onElementVisible = (el: any) => {
 	const {stop} = useIntersectionObserver(

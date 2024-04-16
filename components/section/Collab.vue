@@ -15,7 +15,7 @@
 							</p>
 							<nuxt-link
 								class="mt-5 block hover:underline hover:cursor-pointer"
-								to="/strony-internetowe-katowice">
+								to="/strony-internetowe">
 								<span v-html="$t('readMore')"/>
 							</nuxt-link>
 						</div>
