@@ -1,6 +1,0 @@
-const index_vue_vue_type_style_index_0_scoped_a64f2a4e_lang = ".app__container[data-v-a64f2a4e]{display:flex;flex-direction:row;min-height:100vh;overflow-x:hidden}.app__main[data-v-a64f2a4e]{min-width:100%;width:100vw;--tw-translate-x:0px;transform:translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transition-duration:.7s;transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.app__main--offseted[data-v-a64f2a4e]{--tw-translate-x:-100%;transform:translate(-100%,var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}";
-
-const indexStyles_8pLYCb21 = [index_vue_vue_type_style_index_0_scoped_a64f2a4e_lang];
-
-export { indexStyles_8pLYCb21 as default };
-//# sourceMappingURL=index-styles.8pLYCb21.mjs.map
