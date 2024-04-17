@@ -7,8 +7,8 @@
 
 			<div class="section__wrapper">
 				<div class="section__container md:!pt-48">
-					<div class="flex gap-24">
-						<div class="w-1/2">
+					<div class="flex flex-col md:flex-row gap-10 sm:gap-24">
+						<div class="w-full md:w-1/2 order-2 md:order-1">
 							<p class="text-xs tracking-widest mb-2">ŁUKASZ-FUJARSKI / MID FULL-STACK DEV /
 								FREELANCER</p>
 							<h1 class="text-xl md:text-5xl leading-tight md:leading-tight font-bold">
@@ -17,7 +17,7 @@
 
 							<p class="mt-6" v-html="currentCity.description"/>
 						</div>
-						<div class="w-1/2">
+						<div class="w-1/2 mx-auto order-1">
 							<img src="~/assets/images/render.png"
 							     :alt="`Strony internetowe ${currentCity.singular}, ${currentCity.voivodeship}. Wycena stron WWW - tanio i rzetelnie.`"
 							     :title="`Strony internetowe ${currentCity.singular}, ${currentCity.voivodeship}. Wycena stron WWW - tanio i rzetelnie.`"
@@ -26,15 +26,15 @@
 					</div>
 
 					<div class="mt-24">
-						<h2 class="text-4xl font-bold text-center">
+						<h2 class="text-2xl md:text-4xl font-bold text-center">
 							Profesjonalne strony WWW {{ currentCity.singular }}
 						</h2>
 
-						<h3 class="text-center mt-4 uppercase">
+						<h3 class="text-sm sm:text-base text-center mt-4 uppercase">
 							Oferta, cennik programowania stron dla klientów z {{ currentCity.genitive }}
 						</h3>
 
-						<div class="flex flex-col md:flex-row gap-4 mt-8 text-center">
+						<div class="flex flex-col md:flex-row gap-12 md:gap-4 mt-8 text-center">
 							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border w-full md:w-1/3">
 								<h4 class="text-2xl font-bold">Strona One Page</h4>
 								<p class="mt-4">
@@ -49,7 +49,7 @@
 								</p>
 
 								<button
-									class="form__button form__button--dark form__button--arrow-right mt-4"
+									class="form__button form__button--dark form__button--arrow-right mt-4 text-sm sm:text-base"
 									@click.prevent="modalStore.visible = true"
 								>
 									Masz pytanie? Skontaktuj się
@@ -69,7 +69,7 @@
 									<strong>Cena:</strong> 1500 zł
 								</p>
 								<button
-									class="form__button form__button--dark form__button--arrow-right mt-4"
+									class="form__button form__button--dark form__button--arrow-right mt-4 text-sm sm:text-base"
 									@click.prevent="modalStore.visible = true"
 								>
 									Masz pytanie? Skontaktuj się
@@ -87,7 +87,7 @@
 									<strong>Cena:</strong> od 2000 zł
 								</p>
 								<button
-									class="form__button form__button--dark form__button--arrow-right mt-4"
+									class="form__button form__button--dark form__button--arrow-right mt-4 text-sm sm:text-base"
 									@click.prevent="modalStore.visible = true"
 								>
 									Masz pytanie? Skontaktuj się
@@ -103,12 +103,12 @@
 						</p>
 					</div>
 
-					<div class="mt-24">
-						<h2 class="text-4xl font-bold text-center">
+					<div class="mt-12 md:mt-24">
+						<h2 class="text-2xl md:text-4xl font-bold text-center">
 							Jaką stronę internetową potrzebujesz?
 						</h2>
 
-						<p class="mt-12 text-center">
+						<p class="mt-6 md:mt-12 text-center">
 							Z wykorzystaniem platformy WordPress tworzę strony internetowe lokalnych firm z
 							{{ currentCity.genitive }} i nie tylko.
 							Jest to najpopularniejsza na świecie platforma do zarządzania treścią stron internetowych.
@@ -121,7 +121,7 @@
 						</p>
 
 
-						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center mt-12">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-12 text-center mt-12">
 							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
 								<Icon name="gg:website" class="mb-4 text-gray-600" size="48px"/>
 								<h2 class="font-bold">Strona internetowa</h2>
@@ -177,8 +177,10 @@
 
 						<cities-list/>
 
+						<h4 class="text-2xl md:text-4xl font-bold text-center mt-12">
+							Przykładowe realizacje stron internetowych
+						</h4>
 
-						<h4 class="text-4xl font-bold text-center mt-12">Przykładowe realizacje stron internetowych</h4>
 						<p class="text-center mt-6">
 							Poniżej prezentuję przykładowe realizacje stron internetowych. Wszystkie strony internetowe
 							firm zostały wykonane zgodnie z wytycznymi klienta. Każda strona internetowa jest
@@ -187,7 +189,7 @@
 							tabletach i&nbsp;smartfonach.
 						</p>
 
-						<div class="grid grid-cols-3 gap-12 mt-12">
+						<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-6 md:gap-12 mt-12">
 							<a href="https://doger.pl/" target="_blank"
 							   class="shadow-xl rounded-xl overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
 								<div
@@ -228,14 +230,14 @@
 							</a>
 						</div>
 
-						<h4 class="text-4xl font-bold text-center mt-20">Projekty aplikacji webowych</h4>
+						<h4 class="text-2xl md:text-4xl font-bold text-center mt-20">Projekty aplikacji webowych</h4>
 
 						<p class="text-center mt-12">
 							Projekty aplikacji webowych i portali internetowych, w których biorę aktywny udział jako
 							Full-stack Developer pracując dla firmy Tech-Studio S.C.
 						</p>
 
-						<div class="grid grid-cols-3 gap-12 mt-12">
+						<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-6 md:gap-12 mt-12">
 							<a href="https://www.ecmentarze.pl/" target="_blank"
 							   class="shadow-xl rounded-xl overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
 								<div

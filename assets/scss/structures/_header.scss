@@ -1,6 +1,10 @@
 .header {
 	@apply fixed w-full z-50 left-0 right-0 justify-between items-center transition-all py-3;
 
+	@screen md {
+		@apply px-4 py-0;
+	}
+
 	&--white {
 		@apply bg-[#ffffff] shadow-2xl shadow-gray-50 border-b;
 
@@ -15,14 +19,11 @@
 		}
 	}
 
-	@screen md {
-		@apply pr-24 px-4 py-0;
-	}
 
 	&__logo {
-		@apply text-white text-base tracking-widest;
+		@apply text-white text-sm tracking-widest;
 
-		@screen md {
+		@screen lg {
 			@apply text-xl;
 		}
 	}
@@ -49,7 +50,11 @@
 		}
 
 		@screen md {
-			@apply gap-10 text-lg flex relative top-auto right-auto left-auto bg-transparent shadow-none flex-row text-black;
+			@apply gap-4 text-lg flex relative top-auto right-auto left-auto bg-transparent shadow-none flex-row text-black;
+		}
+
+		@screen lg {
+			@apply gap-10;
 		}
 
 		li {

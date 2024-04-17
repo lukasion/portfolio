@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h3 class="text-4xl mt-12 font-bold text-center">
+		<h3 class="text-2xl md:text-4xl mt-12 font-bold text-center">
 			Strony internetowe dla klientów z całej Polski
 		</h3>
 
@@ -14,7 +14,8 @@
 				v-for="(city, key) in citiesStore.cities"
 				:key="key"
 			>
-				<nuxt-link class="hover:bg-slate-100 border px-4 py-1 rounded-lg" :to="'/strony-internetowe/' + key">
+				<nuxt-link class="hover:bg-slate-100 border px-2 md:px-4 py-1 rounded-lg text-xs sm:text-base"
+				           :to="'/strony-internetowe/' + key">
 					Strony internetowe {{ city.singular }}
 				</nuxt-link>
 			</template>

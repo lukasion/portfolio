@@ -9,6 +9,7 @@
 				<ul :class="{ 'active': mobileVisible }">
 					<li class="header__item" v-for="item in menu">
 						<nuxt-link
+							class="text-sm lg:text-base"
 							:to="item.link"
 							:class="{'header__item--active': isActive(item), '!text-black': white, '!border-black': white}"
 						>
