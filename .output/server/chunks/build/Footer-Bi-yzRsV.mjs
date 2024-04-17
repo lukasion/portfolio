@@ -1,5 +1,5 @@
 import __nuxt_component_1 from './Icon-DvULJxuf.mjs';
-import { ref, defineComponent, inject, mergeProps, useSSRContext } from 'vue';
+import { defineComponent, inject, mergeProps, useSSRContext, ref } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrInterpolate } from 'vue/server-renderer';
 import { u as useFetch } from './fetch-CCjfMeZS.mjs';
 import { d as defineStore, g as useNuxtApp } from './server.mjs';
