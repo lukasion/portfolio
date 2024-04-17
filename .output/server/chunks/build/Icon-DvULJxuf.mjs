@@ -13,6 +13,7 @@ import 'path';
 import 'requrl';
 import 'node:fs';
 import 'node:url';
+import 'redirect-ssl';
 import 'nodemailer';
 import '@dword-design/functions/dist/find-index.js';
 import '@dword-design/functions/dist/omit.js';

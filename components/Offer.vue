@@ -122,7 +122,8 @@
 							Korzystając z platformy WordPress, jestem w stanie zbudować różnorodne typy stron
 							internetowych, które są responsywne. Może to być strona firmowa biznesu z
 							{{ currentCity.genitive }}, sklep
-							online, katalog produktów, strona e-learningowa, strona dla restauracji, system rezerwacji,
+							online, katalog produktów, strona e-learningnuxtowa, strona dla restauracji, system
+							rezerwacji,
 							prosta strona typu landing page, strona typu one page, czy strona dedykowana. <br/><br/>WordPress
 							to&nbsp;rozwiązanie najwyższej jakości, które na pewno spełni Twoje oczekiwania.
 						</p>

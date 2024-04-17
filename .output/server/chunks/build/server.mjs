@@ -17,6 +17,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import 'redirect-ssl';
 import 'nodemailer';
 import '@dword-design/functions/dist/find-index.js';
 import '@dword-design/functions/dist/omit.js';
@@ -912,7 +913,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "3e66eebb-fa92-49de-b9c6-2bbb01e4014d"
+    "buildId": "e554bfdc-ae21-4947-989a-6cede6b083d2"
   },
   "ui": {
     "primary": "green",
@@ -1012,7 +1013,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./offer-CF82iGOa.mjs').then((m) => m.default || m)
+    component: () => import('./offer-CwwitBn3.mjs').then((m) => m.default || m)
   },
   {
     name: "strony-internetowe-slug",
@@ -1020,7 +1021,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-daynI0xN.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-Cig4jXgo.mjs').then((m) => m.default || m)
   },
   {
     name: "strony-internetowe",
