@@ -11,36 +11,30 @@
 
 			<div class="technology__container mt-12">
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<span class="technology__item">
+					<a href="https://github.com/lukasion" target="_blank" class="technology__item">
 						<div>
 							<Icon name="logos:github-icon" size="48px"/>
 							GitHub
 						</div>
-					</span>
+					</a>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<span class="technology__item" style="transition-delay: 0.6s">
+					<a href="https://linkedin.com/in/lukasz-fujarski" target="_blank" class="technology__item"
+					   style="transition-delay: 0.6s">
 						<div>
 							<Icon name="logos:linkedin-icon" size="48px"/>
 							LinkedIn
 						</div>
-					</span>
+					</a>
 				</div>
 				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<span class="technology__item" style="transition-delay: 0.9s">
-						<div>
-							<Icon name="logos:facebook" size="48px"/>
-							Facebook
-						</div>
-					</span>
-				</div>
-				<div class="technology__item-wrapper title--slide-from-bottom" :ref="onElementVisible">
-					<span class="technology__item" style="transition-delay: 1.2s">
+					<a href="mailto:lukasz.fujarski@gmail.com" target="_blank" class="technology__item"
+					   style="transition-delay: 1.2s">
 						<div>
 							<Icon name="logos:google-gmail" size="48px"/>
 							Google Mail
 						</div>
-					</span>
+					</a>
 				</div>
 			</div>
 		</div>

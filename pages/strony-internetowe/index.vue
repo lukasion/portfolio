@@ -10,10 +10,13 @@
 					<cities-list/>
 				</div>
 			</div>
+
+			<FooterComponent/>
 		</div>
 	</div>
 </template>
 
 <script setup>
 
+import FooterComponent from "~/components/Footer.vue";
 </script>

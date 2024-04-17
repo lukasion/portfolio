@@ -10,12 +10,14 @@
 		</p>
 
 		<div class="flex flex-wrap gap-2 mt-8 justify-center">
-			<span class="hover:bg-slate-100 border px-4 py-1 rounded-lg" v-for="(city, key) in citiesStore.cities"
-			      :key="key">
-				<nuxt-link :to="'/strony-internetowe/' + key">
+			<template
+				v-for="(city, key) in citiesStore.cities"
+				:key="key"
+			>
+				<nuxt-link class="hover:bg-slate-100 border px-4 py-1 rounded-lg" :to="'/strony-internetowe/' + key">
 					Strony internetowe {{ city.singular }}
 				</nuxt-link>
-			</span>
+			</template>
 		</div>
 	</div>
 </template>

@@ -17,7 +17,6 @@
 			<SectionCode/>
 
 			<FooterComponent/>
-
 		</div>
 
 		<ModalContact :class="{ 'active': modalStore.visible }"/>

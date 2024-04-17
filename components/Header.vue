@@ -8,7 +8,10 @@
 			<div class="flex gap-4">
 				<ul :class="{ 'active': mobileVisible }">
 					<li class="header__item" v-for="item in menu">
-						<nuxt-link :to="item.link" :class="{'header__item--active': route.path === item.link }">
+						<nuxt-link
+							:to="item.link"
+							:class="{'header__item--active': isActive(item), '!text-black': white, '!border-black': white}"
+						>
 							{{ item.name }}
 						</nuxt-link>
 					</li>
@@ -57,11 +60,16 @@ const menu = ref([
 		name: i18n.t('home'),
 		link: '/'
 	},
-	// {
-	// 	name: i18n.t('about'),
-	// 	link: '/blog'
-	// },
+	{
+		name: i18n.t('websites'),
+		link: '/strony-internetowe'
+	},
 ])
+
+const isActive = (item) => {
+	return route.path === item.link
+		|| (item.link !== '/' && route.path.includes(item.link))
+}
 
 const changeLanguage = (locale: string) => {
 	setLocale(locale)

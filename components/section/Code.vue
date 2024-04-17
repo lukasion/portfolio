@@ -176,7 +176,7 @@
 					Photoshop',
 					'Microsoft Office', 'Microsoft Excel', 'Microsoft SQL Server', 'Microsoft Power BI', 'Pinia',
 					'Vuex',
-					'Vuetify', 'Bootstrap', 'jQuery', 'HTML', 'REST API', 'Python', 'C#'];
+					'Vuetify', 'Bootstrap', 'jQuery', 'HTML', 'REST API', 'Python', 'C#', 'Jira', 'Livewire'];
 				</div>
 				<div data-line-nr="27" class="code__line">
 					<div class="dot">··</div>

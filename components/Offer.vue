@@ -15,35 +15,23 @@
 								Strony internetowe {{ currentCity.singular }}, {{ currentCity.voivodeship }}
 							</h1>
 
-							<p class="mt-6">
-								Zajmuję się<strong> tworzeniem stron internetowych dla klientów z Katowic jak i całej
-								Polski</strong> opartych o system zarządzania
-								treścią <strong>Wordpress</strong> (i nie tylko). Tworzę rozwiązania dla potrzeb małych
-								i średnich firm działających na terenie miasta Katowice, które chcą <strong>zaistnieć w
-								sieci</strong>.
-								Wszystkie moje strony są responsywne, co oznacza, że są dostosowane do urządzeń
-								mobilnych.
-								<br/> <br/>
-								Tworzone przeze mnie strony WWW Katowice są <strong>zgodne z najnowszymi
-								trendami i standardami</strong>, co pozwala na ich długotrwałe użytkowanie. Wszystkie
-								opracowywane aplikacje są zoptymalizowane pod kątem SEO, sprawiając że są one lepiej
-								widoczne w wynikach wyszukiwania, co przekłada się na zwiększenie ruchu na stronie i
-								zwiększenie sprzedaży.
-							</p>
+							<p class="mt-6" v-html="currentCity.description"/>
 						</div>
 						<div class="w-1/2">
-							<img src="~/assets/images/render.png" alt="Strony internetowe Katowice, Śląsk"
+							<img src="~/assets/images/render.png"
+							     :alt="`Strony internetowe ${currentCity.singular}, ${currentCity.voivodeship}. Wycena stron WWW - tanio i rzetelnie.`"
+							     :title="`Strony internetowe ${currentCity.singular}, ${currentCity.voivodeship}. Wycena stron WWW - tanio i rzetelnie.`"
 							     class="rounded-lg"/>
 						</div>
 					</div>
 
 					<div class="mt-24">
 						<h2 class="text-4xl font-bold text-center">
-							Profesjonalne strony WWW Katowice
+							Profesjonalne strony WWW {{ currentCity.singular }}
 						</h2>
 
 						<h3 class="text-center mt-4 uppercase">
-							Oferta, cennik programowania stron dla klientów z Katowic
+							Oferta, cennik programowania stron dla klientów z {{ currentCity.genitive }}
 						</h3>
 
 						<div class="flex flex-col md:flex-row gap-4 mt-8 text-center">
@@ -64,7 +52,7 @@
 									class="form__button form__button--dark form__button--arrow-right mt-4"
 									@click.prevent="modalStore.visible = true"
 								>
-									Nawiąż współpracę
+									Masz pytanie? Skontaktuj się
 								</button>
 							</div>
 							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border w-full md:w-1/3">
@@ -84,7 +72,7 @@
 									class="form__button form__button--dark form__button--arrow-right mt-4"
 									@click.prevent="modalStore.visible = true"
 								>
-									Nawiąż współpracę
+									Masz pytanie? Skontaktuj się
 								</button>
 							</div>
 							<div class="rounded shadow-2xl p-8 py-12 flex flex-col items-center border w-full md:w-1/3">
@@ -102,7 +90,7 @@
 									class="form__button form__button--dark form__button--arrow-right mt-4"
 									@click.prevent="modalStore.visible = true"
 								>
-									Nawiąż współpracę
+									Masz pytanie? Skontaktuj się
 								</button>
 							</div>
 						</div>
@@ -111,7 +99,7 @@
 							Powyższe kwoty stanowią cenę netto. Wszystkie ceny są cenami orientacyjnymi i mogą ulec
 							zmianie w zależności od indywidualnych potrzeb klienta. <br/>W celu uzyskania dokładnej
 							wyceny <a href="tel:+48786826806" class="font-semibold">zapraszam do kontaktu</a> klientów z
-							miasta Katowice i okolic.
+							miasta {{ currentCity.singular }} i okolic.
 						</p>
 					</div>
 
@@ -121,11 +109,12 @@
 						</h2>
 
 						<p class="mt-12 text-center">
-							Z wykorzystaniem platformy WordPress tworzę strony internetowe lokalnych firm z Katowic i
-							nie tylko.
+							Z wykorzystaniem platformy WordPress tworzę strony internetowe lokalnych firm z
+							{{ currentCity.genitive }} i nie tylko.
 							Jest to najpopularniejsza na świecie platforma do zarządzania treścią stron internetowych.
 							Korzystając z platformy WordPress, jestem w stanie zbudować różnorodne typy stron
-							internetowych, które są responsywne. Może to być strona firmowa biznesu z Katowic, sklep
+							internetowych, które są responsywne. Może to być strona firmowa biznesu z
+							{{ currentCity.genitive }}, sklep
 							online, katalog produktów, strona e-learningowa, strona dla restauracji, system rezerwacji,
 							prosta strona typu landing page, strona typu one page, czy strona dedykowana. <br/><br/>WordPress
 							to&nbsp;rozwiązanie najwyższej jakości, które na pewno spełni Twoje oczekiwania.
@@ -159,7 +148,7 @@
 							</div>
 							<div class="border bg-white shadow-md p-6 rounded-lg mb-6">
 								<Icon name="material-symbols:restaurant" class="mb-4 text-gray-600" size="48px"/>
-								<h2 class="font-bold">Strona dla restauracji Katowice</h2>
+								<h2 class="font-bold">Strona dla restauracji {{ currentCity.singular }}</h2>
 								<p class="mt-4">Za pomocą WordPressa, Twoja strona restauracji może stać się prawdziwym
 									biznesem online. WordPress umożliwia utworzenie systemu do zamawiania jedzenia
 									online, idealnego dla restauracji, fast foodów, pizzerii czy kawiarni. Możesz
@@ -187,12 +176,110 @@
 						</div>
 
 						<cities-list/>
+
+
+						<h4 class="text-4xl font-bold text-center mt-12">Przykładowe realizacje stron internetowych</h4>
+						<p class="text-center mt-6">
+							Poniżej prezentuję przykładowe realizacje stron internetowych. Wszystkie strony internetowe
+							firm zostały wykonane zgodnie z wytycznymi klienta. Każda strona internetowa jest
+							responsywna, co oznacza, że dostosowuje się do rozmiaru ekranu urządzenia, na którym jest
+							wyświetlana. Dzięki temu strona internetowa wyświetla się poprawnie na komputerach,
+							tabletach i&nbsp;smartfonach.
+						</p>
+
+						<div class="grid grid-cols-3 gap-12 mt-12">
+							<a href="https://doger.pl/" target="_blank"
+							   class="shadow-xl rounded-xl overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
+								<div
+									class="h-full w-full rounded-xl overflow-hidden bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-50">
+									<img src="~/assets/images/web1.jpg"
+									     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-110 relative"/>
+								</div>
+
+								<p class="font-bold absolute drop-shadow-lg z-100 text-white bottom-4 left-0 right-0 text-center transition-transform translate-y-64">
+									Portal internetowy Doger
+								</p>
+							</a>
+
+							<a href="https://glimren.no/" target="_blank"
+							   class="shadow-xl rounded-xl overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
+								<div
+									class="h-full w-full rounded-xl overflow-hidden bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-50">
+									<img src="~/assets/images/web2.jpg"
+									     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-110 relative"/>
+								</div>
+
+								<p class="font-bold absolute drop-shadow-lg z-100 text-white bottom-4 left-0 right-0 text-center transition-transform translate-y-64">
+									Firma sprzątająca Glimren
+								</p>
+							</a>
+
+							<a href="https://kancelariafinansjer.pl/" target="_blank"
+							   class="shadow-xl rounded-xl overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
+								<div
+									class="h-full w-full rounded-xl overflow-hidden bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-50">
+									<img src="~/assets/images/web3.jpg"
+									     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-110 relative"/>
+								</div>
+
+								<p class="font-bold absolute drop-shadow-lg z-100 text-white bottom-4 left-0 right-0 text-center transition-transform translate-y-64">
+									Kancelaria podatkowa Finansjer
+								</p>
+							</a>
+						</div>
+
+						<h4 class="text-4xl font-bold text-center mt-20">Projekty aplikacji webowych</h4>
+
+						<p class="text-center mt-12">
+							Projekty aplikacji webowych i portali internetowych, w których biorę aktywny udział jako
+							Full-stack Developer pracując dla firmy Tech-Studio S.C.
+						</p>
+
+						<div class="grid grid-cols-3 gap-12 mt-12">
+							<a href="https://www.ecmentarze.pl/" target="_blank"
+							   class="shadow-xl rounded-xl overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
+								<div
+									class="h-full w-full rounded-xl overflow-hidden bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-50">
+									<img src="~/assets/images/web4.jpg"
+									     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-110 relative"/>
+								</div>
+
+								<p class="font-bold absolute drop-shadow-lg z-100 text-white bottom-4 left-0 right-0 text-center transition-transform translate-y-64">
+									Portal eCmentarze.pl
+								</p>
+							</a>
+
+							<a href="https://www.parochialis.pl/" target="_blank"
+							   class="shadow-xl rounded-lg overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
+								<div
+									class="h-full w-full rounded-xl overflow-hidden bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-50">
+									<img src="~/assets/images/web5.jpg"
+									     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-110 relative"/>
+								</div>
+
+								<p class="font-bold absolute drop-shadow-lg z-100 text-white bottom-4 left-0 right-0 text-center transition-transform translate-y-64">
+									Wirtualna kancelaria parafialna
+								</p>
+							</a>
+
+							<a href="https://tech-studio.pl/" target="_blank"
+							   class="shadow-xl rounded-lg overflow-hidden relative hover:bg-black transition [&>p]:hover:translate-y-0">
+								<div
+									class="h-full w-full rounded-xl overflow-hidden bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-50">
+									<img src="~/assets/images/web6.jpg"
+									     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-110 relative"/>
+								</div>
+
+								<p class="font-bold absolute drop-shadow-lg z-100 text-white bottom-4 left-0 right-0 text-center transition-transform translate-y-64">
+									Wizytówka firmy Tech-Studio S.C.
+								</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<FooterComponent/>
-
 		</div>
 
 		<ModalContact :class="{ 'active': modalStore.visible }"/>
