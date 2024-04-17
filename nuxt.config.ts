@@ -46,5 +46,5 @@ export default defineNuxtConfig({
     vueEmail: {
         baseUrl: 'https://be-crafty.com',
         autoImport: true,
-    }
+    },
 })

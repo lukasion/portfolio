@@ -41,6 +41,7 @@
     "nuxt-mail": "^4.0.2",
     "openai": "^4.24.7",
     "pinia": "^2.1.7",
+    "redirect-ssl": "^3.0.0",
     "vanilla-tilt": "^1.8.1"
   }
 }
