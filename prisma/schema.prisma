@@ -36,6 +36,7 @@ model Post {
     user            User?    @relation(fields: [userId], references: [id])
     minutes_read    Int?
     friendly_url    String?
+    lang            String? @default("pl")
     category        Category? @relation(fields: [category_id], references: [id])
     category_id     Int?
 }

@@ -8,7 +8,7 @@
 	&::v-deep {
 		.article {
 			&__image {
-				@apply h-96 mb-12 object-cover object-center overflow-hidden flex items-center;
+				@apply md:h-96 mb-12 object-cover object-center overflow-hidden flex items-center;
 
 				img {
 					width: 100%;
@@ -20,11 +20,11 @@
 			}
 
 			&__title {
-				@apply text-4xl mb-4 font-bold text-center;
+				@apply text-2xl md:text-4xl mb-4 font-bold text-center;
 			}
 
 			&__subtitle {
-				@apply text-3xl mb-4;
+				@apply font-semibold text-xl md:text-3xl mb-4;
 			}
 
 			&__text {

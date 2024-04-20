@@ -4,7 +4,7 @@
 		<thead>
 		<tr>
 			<th>ID</th>
-			<th>Prompt</th>
+			<th>Title</th>
 			<th>Content</th>
 			<th>Actions</th>
 		</tr>
@@ -12,9 +12,10 @@
 		<tbody>
 		<tr v-for="article in articlesStore.articles">
 			<td>{{ article.id }}</td>
-			<td>{{ article.prompt }}</td>
+			<td>{{ article.title }}</td>
 			<td>{{ shorten(article.content, 150) }}</td>
 			<td>
+				<a class="btn btn-sm btn-neutral" :href="`/blog/${article.friendly_url}`" target="_blank">Preview</a>
 				<a class="btn btn-sm btn-neutral" :href="`/user/posts/form/${article.id}`">Edit</a>
 			</td>
 		</tr>

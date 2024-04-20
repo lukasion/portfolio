@@ -3,27 +3,36 @@
 		<Header white/>
 
 		<div class="container mx-auto pt-20">
-			<div class="article">
+			<div class="article mt-12">
 				<div class="article__image">
 					<img
 						src="https://d3mm2s9r15iqcv.cloudfront.net/en/wp-content/uploads/2024/01/best-online-learning-platforms.jpg"
 						alt="Article image"/>
 				</div>
 
-				<div class="article__content">
-					<h4 class="uppercase text-sm tracking-wider text-center">
-						{{ articlesStore.article.category ? articlesStore.article.category.name : 'Not assigned' }}
-					</h4>
+				<div class="article__content" v-if="articlesStore.article">
+					<p class="text-center">
+						<nuxt-link :to="`/category/${articlesStore.article.category_id}`"
+						           class="uppercase text-sm tracking-wider">
+							{{ articlesStore.article.category ? articlesStore.article.category.name : $t('not_assigned')
+							}}
+						</nuxt-link>
+					</p>
+
+
 					<h1 class="article__title">{{ articlesStore.article.title }}</h1>
 
-					<template v-if="articlesStore.article">
-						<div v-html="articlesStore.article.content"></div>
-					</template>
-					<p v-else>
-						Article not found. Redirecting.
-					</p>
+					<div v-html="articlesStore.article.content"></div>
 				</div>
+				<p v-else>
+					Article not found. Redirecting.
+				</p>
 			</div>
+
+			<article-others
+				:without-article-id="articlesStore.article.id"
+				:category-id="articlesStore.article.category_id"
+			/>
 		</div>
 
 		<Footer class="mt-24"/>

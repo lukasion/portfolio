@@ -5,6 +5,7 @@
 		</label>
 		<label class="input-group">
 			<textarea
+				rows="10"
 				:placeholder="placeholder"
 				:class="['textarea textarea-bordered', props.class]"
 				:required="required"

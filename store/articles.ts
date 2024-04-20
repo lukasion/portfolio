@@ -24,7 +24,7 @@ export const useArticlesStore = defineStore('articles', () => {
     }
 
     async function fetchBySlug(slug: string): Promise<object | null> {
-        const {data}: any = await useFetch(`/api/articles/${slug}`)
+        const {data}: any = await useFetch(`/api/articles/friendly-url/${slug}`)
 
         if (data.value) {
             article.value = data.value

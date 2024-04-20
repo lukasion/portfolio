@@ -10,6 +10,26 @@ export default defineEventHandler(async (event: H3Event<EventHandlerRequest>): P
         take: query.limit ? parseInt(<string>query.limit) : 4
     }
 
+    let whereClause = {
+        lang: query.lang
+    }
+
+    if (query.withoutArticleId) {
+        whereClause = {
+            ...whereClause,
+            id: {
+                not: parseInt(<string>query.withoutArticleId)
+            }
+        }
+    }
+
+    if (query.categoryId) {
+        whereClause = {
+            ...whereClause,
+            category_id: parseInt(<string>query.categoryId)
+        }
+    }
+
     return prisma.post.findMany({
         ...pagination,
         orderBy: {
@@ -17,6 +37,7 @@ export default defineEventHandler(async (event: H3Event<EventHandlerRequest>): P
         },
         include: {
             category: true
-        }
+        },
+        where: whereClause
     });
 })

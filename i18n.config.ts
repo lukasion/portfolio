@@ -3,6 +3,7 @@ export default defineI18nConfig(() => ({
     locale: 'pl',
     messages: {
         en: {
+            articles: 'Articles',
             seo_title: 'Web development, Wordpress websites, SEO Katowice, Silesia - Łukasz Fujarski',
             seo_description: 'Designing modern, mobile-friendly websites Katowice. Wordpress websites, freelancing, SEO optimization, website positioning.',
             welcome: 'Welcome',
@@ -48,8 +49,17 @@ export default defineI18nConfig(() => ({
             yourPhone: 'Your phone number',
             contactRequest: 'Send request',
             readMore: 'Read more',
+            no_articles_found: 'No articles found',
+            featured_article: 'Featured article',
+            recent_articles: 'Recent articles',
+            blog: 'Be Crafty - About web',
+            blog_subtitle: 'Start being crafty today.',
+            minutes_read: 'minute(s) read',
+            not_assigned: 'Not assigned',
+            articles_in_category: 'Articles in category',
         },
         pl: {
+            articles: 'Artykuły',
             seo_title: 'Tworzenie stron internetowych, strony WWW Wordpress, SEO Katowice, Śląsk - Łukasz Fujarski',
             seo_description: 'Projektowanie nowoczesnych, mobilnych stron internetowych Katowice. Strony Wordpress, freelancing, optymalizacja SEO, pozycjonowanie WWW.',
             welcome: 'Witamy',
@@ -102,6 +112,14 @@ export default defineI18nConfig(() => ({
             yourMessage: 'Twoja wiadomość',
             contactRequest: 'Wyślij zapytanie',
             readMore: 'Czytaj więcej',
+            no_articles_found: 'Nie znaleziono artykułów',
+            featured_article: 'Artykuł wyróżniony',
+            recent_articles: 'Ostatnie artykuły',
+            blog: 'Be Crafty - Blog',
+            blog_subtitle: 'Zacznij być kreatywny już dziś.',
+            minutes_read: 'minut(y) czytania',
+            not_assigned: 'Nie przypisano',
+            articles_in_category: 'Artykuły w kategorii',
         }
     }
 }))

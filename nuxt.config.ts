@@ -38,9 +38,9 @@ export default defineNuxtConfig({
         pageTransition: {name: 'page', mode: 'out-in'}
     },
     dayjs: {
-        locales: ['en'],
+        locales: ['en', 'pl'],
         plugins: ['timezone'],
-        defaultLocale: 'en',
+        defaultLocale: 'pl',
         defaultTimezone: 'Europe/Warsaw',
     },
     vueEmail: {

@@ -13,7 +13,7 @@
 				label="Name of article"
 				placeholder="Name"
 				required
-				:value="articlesStore.article?.prompt"
+				:value="articlesStore.article?.title"
 			/>
 
 			<form-textarea
@@ -23,9 +23,9 @@
 				:value="articlesStore.article?.content"
 			/>
 
-			<div class="flex gap-2">
+			<div class="flex gap-4 mt-4">
 				<nuxt-link to="/user/posts" class="btn">Cancel</nuxt-link>
-				
+
 				<button class="btn btn-neutral">Submit form</button>
 			</div>
 		</div>

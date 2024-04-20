@@ -1,6 +1,10 @@
 .blog {
 	&__container {
-		@apply flex gap-24 mt-12;
+		@apply flex gap-24 mt-12 flex-col lg:flex-row px-4;
+
+		&--grid {
+			@apply grid gap-6 mt-6 md:grid-cols-3;
+		}
 
 		&--column {
 			@apply flex-col gap-12;

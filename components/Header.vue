@@ -65,6 +65,10 @@ const menu = ref([
 		name: i18n.t('websites'),
 		link: '/strony-internetowe'
 	},
+	{
+		name: i18n.t('articles'),
+		link: '/blog'
+	},
 ])
 
 const isActive = (item) => {

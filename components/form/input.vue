@@ -9,15 +9,13 @@
 				:placeholder="placeholder"
 				:class="['input input-bordered', props.class]"
 				:required="required"
-				v-model="model"
+				:value="value"
 			/>
 		</label>
 	</div>
 </template>
 
 <script setup lang="ts">
-const model = defineModel()
-
 const props = defineProps({
 	type: {
 		type: String,
@@ -38,6 +36,10 @@ const props = defineProps({
 	required: {
 		type: Boolean,
 		default: false
+	},
+	value: {
+		type: String,
+		default: null
 	}
 })
 
