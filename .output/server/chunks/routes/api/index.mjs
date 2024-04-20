@@ -19,6 +19,23 @@ const index = defineEventHandler(async (event) => {
     skip: query.page ? (parseInt(query.page) - 1) * 4 : 0,
     take: query.limit ? parseInt(query.limit) : 4
   };
+  let whereClause = {
+    lang: query.lang
+  };
+  if (query.withoutArticleId) {
+    whereClause = {
+      ...whereClause,
+      id: {
+        not: parseInt(query.withoutArticleId)
+      }
+    };
+  }
+  if (query.categoryId) {
+    whereClause = {
+      ...whereClause,
+      category_id: parseInt(query.categoryId)
+    };
+  }
   return prisma.post.findMany({
     ...pagination,
     orderBy: {
@@ -26,7 +43,8 @@ const index = defineEventHandler(async (event) => {
     },
     include: {
       category: true
-    }
+    },
+    where: whereClause
   });
 });
 

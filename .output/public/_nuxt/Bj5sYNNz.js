@@ -1,0 +1,1 @@
+import{k as e,s as a,x as n,B as u}from"./EeqhaEl4.js";const l={__name:"[slug]",setup(r){const{setLocale:s}=e(),o=a();n();const t=o.params.slug;return u(()=>{s(t),window.location="/"}),()=>{}}};export{l as default};

@@ -913,7 +913,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "a9862ce3-1ec1-4a4b-9ffc-18bb079f545c"
+    "buildId": "efe7b68f-2a61-42c8-9c1b-5c5f6466b5f9"
   },
   "ui": {
     "primary": "green",
@@ -981,7 +981,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-byz6kNqx.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-BukrAJ09.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -989,7 +989,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CD_miP8v.mjs').then((m) => m.default || m)
+    component: () => import('./index-qgLgMnMI.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "category-id",
+    path: "/category/:id()",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_id_-DP8HotW1.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -997,7 +1005,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-Cq9Tgd9X.mjs').then((m) => m.default || m)
+    component: () => import('./index-DHz5RBuX.mjs').then((m) => m.default || m)
   },
   {
     name: "lang-slug",
@@ -1005,7 +1013,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_--NgvSrEi.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-DUpo7H3x.mjs').then((m) => m.default || m)
   },
   {
     name: "offer",
@@ -1013,7 +1021,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./offer-CwwitBn3.mjs').then((m) => m.default || m)
+    component: () => import('./offer-CiPw-hNM.mjs').then((m) => m.default || m)
   },
   {
     name: "strony-internetowe-slug",
@@ -1021,7 +1029,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_slug_-Cig4jXgo.mjs').then((m) => m.default || m)
+    component: () => import('./_slug_-BN1NdsF8.mjs').then((m) => m.default || m)
   },
   {
     name: "strony-internetowe",
@@ -1029,7 +1037,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CWYMY6Lv.mjs').then((m) => m.default || m)
+    component: () => import('./index-BfMsHooy.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "user",
@@ -1037,7 +1045,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
-    component: () => import('./user-DDYxrjro.mjs').then((m) => m.default || m),
+    component: () => import('./user-C0xzRIg2.mjs').then((m) => m.default || m),
     children: [
       {
         name: "user-auth",
@@ -1045,7 +1053,7 @@ const _routes = [
         meta: {},
         alias: [],
         redirect: void 0 ,
-        component: () => import('./auth-DjxeU8rM.mjs').then((m) => m.default || m)
+        component: () => import('./auth-D0TQVl9y.mjs').then((m) => m.default || m)
       },
       {
         name: "user-posts",
@@ -1053,7 +1061,7 @@ const _routes = [
         meta: {},
         alias: [],
         redirect: void 0 ,
-        component: () => import('./posts-hoNYMAIM.mjs').then((m) => m.default || m),
+        component: () => import('./posts-3bW9C7MW.mjs').then((m) => m.default || m),
         children: [
           {
             name: "user-posts-slug",
@@ -1061,7 +1069,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-DGEUmvfB.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-EHtIwjyx.mjs').then((m) => m.default || m)
           },
           {
             name: "user-posts-form-slug",
@@ -1069,7 +1077,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-BF2rgrJ1.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-DOcxoLV5.mjs').then((m) => m.default || m)
           }
         ]
       },
@@ -1079,7 +1087,7 @@ const _routes = [
         meta: {},
         alias: [],
         redirect: void 0 ,
-        component: () => import('./topics-DjSENV-_.mjs').then((m) => m.default || m),
+        component: () => import('./topics-Dvkh04Qc.mjs').then((m) => m.default || m),
         children: [
           {
             name: "user-topics-slug",
@@ -1087,7 +1095,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-D9PxmPNB.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-Drz7IJ_m.mjs').then((m) => m.default || m)
           },
           {
             name: "user-topics-form-slug",
@@ -1095,7 +1103,7 @@ const _routes = [
             meta: {},
             alias: [],
             redirect: void 0 ,
-            component: () => import('./_slug_-ySQvtE0p.mjs').then((m) => m.default || m)
+            component: () => import('./_slug_-xe8Zfs9r.mjs').then((m) => m.default || m)
           }
         ]
       }
@@ -1898,8 +1906,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
   }
 });
 const LazyContact = defineAsyncComponent(() => import('./Contact-B_b1lq5U.mjs').then((r) => r.default));
-const LazyIcon = defineAsyncComponent(() => import('./Icon-DvULJxuf.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-El1nD88I.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-kqhLPqFV.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DxdngZfs.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Contact", LazyContact],
   ["Icon", LazyIcon],
@@ -2301,8 +2309,8 @@ dayjs.extend(timezone);
 dayjs.extend(relativeTime);
 dayjs.extend(utc);
 dayjs.tz.setDefault("Europe/Warsaw");
-dayjs.updateLocale("en");
-dayjs.locale("en");
+dayjs.updateLocale("pl");
+dayjs.locale("pl");
 const plugin_8SbxDRbG6Y = /* @__PURE__ */ defineNuxtPlugin(async (nuxtApp) => nuxtApp.provide("dayjs", dayjs));
 extendTailwindMerge({
   extend: {
@@ -6336,7 +6344,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-NDGuFnm8.mjs'
+    './i18n.config-BBH_hBRe.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -8609,8 +8617,8 @@ const _sfc_main$1 = {
     const statusMessage = _error2.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error2.message || _error2.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-Ca5u56AH.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-1as4lDjq.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-CuMs1RK1.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-B5A40evG.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -8690,5 +8698,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { __nuxt_component_3 as _, useRoute as a, useRouter as b, useIntersectionObserver as c, defineStore as d, entry$1 as default, useI18n as e, useCitiesStore as f, useNuxtApp as g, __nuxt_component_1 as h, useAuth as i, hasProtocol as j, joinURL as k, parseQuery as l, useRuntimeConfig as m, nuxtLinkDefaults as n, navigateTo as o, parseURL as p, withoutTrailingSlash as q, asyncDataDefaults as r, createError as s, fetchDefaults as t, useHead as u, useRequestFetch as v, withTrailingSlash as w, useAppConfig as x, useState as y };
+export { __nuxt_component_3 as _, useI18n as a, useRoute as b, useRouter as c, defineStore as d, entry$1 as default, useIntersectionObserver as e, useCitiesStore as f, useNuxtApp as g, __nuxt_component_1 as h, useAuth as i, hasProtocol as j, joinURL as k, parseQuery as l, useRuntimeConfig as m, nuxtLinkDefaults as n, navigateTo as o, parseURL as p, withoutTrailingSlash as q, asyncDataDefaults as r, createError as s, fetchDefaults as t, useHead as u, useRequestFetch as v, withTrailingSlash as w, useAppConfig as x, useState as y };
 //# sourceMappingURL=server.mjs.map
