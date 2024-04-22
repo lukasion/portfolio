@@ -32,7 +32,9 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/scss/main.scss'],
     auth: {
-        baseURL: 'http://localhost:3000/user/auth'
+        baseURL: process.env.NODE_ENV === 'production'
+            ? 'https://be-crafty.com/user/auth'
+            : 'http://localhost:3000/user/auth'
     },
     app: {
         pageTransition: {name: 'page', mode: 'out-in'}
