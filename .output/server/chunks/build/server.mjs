@@ -913,7 +913,7 @@ function toArray(value) {
 }
 const inlineConfig = {
   "nuxt": {
-    "buildId": "80c072e3-22cc-4d94-b9aa-9b338649bc8f"
+    "buildId": "ff3e3cf1-ed30-4d0a-928c-7d3b16f5f63a"
   },
   "ui": {
     "primary": "green",

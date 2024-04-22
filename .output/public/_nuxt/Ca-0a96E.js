@@ -1,1 +1,0 @@
-import{f as n,x as a,s as u,B as r,K as c,o as _,q as i,_ as p}from"./DMqJ8JIy.js";const h=n({__name:"user",setup(f){const s=a(),e=u();return r(async()=>{await c().getSession()?e.fullPath==="/user"&&await s.push("/user/posts"):await s.push("/auth/login")}),(t,l)=>{const o=p;return _(),i(o)}}});export{h as default};

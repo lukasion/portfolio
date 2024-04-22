@@ -1,0 +1,1 @@
+import{k as e,s as a,x as n,B as u}from"./pAP22Ojy.js";const l={__name:"[slug]",setup(r){const{setLocale:s}=e(),o=a();n();const t=o.params.slug;return u(()=>{s(t),window.location="/"}),()=>{}}};export{l as default};
