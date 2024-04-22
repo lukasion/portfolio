@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
     apps: [
         {
@@ -18,7 +20,7 @@ module.exports = {
                 NODE_ENV: "production",
                 PORT: 3000,
                 exec_mode: "cluster_mode",
-                DATABASE_URL: "file:./dev.db"
+                DATABASE_URL: process.env.DATABASE_URL
             },
             env_development: {
                 NODE_ENV: "development",
@@ -35,7 +37,7 @@ module.exports = {
                     "./samples",
                     "./src"
                 ],
-                DATABASE_URL: "file:./dev.db"
+                DATABASE_URL: process.env.DATABASE_URL
             },
         },
     ],
